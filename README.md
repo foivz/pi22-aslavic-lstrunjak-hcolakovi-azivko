@@ -25,15 +25,23 @@ Andrija Živko   | azivko@foi.hr       | 0016143755 |    Z1V3
 
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Aplikacija će omogućiti korisniku da rezevira autobusnu kartu za traženo odredište. Također, omogućiti će adminu da briše i dodaje nove autobusne relacije te korisniku omogućuje pretraživanje i sortiranje autobusnih linija te prikazuje popuste koje korisnik ostvaruje (ako zadovoljava određene uvjete). Isto tako korisniku će biti dostupna često postavljana pitanja koja će mu pomoći pri korištenju aplikacije.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
-
+F01 | Login | Za pristupanje aplikaciji u svojstvu korisnika/admina | Hasan Čolaković
+F02 | Spajanje na bazu podataka | Spajanje sa bazom podataka gdje će biti dostupne sve informacije o autobusnim linijama | Luka Strunjak
+F03 | Profil korisnika | Pristupanje/kreiranje profila korsnika ili admina | Andrija Živko
+F04 | Pregled vožnje | Informacije o rasporedu vožnje | Andrija Slavić
+F05 | Rezervacija karte | Odabir sjedala i rezervacija karte za određenu liniju | Andrija Slavić
+F06 | Filtriranje | Filtriranje po određenim karakteristikama (relacija, odredište, cijena karte...) | Andrija Živko
+F07 | Uređivanje unesenih podataka | Uređivanje već postojećih podataka u slučaju nekih promjena (promjena voznog reda) | Hasan Čolaković
+F08 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
+F09 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Luka Strunjak
+F10 | Popusti | Informacije o popustima ako korisnik zadovoljava određene uvjete (studenti, umirovljenici, učenici, invalidi) | Luka Strunjak
+F11 | Recenzija | Povratne informacije korisnika o aplikaciji | Andrija Živko
+F12 | FAQ | Pomoć korisnicima u korištenju aplikacije (često postavljana pitanja) | Andrija Slavić
 ## Tehnologije i oprema
-Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
+Tehnologije koje ćemo koristiti su: Visual Studio 2019/2022, Github, MySQL DBMS, MySQL Workbench, Microsoft Word.
