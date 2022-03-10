@@ -11,15 +11,18 @@ Sav programski kod potrebno je verzionirati u glavnoj **master** grani i **obvez
 
 Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
 
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
+# Aplikacija za rezervaciju autobusne karte
+
 
 ## Projektni tim
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
-Ime i prezime | ... | ... | ...
+Ime i prezime   | E-mail adresa (FOI) | JMBAG      | Github korisničko ime
+------------    | ------------------- | -----      | ---------------------
+Andrija Slavić  | aslavic@foi.hr      | 0016143295 |    weis25
+Luka Strunjak   | lstrunjak@foi.hr    | 0016145718 |    strule23
+Hasan Čolaković | hcolakovi@foi.hr    | 0016145973 |    HasanColakovic99
+Andrija Živko   | azivko@foi.hr       | 0016143755 |    Z1V3
+
 
 ## Opis domene
 Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
