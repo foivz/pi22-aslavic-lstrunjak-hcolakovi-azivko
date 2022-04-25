@@ -32,12 +32,12 @@ Aplikacija će omogućiti korisniku da rezevira autobusnu kartu za traženo odre
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Login | Za pristupanje aplikaciji u svojstvu korisnika/admina | Hasan Čolaković
-F02 | Spajanje na bazu podataka | Spajanje sa bazom podataka gdje će biti dostupne sve informacije o autobusnim linijama | Luka Strunjak
+F02 | Registracija u sustav | Kako bi korisnik koristio aplikaciju potrebna je registracija. Podaci koje će biti potrebno unijeti su: Ime, Prezime, E-mail, Korisničko ime, Lozinka | Luka Strunjak
 F03 | Profil korisnika | Pristupanje/kreiranje profila korsnika ili admina | Andrija Živko
 F04 | Pregled vožnje | Informacije o rasporedu vožnje | Andrija Slavić
-F05 | Rezervacija karte | Odabir sjedala i rezervacija karte za određenu liniju | Andrija Slavić
-F06 | Filtriranje | Filtriranje po određenim karakteristikama (relacija, odredište, cijena karte...) | Andrija Živko
-F07 | Uređivanje unesenih podataka | Uređivanje već postojećih podataka u slučaju nekih promjena (promjena voznog reda) | Hasan Čolaković
+F05 | Rezervacija karte i filtriranje linija | Odabir sjedala i rezervacija karte za određenu liniju te filtriranje po određenim karakteristikama | Andrija Slavić
+F06 | Plaćanje karte | Korisnik će trebati unijeti podatke o kreditnim karticama kako bi uspješno platio rezerviranu kartu | Andrija Živko
+F07 | Kreiranje karte | Nakon što korisnik odabere liniju, vrstu karte te vrijeme polaska kreirat će se karta koja će imati informacije o cijeni, vremenu polaska (i povratka u slučaju odabira povratne karte), vremenu trajanja puta, prtljagi te broj slobodnih mjesta | Hasan Čolaković
 F08 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
 F09 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Luka Strunjak
 F10 | Popusti | Informacije o popustima ako korisnik zadovoljava određene uvjete (studenti, umirovljenici, učenici, invalidi) | Luka Strunjak
