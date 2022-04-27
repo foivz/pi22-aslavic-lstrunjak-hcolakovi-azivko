@@ -33,14 +33,14 @@ Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Login | Za pristupanje aplikaciji u svojstvu korisnika/admina | Hasan Čolaković
 F02 | Registracija u sustav | Kako bi korisnik koristio aplikaciju potrebna je registracija. Podaci koje će biti potrebno unijeti su: Ime, Prezime, E-mail, Korisničko ime, Lozinka | Luka Strunjak
-F03 | Profil korisnika | Pristupanje/kreiranje profila korsnika ili admina | Andrija Živko
-F04 | Pregled vožnje | Informacije o rasporedu vožnje | Andrija Slavić
-F05 | Rezervacija karte i filtriranje linija | Odabir sjedala i rezervacija karte za određenu liniju te filtriranje po određenim karakteristikama | Andrija Slavić
-F06 | Plaćanje karte | Korisnik će trebati unijeti podatke o kreditnim karticama kako bi uspješno platio rezerviranu kartu | Andrija Živko
-F07 | Kreiranje karte | Nakon što korisnik odabere liniju, vrstu karte te vrijeme polaska kreirat će se karta koja će imati informacije o cijeni, vremenu polaska (i povratka u slučaju odabira povratne karte), vremenu trajanja puta, prtljagi te broj slobodnih mjesta | Hasan Čolaković
+F03 | Profil korisnika | Pristupanje/kreiranje profila korisnika ili admina | Andrija Živko
+F04 | Pregled i filtriranje rasporeda vožnje | Informacije o rasporedu vožnje uz filtriranje po određenim karakteristikama | Andrija Slavić
+F05 | Rezervacija i kupovina karte | Odabir sjedala, rezervacija te kupovina karte za određenu liniju | Andrija Slavić
+F06 | Omiljene destinacije | Mogućnost dodavanja određene linije u listu omiljenih | Andrija Živko
+F07 | Statistika | Mogućnost pregleda raznih statistika kao što su najkorištenija linija, vrsta karte koju putnici najviše kupuju, učestalost kupovine karte s opcijom prtljage | Hasan Čolaković
 F08 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
 F09 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Luka Strunjak
-F10 | Popusti | Informacije o popustima ako korisnik zadovoljava određene uvjete (studenti, umirovljenici, učenici, invalidi) | Luka Strunjak
+F10 | Povijest putovanja | Mogućnost pregleda prošlih putovanja | Luka Strunjak
 F11 | Recenzija | Povratne informacije korisnika o aplikaciji | Andrija Živko
 F12 | FAQ | Pomoć korisnicima u korištenju aplikacije (često postavljana pitanja) | Andrija Slavić
 ## Tehnologije i oprema
