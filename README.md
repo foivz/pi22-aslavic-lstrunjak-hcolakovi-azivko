@@ -32,16 +32,12 @@ Aplikacija će omogućiti korisniku da rezevira autobusnu kartu za traženo odre
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Login | Za pristupanje aplikaciji u svojstvu korisnika/admina | Hasan Čolaković
-F02 | Registracija u sustav | Kako bi korisnik koristio aplikaciju potrebna je registracija. Podaci koje će biti potrebno unijeti su: Ime, Prezime, E-mail, Korisničko ime, Lozinka | Luka Strunjak
+F02 | Registracija u sustav | Kako bi korisnik koristio aplikaciju potrebna je registracija. Podaci koje će biti potrebno unijeti su: Ime, Prezime, E-mail, Korisničko ime, Lozinka | Andrija Živko
 F03 | Profil korisnika | Pristupanje/kreiranje profila korisnika ili admina | Andrija Živko
-F04 | Pregled i filtriranje rasporeda vožnje | Informacije o rasporedu vožnje uz filtriranje po određenim karakteristikama | Andrija Slavić
-F05 | Rezervacija i kupovina karte | Odabir sjedala, rezervacija te kupovina karte za određenu liniju | Andrija Slavić
-F06 | Omiljene destinacije | Mogućnost dodavanja određene linije u listu omiljenih | Andrija Živko
-F07 | Statistika | Mogućnost pregleda raznih statistika kao što su najkorištenija linija, vrsta karte koju putnici najviše kupuju, učestalost kupovine karte s opcijom prtljage | Hasan Čolaković
-F08 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
-F09 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Luka Strunjak
-F10 | Povijest putovanja | Mogućnost pregleda prošlih putovanja | Luka Strunjak
-F11 | Recenzija | Povratne informacije korisnika o aplikaciji | Andrija Živko
-F12 | FAQ | Pomoć korisnicima u korištenju aplikacije (često postavljana pitanja) | Andrija Slavić
+F04 | Pregled i filtriranje rasporeda vožnje | Informacije o rasporedu vožnje uz filtriranje po određenim karakteristikama | Hasan Čolaković
+F05 | Rezervacija i kupovina karte | Odabir sjedala, rezervacija te kupovina karte za određenu liniju | Andrija Živko
+F06 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
+F07 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Hasan Čolaković
+F08 | Povijest putovanja | Mogućnost pregleda prošlih putovanja | Andrija Živko
 ## Tehnologije i oprema
 Tehnologije koje ćemo koristiti su: Visual Studio 2019/2022, Github, MySQL DBMS, MySQL Workbench, Microsoft Word.
