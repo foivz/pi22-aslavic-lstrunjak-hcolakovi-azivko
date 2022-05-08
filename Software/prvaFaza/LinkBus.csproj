@@ -49,121 +49,121 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForm.cs">
+    <Compile Include="Forme\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm.Designer.cs">
+    <Compile Include="Forme\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AzurirajLinijuForm.cs">
+    <Compile Include="Forme\AzurirajLinijuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AzurirajLinijuForm.Designer.cs">
+    <Compile Include="Forme\AzurirajLinijuForm.Designer.cs">
       <DependentUpon>AzurirajLinijuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DodajLinijuForm.cs">
+    <Compile Include="Forme\DodajLinijuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DodajLinijuForm.Designer.cs">
+    <Compile Include="Forme\DodajLinijuForm.Designer.cs">
       <DependentUpon>DodajLinijuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="IspisKarteForm.cs">
+    <Compile Include="Forme\IspisKarteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IspisKarteForm.Designer.cs">
+    <Compile Include="Forme\IspisKarteForm.Designer.cs">
       <DependentUpon>IspisKarteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Korisnik.cs" />
-    <Compile Include="KupiKartuForm.cs">
+    <Compile Include="Forme\KupiKartuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KupiKartuForm.Designer.cs">
+    <Compile Include="Forme\KupiKartuForm.Designer.cs">
       <DependentUpon>KupiKartuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Linija.cs" />
-    <Compile Include="LogInForm.cs">
+    <Compile Include="Forme\LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogInForm.Designer.cs">
+    <Compile Include="Forme\LogInForm.Designer.cs">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogInRegistriraniKorisnikForm.cs">
+    <Compile Include="Forme\LogInRegistriraniKorisnikForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogInRegistriraniKorisnikForm.Designer.cs">
+    <Compile Include="Forme\LogInRegistriraniKorisnikForm.Designer.cs">
       <DependentUpon>LogInRegistriraniKorisnikForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NeregistriraniKorisnikForm.cs">
+    <Compile Include="Forme\NeregistriraniKorisnikForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NeregistriraniKorisnikForm.Designer.cs">
+    <Compile Include="Forme\NeregistriraniKorisnikForm.Designer.cs">
       <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OdabirLinijeForm.cs">
+    <Compile Include="Forme\OdabirLinijeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OdabirLinijeForm.Designer.cs">
+    <Compile Include="Forme\OdabirLinijeForm.Designer.cs">
       <DependentUpon>OdabirLinijeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PocetnaForm.cs">
+    <Compile Include="Forme\PocetnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PocetnaForm.Designer.cs">
+    <Compile Include="Forme\PocetnaForm.Designer.cs">
       <DependentUpon>PocetnaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfilKorisnikaForm.cs">
+    <Compile Include="Forme\ProfilKorisnikaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProfilKorisnikaForm.Designer.cs">
+    <Compile Include="Forme\ProfilKorisnikaForm.Designer.cs">
       <DependentUpon>ProfilKorisnikaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterForm.cs">
+    <Compile Include="Forme\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegisterForm.Designer.cs">
+    <Compile Include="Forme\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistriraniForm.cs">
+    <Compile Include="Forme\RegistriraniForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistriraniForm.Designer.cs">
+    <Compile Include="Forme\RegistriraniForm.Designer.cs">
       <DependentUpon>RegistriraniForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Repozitorij.cs" />
     <Compile Include="UlogaKorisnika.cs" />
-    <EmbeddedResource Include="AdminForm.resx">
+    <EmbeddedResource Include="Forme\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AzurirajLinijuForm.resx">
+    <EmbeddedResource Include="Forme\AzurirajLinijuForm.resx">
       <DependentUpon>AzurirajLinijuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DodajLinijuForm.resx">
+    <EmbeddedResource Include="Forme\DodajLinijuForm.resx">
       <DependentUpon>DodajLinijuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IspisKarteForm.resx">
+    <EmbeddedResource Include="Forme\IspisKarteForm.resx">
       <DependentUpon>IspisKarteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KupiKartuForm.resx">
+    <EmbeddedResource Include="Forme\KupiKartuForm.resx">
       <DependentUpon>KupiKartuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogInForm.resx">
+    <EmbeddedResource Include="Forme\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogInRegistriraniKorisnikForm.resx">
+    <EmbeddedResource Include="Forme\LogInRegistriraniKorisnikForm.resx">
       <DependentUpon>LogInRegistriraniKorisnikForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NeregistriraniKorisnikForm.resx">
+    <EmbeddedResource Include="Forme\NeregistriraniKorisnikForm.resx">
       <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OdabirLinijeForm.resx">
+    <EmbeddedResource Include="Forme\OdabirLinijeForm.resx">
       <DependentUpon>OdabirLinijeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PocetnaForm.resx">
+    <EmbeddedResource Include="Forme\PocetnaForm.resx">
       <DependentUpon>PocetnaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfilKorisnikaForm.resx">
+    <EmbeddedResource Include="Forme\ProfilKorisnikaForm.resx">
       <DependentUpon>ProfilKorisnikaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -175,10 +175,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegisterForm.resx">
+    <EmbeddedResource Include="Forme\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistriraniForm.resx">
+    <EmbeddedResource Include="Forme\RegistriraniForm.resx">
       <DependentUpon>RegistriraniForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
