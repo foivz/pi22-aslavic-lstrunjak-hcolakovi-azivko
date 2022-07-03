@@ -18,8 +18,6 @@ Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra
 
 Ime i prezime   | E-mail adresa (FOI) | JMBAG      | Github korisničko ime
 ------------    | ------------------- | -----      | ---------------------
-Andrija Slavić  | aslavic@foi.hr      | 0016143295 |    weis25
-Luka Strunjak   | lstrunjak@foi.hr    | 0016145718 |    strule23
 Hasan Čolaković | hcolakovi@foi.hr    | 0016145973 |    HasanColakovic99
 Andrija Živko   | azivko@foi.hr       | 0016143755 |    Z1V3
 
