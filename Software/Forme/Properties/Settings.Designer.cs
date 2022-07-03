@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Početna_stranica.Properties
+namespace Forme.Properties
 {
 
 
