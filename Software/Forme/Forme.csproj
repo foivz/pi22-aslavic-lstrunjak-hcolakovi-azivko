@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AzuriranjeLinijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjeLinijeForm.Designer.cs">
+      <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjeLinije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodavanjeLinije.Designer.cs">
+      <DependentUpon>DodavanjeLinije.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,15 @@
     <Compile Include="RegistriraniKorisnikForm.Designer.cs">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzuriranjeLinijeForm.resx">
+      <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodavanjeLinije.resx">
+      <DependentUpon>DodavanjeLinije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

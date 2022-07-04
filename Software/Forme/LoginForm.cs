@@ -23,5 +23,12 @@ namespace Forme
             this.Hide();
             pocetnaForm.ShowDialog();
         }
+
+        private void prijaviSeButton_Click(object sender, EventArgs e)
+        {
+            AdminForm adminForm = new AdminForm();
+            this.Hide();
+            adminForm.ShowDialog();
+        }
     }
 }

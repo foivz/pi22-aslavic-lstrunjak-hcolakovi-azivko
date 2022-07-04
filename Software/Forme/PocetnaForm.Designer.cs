@@ -38,8 +38,8 @@
             // adminButton
             // 
             this.adminButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.adminButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.adminButton.Location = new System.Drawing.Point(89, 208);
+            this.adminButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.adminButton.Location = new System.Drawing.Point(81, 173);
             this.adminButton.Name = "adminButton";
             this.adminButton.Size = new System.Drawing.Size(141, 83);
             this.adminButton.TabIndex = 0;
@@ -50,8 +50,8 @@
             // registriraniKorisnikButton
             // 
             this.registriraniKorisnikButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registriraniKorisnikButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.registriraniKorisnikButton.Location = new System.Drawing.Point(294, 208);
+            this.registriraniKorisnikButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registriraniKorisnikButton.Location = new System.Drawing.Point(248, 173);
             this.registriraniKorisnikButton.Name = "registriraniKorisnikButton";
             this.registriraniKorisnikButton.Size = new System.Drawing.Size(141, 83);
             this.registriraniKorisnikButton.TabIndex = 1;
@@ -62,8 +62,8 @@
             // neregistriraniKorisnikButton
             // 
             this.neregistriraniKorisnikButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.neregistriraniKorisnikButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.neregistriraniKorisnikButton.Location = new System.Drawing.Point(496, 208);
+            this.neregistriraniKorisnikButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.neregistriraniKorisnikButton.Location = new System.Drawing.Point(413, 173);
             this.neregistriraniKorisnikButton.Name = "neregistriraniKorisnikButton";
             this.neregistriraniKorisnikButton.Size = new System.Drawing.Size(141, 83);
             this.neregistriraniKorisnikButton.TabIndex = 2;
@@ -74,8 +74,8 @@
             // izlazButton
             // 
             this.izlazButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.izlazButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.izlazButton.Location = new System.Drawing.Point(294, 324);
+            this.izlazButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.izlazButton.Location = new System.Drawing.Point(248, 278);
             this.izlazButton.Name = "izlazButton";
             this.izlazButton.Size = new System.Drawing.Size(141, 83);
             this.izlazButton.TabIndex = 3;
@@ -86,11 +86,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(233, 67);
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(127, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 96);
+            this.label1.Size = new System.Drawing.Size(495, 144);
             this.label1.TabIndex = 4;
             this.label1.Text = "LinkBus";
             // 
@@ -99,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(700, 450);
+            this.ClientSize = new System.Drawing.Size(621, 392);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.izlazButton);
             this.Controls.Add(this.neregistriraniKorisnikButton);

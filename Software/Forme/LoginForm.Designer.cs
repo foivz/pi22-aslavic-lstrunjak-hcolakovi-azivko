@@ -80,6 +80,7 @@
             this.prijaviSeButton.TabIndex = 4;
             this.prijaviSeButton.Text = "Prijavi se";
             this.prijaviSeButton.UseVisualStyleBackColor = true;
+            this.prijaviSeButton.Click += new System.EventHandler(this.prijaviSeButton_Click);
             // 
             // nazadButton
             // 
@@ -107,7 +108,7 @@
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "Login";
             this.ResumeLayout(false);

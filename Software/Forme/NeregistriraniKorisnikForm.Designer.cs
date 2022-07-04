@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.registrirajSeButton = new System.Windows.Forms.Button();
             this.nazadButton = new System.Windows.Forms.Button();
+            this.pretraziButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(217, 39);
+            this.searchTextBox.Location = new System.Drawing.Point(204, 39);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(263, 29);
             this.searchTextBox.TabIndex = 2;
@@ -75,7 +76,7 @@
             // registrirajSeButton
             // 
             this.registrirajSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registrirajSeButton.Location = new System.Drawing.Point(183, 517);
+            this.registrirajSeButton.Location = new System.Drawing.Point(172, 517);
             this.registrirajSeButton.Name = "registrirajSeButton";
             this.registrirajSeButton.Size = new System.Drawing.Size(158, 47);
             this.registrirajSeButton.TabIndex = 4;
@@ -94,12 +95,23 @@
             this.nazadButton.UseVisualStyleBackColor = true;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
+            // pretraziButton
+            // 
+            this.pretraziButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pretraziButton.Location = new System.Drawing.Point(487, 30);
+            this.pretraziButton.Name = "pretraziButton";
+            this.pretraziButton.Size = new System.Drawing.Size(113, 46);
+            this.pretraziButton.TabIndex = 6;
+            this.pretraziButton.Text = "Pretraži";
+            this.pretraziButton.UseVisualStyleBackColor = true;
+            // 
             // NeregistriraniKorisnikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(862, 586);
+            this.Controls.Add(this.pretraziButton);
             this.Controls.Add(this.nazadButton);
             this.Controls.Add(this.registrirajSeButton);
             this.Controls.Add(this.label2);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button registrirajSeButton;
         private System.Windows.Forms.Button nazadButton;
+        private System.Windows.Forms.Button pretraziButton;
     }
 }
