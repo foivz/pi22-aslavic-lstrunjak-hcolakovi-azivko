@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Broj linije:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -65,7 +64,6 @@
             this.label2.Size = new System.Drawing.Size(83, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Polazište:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -75,7 +73,6 @@
             this.label3.Size = new System.Drawing.Size(87, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Odredište:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -85,7 +82,6 @@
             this.label4.Size = new System.Drawing.Size(200, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Datum i vrijeme polaska:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -115,6 +111,7 @@
             this.dodajLinijuButton.TabIndex = 12;
             this.dodajLinijuButton.Text = "Dodaj liniju";
             this.dodajLinijuButton.UseVisualStyleBackColor = true;
+            this.dodajLinijuButton.Click += new System.EventHandler(this.dodajLinijuButton_Click);
             // 
             // odustaniButton
             // 
@@ -157,6 +154,24 @@
             // polazisteComboBox
             // 
             this.polazisteComboBox.FormattingEnabled = true;
+            this.polazisteComboBox.Items.AddRange(new object[] {
+            "Zagreb",
+            "Varaždin",
+            "Čakovec",
+            "Split",
+            "Osijek",
+            "Rijeka",
+            "Zadar",
+            "Makarska",
+            "Slavonski Brod",
+            "Dubrovnik",
+            "Karlovac",
+            "Pula",
+            "Rovinj",
+            "Požega",
+            "Šibenik",
+            "Bjelovar",
+            "Zaprešić"});
             this.polazisteComboBox.Location = new System.Drawing.Point(264, 155);
             this.polazisteComboBox.Name = "polazisteComboBox";
             this.polazisteComboBox.Size = new System.Drawing.Size(256, 29);
@@ -165,6 +180,24 @@
             // odredisteComboBox
             // 
             this.odredisteComboBox.FormattingEnabled = true;
+            this.odredisteComboBox.Items.AddRange(new object[] {
+            "Zagreb",
+            "Varaždin",
+            "Čakovec",
+            "Split",
+            "Osijek",
+            "Rijeka",
+            "Zadar",
+            "Makarska",
+            "Slavonski Brod",
+            "Dubrovnik",
+            "Karlovac",
+            "Pula",
+            "Rovinj",
+            "Požega",
+            "Šibenik",
+            "Bjelovar",
+            "Zaprešić"});
             this.odredisteComboBox.Location = new System.Drawing.Point(264, 214);
             this.odredisteComboBox.Name = "odredisteComboBox";
             this.odredisteComboBox.Size = new System.Drawing.Size(256, 29);
