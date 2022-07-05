@@ -27,9 +27,9 @@ namespace Forme
 
         private void nazadButton_Click(object sender, EventArgs e)
         {
-            Form1 pocetnaForm = new Form1();
+            NeregistriraniKorisnikForm neregistriraniKorisnikForm = new NeregistriraniKorisnikForm();
             this.Hide();
-            pocetnaForm.ShowDialog();
+            neregistriraniKorisnikForm.ShowDialog();
         }
 
         private void registirajSeButton_Click(object sender, EventArgs e)
