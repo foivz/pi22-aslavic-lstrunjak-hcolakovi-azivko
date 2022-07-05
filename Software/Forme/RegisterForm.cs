@@ -36,7 +36,7 @@ namespace Forme
         {
             bool pronadjen = false;
             bool greska = false;
-            using(var context = new Entities())
+            using(var context = new PI2229_DBEntities())
             {
                 string ime = imeTextBox.Text;
                 string prezime = prezimeTextBox.Text;

@@ -24,7 +24,7 @@ namespace Forme.Database
         public string broj_linije { get; set; }
         public string polaziste { get; set; }
         public string odrediste { get; set; }
-        public byte[] datum_i_vrijeme_polaska { get; set; }
+        public string datum_i_vrijeme_polaska { get; set; }
         public int udaljenost { get; set; }
         public int autoprijevoznik_id { get; set; }
         public int broj_mjesta { get; set; }

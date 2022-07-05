@@ -13,10 +13,10 @@ namespace Forme.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class PI2229_DBEntities : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public PI2229_DBEntities()
+            : base("name=PI2229_DBEntities")
         {
         }
     
