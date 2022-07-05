@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Forme.Database;
 
 namespace Forme
 {
@@ -29,6 +30,46 @@ namespace Forme
             RegisterForm registerForm = new RegisterForm();
             this.Hide();
             registerForm.ShowDialog();
+        }
+
+        public object DohvatiLinije()
+        {
+            using (var context = new PI2229_DBEntities())
+            {
+                return context.Linija.ToList();
+            }
+        }
+
+        private void NeregistriraniKorisnikForm_Load(object sender, EventArgs e)
+        {
+            using(var context = new PI2229_DBEntities())
+            {
+                popisLinijaDataGridView.DataSource = null;
+                popisLinijaDataGridView.DataSource = DohvatiLinije();
+
+
+                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
+                popisLinijaDataGridView.Columns["Karta"].Visible = false;
+            }
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            List<Linija> linije = new List<Linija>();
+            using(var context = new PI2229_DBEntities())
+            {
+                foreach(Linija linija in context.Linija)
+                {
+                    if(linija.odrediste.Contains(searchTextBox.Text))
+                    {
+                        linije.Add(linija);
+                    }
+                }
+
+                popisLinijaDataGridView.DataSource = null;
+                popisLinijaDataGridView.DataSource = linije;
+            }
         }
     }
 }

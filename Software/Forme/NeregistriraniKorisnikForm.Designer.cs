@@ -28,21 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.registrirajSeButton = new System.Windows.Forms.Button();
             this.nazadButton = new System.Windows.Forms.Button();
-            this.pretraziButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // popisLinijaDataGridView
             // 
+            this.popisLinijaDataGridView.BackgroundColor = System.Drawing.Color.Gray;
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            this.popisLinijaDataGridView.GridColor = System.Drawing.Color.DarkGray;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(43, 91);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.popisLinijaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
             this.popisLinijaDataGridView.RowTemplate.Height = 24;
             this.popisLinijaDataGridView.Size = new System.Drawing.Size(771, 396);
@@ -63,6 +82,7 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(263, 29);
             this.searchTextBox.TabIndex = 2;
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
             // 
             // label2
             // 
@@ -95,23 +115,12 @@
             this.nazadButton.UseVisualStyleBackColor = true;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
-            // pretraziButton
-            // 
-            this.pretraziButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pretraziButton.Location = new System.Drawing.Point(487, 30);
-            this.pretraziButton.Name = "pretraziButton";
-            this.pretraziButton.Size = new System.Drawing.Size(113, 46);
-            this.pretraziButton.TabIndex = 6;
-            this.pretraziButton.Text = "Pretraži";
-            this.pretraziButton.UseVisualStyleBackColor = true;
-            // 
             // NeregistriraniKorisnikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(862, 586);
-            this.Controls.Add(this.pretraziButton);
             this.Controls.Add(this.nazadButton);
             this.Controls.Add(this.registrirajSeButton);
             this.Controls.Add(this.label2);
@@ -124,6 +133,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NeregistriraniKorisnikForm";
             this.Text = "Popis autobusnih linija";
+            this.Load += new System.EventHandler(this.NeregistriraniKorisnikForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,6 +148,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button registrirajSeButton;
         private System.Windows.Forms.Button nazadButton;
-        private System.Windows.Forms.Button pretraziButton;
     }
 }
