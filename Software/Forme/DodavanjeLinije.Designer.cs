@@ -37,13 +37,13 @@
             this.dodajLinijuButton = new System.Windows.Forms.Button();
             this.odustaniButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.brojLinijeTextBox = new System.Windows.Forms.TextBox();
             this.polazisteComboBox = new System.Windows.Forms.ComboBox();
             this.odredisteComboBox = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.datumPolaskaTextBox = new System.Windows.Forms.TextBox();
             this.udaljenostTextBox = new System.Windows.Forms.TextBox();
-            this.autoprijevoznikTextBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.prijevozniciComboBox = new System.Windows.Forms.ComboBox();
             this.brojMjestaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -138,86 +138,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Dodavanje nove linije!";
             // 
-            // brojLinijeTextBox
-            // 
-            this.brojLinijeTextBox.Location = new System.Drawing.Point(264, 107);
-            this.brojLinijeTextBox.Name = "brojLinijeTextBox";
-            this.brojLinijeTextBox.Size = new System.Drawing.Size(256, 28);
-            this.brojLinijeTextBox.TabIndex = 15;
-            // 
-            // polazisteComboBox
-            // 
-            this.polazisteComboBox.FormattingEnabled = true;
-            this.polazisteComboBox.Items.AddRange(new object[] {
-            "Zagreb",
-            "Varaždin",
-            "Čakovec",
-            "Split",
-            "Osijek",
-            "Rijeka",
-            "Zadar",
-            "Makarska",
-            "Slavonski Brod",
-            "Dubrovnik",
-            "Karlovac",
-            "Pula",
-            "Rovinj",
-            "Požega",
-            "Šibenik",
-            "Bjelovar",
-            "Zaprešić"});
-            this.polazisteComboBox.Location = new System.Drawing.Point(264, 163);
-            this.polazisteComboBox.Name = "polazisteComboBox";
-            this.polazisteComboBox.Size = new System.Drawing.Size(256, 29);
-            this.polazisteComboBox.TabIndex = 16;
-            // 
-            // odredisteComboBox
-            // 
-            this.odredisteComboBox.FormattingEnabled = true;
-            this.odredisteComboBox.Items.AddRange(new object[] {
-            "Zagreb",
-            "Varaždin",
-            "Čakovec",
-            "Split",
-            "Osijek",
-            "Rijeka",
-            "Zadar",
-            "Makarska",
-            "Slavonski Brod",
-            "Dubrovnik",
-            "Karlovac",
-            "Pula",
-            "Rovinj",
-            "Požega",
-            "Šibenik",
-            "Bjelovar",
-            "Zaprešić"});
-            this.odredisteComboBox.Location = new System.Drawing.Point(264, 222);
-            this.odredisteComboBox.Name = "odredisteComboBox";
-            this.odredisteComboBox.Size = new System.Drawing.Size(256, 29);
-            this.odredisteComboBox.TabIndex = 17;
-            // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Location = new System.Drawing.Point(264, 283);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(256, 28);
-            this.dateTimePicker.TabIndex = 18;
-            // 
-            // udaljenostTextBox
-            // 
-            this.udaljenostTextBox.Location = new System.Drawing.Point(264, 348);
-            this.udaljenostTextBox.Name = "udaljenostTextBox";
-            this.udaljenostTextBox.Size = new System.Drawing.Size(256, 28);
-            this.udaljenostTextBox.TabIndex = 19;
-            // 
-            // autoprijevoznikTextBox
-            // 
-            this.autoprijevoznikTextBox.Location = new System.Drawing.Point(264, 412);
-            this.autoprijevoznikTextBox.Name = "autoprijevoznikTextBox";
-            this.autoprijevoznikTextBox.Size = new System.Drawing.Size(256, 28);
-            this.autoprijevoznikTextBox.TabIndex = 20;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -227,12 +147,57 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Broj mjesta:";
             // 
+            // brojLinijeTextBox
+            // 
+            this.brojLinijeTextBox.Location = new System.Drawing.Point(264, 107);
+            this.brojLinijeTextBox.Name = "brojLinijeTextBox";
+            this.brojLinijeTextBox.Size = new System.Drawing.Size(256, 28);
+            this.brojLinijeTextBox.TabIndex = 22;
+            // 
+            // polazisteComboBox
+            // 
+            this.polazisteComboBox.FormattingEnabled = true;
+            this.polazisteComboBox.Location = new System.Drawing.Point(264, 155);
+            this.polazisteComboBox.Name = "polazisteComboBox";
+            this.polazisteComboBox.Size = new System.Drawing.Size(256, 29);
+            this.polazisteComboBox.TabIndex = 23;
+            // 
+            // odredisteComboBox
+            // 
+            this.odredisteComboBox.FormattingEnabled = true;
+            this.odredisteComboBox.Location = new System.Drawing.Point(264, 214);
+            this.odredisteComboBox.Name = "odredisteComboBox";
+            this.odredisteComboBox.Size = new System.Drawing.Size(256, 29);
+            this.odredisteComboBox.TabIndex = 24;
+            // 
+            // datumPolaskaTextBox
+            // 
+            this.datumPolaskaTextBox.Location = new System.Drawing.Point(264, 276);
+            this.datumPolaskaTextBox.Name = "datumPolaskaTextBox";
+            this.datumPolaskaTextBox.Size = new System.Drawing.Size(256, 28);
+            this.datumPolaskaTextBox.TabIndex = 25;
+            // 
+            // udaljenostTextBox
+            // 
+            this.udaljenostTextBox.Location = new System.Drawing.Point(264, 341);
+            this.udaljenostTextBox.Name = "udaljenostTextBox";
+            this.udaljenostTextBox.Size = new System.Drawing.Size(256, 28);
+            this.udaljenostTextBox.TabIndex = 26;
+            // 
+            // prijevozniciComboBox
+            // 
+            this.prijevozniciComboBox.FormattingEnabled = true;
+            this.prijevozniciComboBox.Location = new System.Drawing.Point(264, 404);
+            this.prijevozniciComboBox.Name = "prijevozniciComboBox";
+            this.prijevozniciComboBox.Size = new System.Drawing.Size(256, 29);
+            this.prijevozniciComboBox.TabIndex = 27;
+            // 
             // brojMjestaTextBox
             // 
-            this.brojMjestaTextBox.Location = new System.Drawing.Point(264, 468);
+            this.brojMjestaTextBox.Location = new System.Drawing.Point(264, 459);
             this.brojMjestaTextBox.Name = "brojMjestaTextBox";
             this.brojMjestaTextBox.Size = new System.Drawing.Size(256, 28);
-            this.brojMjestaTextBox.TabIndex = 22;
+            this.brojMjestaTextBox.TabIndex = 28;
             // 
             // DodavanjeLinije
             // 
@@ -241,13 +206,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(573, 607);
             this.Controls.Add(this.brojMjestaTextBox);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.autoprijevoznikTextBox);
+            this.Controls.Add(this.prijevozniciComboBox);
             this.Controls.Add(this.udaljenostTextBox);
-            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.datumPolaskaTextBox);
             this.Controls.Add(this.odredisteComboBox);
             this.Controls.Add(this.polazisteComboBox);
             this.Controls.Add(this.brojLinijeTextBox);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.odustaniButton);
             this.Controls.Add(this.dodajLinijuButton);
@@ -280,13 +245,13 @@
         private System.Windows.Forms.Button dodajLinijuButton;
         private System.Windows.Forms.Button odustaniButton;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox brojLinijeTextBox;
         private System.Windows.Forms.ComboBox polazisteComboBox;
         private System.Windows.Forms.ComboBox odredisteComboBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.TextBox datumPolaskaTextBox;
         private System.Windows.Forms.TextBox udaljenostTextBox;
-        private System.Windows.Forms.TextBox autoprijevoznikTextBox;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox prijevozniciComboBox;
         private System.Windows.Forms.TextBox brojMjestaTextBox;
     }
 }
