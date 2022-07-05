@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +66,36 @@
     </Compile>
     <Compile Include="AzuriranjeLinijeForm.Designer.cs">
       <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Autoprijevoznik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Karta.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Korisnik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Linija.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Uloga_korisnika.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
     <Compile Include="DodavanjeLinije.cs">
       <SubType>Form</SubType>
@@ -156,6 +195,14 @@
     <EmbeddedResource Include="RegistriraniKorisnikForm.resx">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Baza podataka\LinkBus.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LinkBus.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Baza podataka\LinkBus.edmx.diagram">
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,6 +215,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Baza podataka\LinkBus.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LinkBus.Context.cs</LastGenOutput>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </Content>
+    <Content Include="Baza podataka\LinkBus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+      <LastGenOutput>LinkBus.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

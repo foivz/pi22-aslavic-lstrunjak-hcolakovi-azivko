@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Forme.Baza_podataka;
 
 namespace Forme
 {
@@ -26,13 +27,7 @@ namespace Forme
 
         private void prijaviSeButton_Click(object sender, EventArgs e)
         {
-            //AdminForm adminForm = new AdminForm();
-            //this.Hide();
-            //adminForm.ShowDialog();
 
-            RegistriraniKorisnikForm registriraniKorisnikForm = new RegistriraniKorisnikForm();
-            this.Hide();
-            registriraniKorisnikForm.ShowDialog();
         }
     }
 }
