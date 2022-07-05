@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Forme.Baza_podataka;
 
 namespace Forme
 {
@@ -27,37 +26,7 @@ namespace Forme
 
         private void prijaviSeButton_Click(object sender, EventArgs e)
         {
-            bool pronadjen = false;
-            using (var context = new PI2229_DBEntities())
-            {
-                foreach (Korisnik item in context.Korisnik)
-                {
-                    if (korisnickoImeTextBox.Text == string.Empty || lozinkaTextBox.Text == string.Empty)
-                    {
-                        pronadjen = true;
-                        MessageBox.Show("Morate unijeti korisničko ime i lozinku!");
-                    }
-                    else if (korisnickoImeTextBox.Text == item.korisnicko_ime && lozinkaTextBox.Text == item.lozinka && item.uloga_korisnika_id == 1)
-                    {
-                        pronadjen = true;
-                        AdminForm adminForm = new AdminForm();
-                        this.Hide();
-                        adminForm.ShowDialog();
-                    }
-                    else if (korisnickoImeTextBox.Text == item.korisnicko_ime && lozinkaTextBox.Text == item.lozinka && item.uloga_korisnika_id != 1)
-                    {
-                        pronadjen = true;
-                        RegistriraniKorisnikForm registriraniKorisnikForm = new RegistriraniKorisnikForm();
-                        this.Hide();
-                        registriraniKorisnikForm.ShowDialog();
-                    }
-                }
 
-                if (pronadjen == false)
-                {
-                    MessageBox.Show("Korisničko ime ili lozinka nisu točni, pokušajte ponovo!");
-                }
-            }
         }
     }
 }
