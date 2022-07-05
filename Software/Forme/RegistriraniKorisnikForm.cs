@@ -23,5 +23,11 @@ namespace Forme
             this.Hide();
             loginForm.ShowDialog();
         }
+
+        private void kupiKartuButton_Click(object sender, EventArgs e)
+        {
+            KupiKartuForm kupiKartuForm = new KupiKartuForm();
+            kupiKartuForm.ShowDialog();
+        }
     }
 }

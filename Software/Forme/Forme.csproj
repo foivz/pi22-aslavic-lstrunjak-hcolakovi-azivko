@@ -64,6 +64,12 @@
     <Compile Include="DodavanjeLinije.Designer.cs">
       <DependentUpon>DodavanjeLinije.cs</DependentUpon>
     </Compile>
+    <Compile Include="KupiKartuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KupiKartuForm.Designer.cs">
+      <DependentUpon>KupiKartuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="NeregistriraniKorisnikForm.Designer.cs">
       <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaberiLinijuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaberiLinijuForm.Designer.cs">
+      <DependentUpon>OdaberiLinijuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PocetnaForm.cs">
       <SubType>Form</SubType>
@@ -111,11 +123,17 @@
     <EmbeddedResource Include="DodavanjeLinije.resx">
       <DependentUpon>DodavanjeLinije.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KupiKartuForm.resx">
+      <DependentUpon>KupiKartuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NeregistriraniKorisnikForm.resx">
       <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaberiLinijuForm.resx">
+      <DependentUpon>OdaberiLinijuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PocetnaForm.resx">
       <DependentUpon>PocetnaForm.cs</DependentUpon>

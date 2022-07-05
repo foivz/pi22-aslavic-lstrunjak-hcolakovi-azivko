@@ -75,6 +75,7 @@
             this.kupiKartuButton.TabIndex = 4;
             this.kupiKartuButton.Text = "Kupi kartu";
             this.kupiKartuButton.UseVisualStyleBackColor = true;
+            this.kupiKartuButton.Click += new System.EventHandler(this.kupiKartuButton_Click);
             // 
             // profilButton
             // 
@@ -189,7 +190,7 @@
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistriraniKorisnikForm";
             this.Text = "LinkBus";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

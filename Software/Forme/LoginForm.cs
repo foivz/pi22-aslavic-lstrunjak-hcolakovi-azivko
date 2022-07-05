@@ -26,9 +26,13 @@ namespace Forme
 
         private void prijaviSeButton_Click(object sender, EventArgs e)
         {
-            AdminForm adminForm = new AdminForm();
+            //AdminForm adminForm = new AdminForm();
+            //this.Hide();
+            //adminForm.ShowDialog();
+
+            RegistriraniKorisnikForm registriraniKorisnikForm = new RegistriraniKorisnikForm();
             this.Hide();
-            adminForm.ShowDialog();
+            registriraniKorisnikForm.ShowDialog();
         }
     }
 }
