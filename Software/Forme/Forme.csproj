@@ -67,34 +67,34 @@
     <Compile Include="AzuriranjeLinijeForm.Designer.cs">
       <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\Autoprijevoznik.cs">
+    <Compile Include="Database\Autoprijevoznik.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\Karta.cs">
+    <Compile Include="Database\Karta.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\Korisnik.cs">
+    <Compile Include="Database\Korisnik.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\Linija.cs">
+    <Compile Include="Database\Linija.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\LinkBus.Context.cs">
+    <Compile Include="Database\LinkBus.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LinkBus.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\LinkBus.cs">
+    <Compile Include="Database\LinkBus.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\LinkBus.Designer.cs">
+    <Compile Include="Database\LinkBus.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LinkBus.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Baza podataka\Uloga_korisnika.cs">
+    <Compile Include="Database\Uloga_korisnika.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
     <Compile Include="DodavanjeLinije.cs">
@@ -195,11 +195,11 @@
     <EmbeddedResource Include="RegistriraniKorisnikForm.resx">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Baza podataka\LinkBus.edmx">
+    <EntityDeploy Include="Database\LinkBus.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LinkBus.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Baza podataka\LinkBus.edmx.diagram">
+    <None Include="Database\LinkBus.edmx.diagram">
       <DependentUpon>LinkBus.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -220,12 +220,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Baza podataka\LinkBus.Context.tt">
+    <Content Include="Database\LinkBus.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LinkBus.edmx</DependentUpon>
       <LastGenOutput>LinkBus.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Baza podataka\LinkBus.tt">
+    <Content Include="Database\LinkBus.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LinkBus.edmx</DependentUpon>
       <LastGenOutput>LinkBus.cs</LastGenOutput>
