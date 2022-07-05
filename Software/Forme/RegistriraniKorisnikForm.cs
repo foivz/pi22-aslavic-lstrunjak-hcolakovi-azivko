@@ -27,6 +27,13 @@ namespace Forme
             loginForm.ShowDialog();
         }
 
+        public void SkriveneKolone()
+        {
+            popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+            popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
+            popisLinijaDataGridView.Columns["Karta"].Visible = false;
+        }
+
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
             KupiKartuForm kupiKartuForm = new KupiKartuForm();
@@ -39,10 +46,7 @@ namespace Forme
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
-
-                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
-                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
-                popisLinijaDataGridView.Columns["Karta"].Visible = false;
+                SkriveneKolone();
             }
         }
 
@@ -61,10 +65,29 @@ namespace Forme
 
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = linije;
+                SkriveneKolone();
+            }
+        }
 
-                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
-                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
-                popisLinijaDataGridView.Columns["Karta"].Visible = false;
+        private void filtrirajButton_Click(object sender, EventArgs e)
+        {
+            List<Linija> linije = new List<Linija>();
+            string filtriranDatum = dateTimePicker.Value.ToShortDateString();
+            using (var context = new PI2229_DBEntities())
+            {
+                foreach(Linija linija in context.Linija)
+                {
+                    string[] splitanDatum = linija.datum_i_vrijeme_polaska.Split(' ');
+
+                    if (splitanDatum[0] == filtriranDatum)
+                    {
+                        linije.Add(linija);
+                    }
+                }
+
+                popisLinijaDataGridView.DataSource = null;
+                popisLinijaDataGridView.DataSource = linije;
+                SkriveneKolone();
             }
         }
     }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odjaviSeButton = new System.Windows.Forms.Button();
             this.kupiKartuButton = new System.Windows.Forms.Button();
@@ -49,14 +49,14 @@
             // popisLinijaDataGridView
             // 
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(50, 118);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
@@ -112,6 +112,7 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(242, 32);
             this.dateTimePicker.TabIndex = 7;
+            this.dateTimePicker.Value = new System.DateTime(2022, 7, 5, 0, 0, 0, 0);
             // 
             // polazisteTextBox
             // 
@@ -156,6 +157,7 @@
             this.filtrirajButton.TabIndex = 12;
             this.filtrirajButton.Text = "Filtriraj";
             this.filtrirajButton.UseVisualStyleBackColor = true;
+            this.filtrirajButton.Click += new System.EventHandler(this.filtrirajButton_Click);
             // 
             // groupBox
             // 
