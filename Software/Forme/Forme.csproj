@@ -67,6 +67,36 @@
     <Compile Include="AzuriranjeLinijeForm.Designer.cs">
       <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Baza podataka\Autoprijevoznik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Karta.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Korisnik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Linija.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\LinkBus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Baza podataka\Uloga_korisnika.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
     <Compile Include="DodavanjeLinije.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +195,13 @@
     <EmbeddedResource Include="RegistriraniKorisnikForm.resx">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Baza podataka\LinkBus.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LinkBus.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Baza podataka\LinkBus.edmx.diagram">
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,6 +218,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Baza podataka\LinkBus.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+      <LastGenOutput>LinkBus.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Baza podataka\LinkBus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+      <LastGenOutput>LinkBus.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
