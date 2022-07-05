@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Forme.Database;
 
 namespace Forme
 {
     public partial class RegistriraniKorisnikForm : Form
     {
-        public RegistriraniKorisnikForm()
+        Korisnik korisnik;
+        public RegistriraniKorisnikForm(Korisnik logiranKorisnik)
         {
             InitializeComponent();
+            korisnik = logiranKorisnik;
         }
 
         private void odjaviSeButton_Click(object sender, EventArgs e)
@@ -28,6 +31,41 @@ namespace Forme
         {
             KupiKartuForm kupiKartuForm = new KupiKartuForm();
             kupiKartuForm.ShowDialog();
+        }
+
+        private void RegistriraniKorisnikForm_Load(object sender, EventArgs e)
+        {
+            using(var context = new PI2229_DBEntities())
+            {
+                popisLinijaDataGridView.DataSource = null;
+                popisLinijaDataGridView.DataSource = context.Linija.ToList();
+
+                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
+                popisLinijaDataGridView.Columns["Karta"].Visible = false;
+            }
+        }
+
+        private void pretraziButton_Click(object sender, EventArgs e)
+        {
+            List<Linija> linije = new List<Linija>();
+            using (var context = new PI2229_DBEntities())
+            {
+                foreach (Linija linija in context.Linija)
+                {
+                    if(linija.polaziste.Contains(polazisteTextBox.Text) && linija.odrediste.Contains(odredisteTextBox.Text))
+                    {
+                        linije.Add(linija);
+                    }
+                }
+
+                popisLinijaDataGridView.DataSource = null;
+                popisLinijaDataGridView.DataSource = linije;
+
+                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
+                popisLinijaDataGridView.Columns["Karta"].Visible = false;
+            }
         }
     }
 }

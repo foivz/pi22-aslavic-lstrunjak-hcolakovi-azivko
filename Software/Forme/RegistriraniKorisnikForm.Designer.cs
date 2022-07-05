@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odjaviSeButton = new System.Windows.Forms.Button();
             this.kupiKartuButton = new System.Windows.Forms.Button();
             this.profilButton = new System.Windows.Forms.Button();
@@ -41,19 +42,27 @@
             this.filtrirajButton = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.pretraziButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // popisLinijaDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 386);
-            this.dataGridView1.TabIndex = 0;
+            this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.popisLinijaDataGridView.Location = new System.Drawing.Point(50, 118);
+            this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
+            this.popisLinijaDataGridView.RowHeadersWidth = 51;
+            this.popisLinijaDataGridView.RowTemplate.Height = 24;
+            this.popisLinijaDataGridView.Size = new System.Drawing.Size(584, 386);
+            this.popisLinijaDataGridView.TabIndex = 0;
             // 
             // odjaviSeButton
             // 
@@ -170,6 +179,7 @@
             this.pretraziButton.TabIndex = 14;
             this.pretraziButton.Text = "Pretraži";
             this.pretraziButton.UseVisualStyleBackColor = true;
+            this.pretraziButton.Click += new System.EventHandler(this.pretraziButton_Click);
             // 
             // RegistriraniKorisnikForm
             // 
@@ -186,14 +196,15 @@
             this.Controls.Add(this.profilButton);
             this.Controls.Add(this.kupiKartuButton);
             this.Controls.Add(this.odjaviSeButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.popisLinijaDataGridView);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistriraniKorisnikForm";
             this.Text = "LinkBus";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.RegistriraniKorisnikForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.ResumeLayout(false);
@@ -203,7 +214,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView popisLinijaDataGridView;
         private System.Windows.Forms.Button odjaviSeButton;
         private System.Windows.Forms.Button kupiKartuButton;
         private System.Windows.Forms.Button profilButton;

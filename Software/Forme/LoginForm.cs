@@ -49,7 +49,7 @@ namespace Forme
                     else if (korisnickoImeTextBox.Text == korisnik.korisnicko_ime && lozinkaTextBox.Text == korisnik.lozinka && korisnik.uloga_korisnika_id != 1)
                     {
                         pronadjen = true;
-                        RegistriraniKorisnikForm registriraniKorisnik = new RegistriraniKorisnikForm();
+                        RegistriraniKorisnikForm registriraniKorisnik = new RegistriraniKorisnikForm(korisnik);
                         this.Hide();
                         registriraniKorisnik.ShowDialog();
                     }
