@@ -43,6 +43,8 @@
             this.autoprijevoznikTextBox = new System.Windows.Forms.TextBox();
             this.azurirajButton = new System.Windows.Forms.Button();
             this.odustaniButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.brojMjestaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -167,7 +169,7 @@
             // azurirajButton
             // 
             this.azurirajButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.azurirajButton.Location = new System.Drawing.Point(286, 488);
+            this.azurirajButton.Location = new System.Drawing.Point(286, 543);
             this.azurirajButton.Name = "azurirajButton";
             this.azurirajButton.Size = new System.Drawing.Size(114, 49);
             this.azurirajButton.TabIndex = 13;
@@ -177,19 +179,37 @@
             // odustaniButton
             // 
             this.odustaniButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.odustaniButton.Location = new System.Drawing.Point(421, 488);
+            this.odustaniButton.Location = new System.Drawing.Point(421, 543);
             this.odustaniButton.Name = "odustaniButton";
             this.odustaniButton.Size = new System.Drawing.Size(114, 49);
             this.odustaniButton.TabIndex = 14;
             this.odustaniButton.Text = "Odustani";
             this.odustaniButton.UseVisualStyleBackColor = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(44, 495);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 22);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Broj mjesta:";
+            // 
+            // brojMjestaTextBox
+            // 
+            this.brojMjestaTextBox.Location = new System.Drawing.Point(286, 488);
+            this.brojMjestaTextBox.Name = "brojMjestaTextBox";
+            this.brojMjestaTextBox.Size = new System.Drawing.Size(249, 29);
+            this.brojMjestaTextBox.TabIndex = 16;
+            // 
             // AzuriranjeLinijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(572, 583);
+            this.ClientSize = new System.Drawing.Size(572, 618);
+            this.Controls.Add(this.brojMjestaTextBox);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.odustaniButton);
             this.Controls.Add(this.azurirajButton);
             this.Controls.Add(this.autoprijevoznikTextBox);
@@ -208,7 +228,7 @@
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AzuriranjeLinijeForm";
             this.Text = "Ažuriranje linije";
             this.ResumeLayout(false);
@@ -233,5 +253,7 @@
         private System.Windows.Forms.TextBox autoprijevoznikTextBox;
         private System.Windows.Forms.Button azurirajButton;
         private System.Windows.Forms.Button odustaniButton;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox brojMjestaTextBox;
     }
 }

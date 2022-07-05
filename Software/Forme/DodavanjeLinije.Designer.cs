@@ -43,6 +43,8 @@
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.udaljenostTextBox = new System.Windows.Forms.TextBox();
             this.autoprijevoznikTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.brojMjestaTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -107,7 +109,7 @@
             // 
             this.dodajLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dodajLinijuButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dodajLinijuButton.Location = new System.Drawing.Point(264, 467);
+            this.dodajLinijuButton.Location = new System.Drawing.Point(264, 518);
             this.dodajLinijuButton.Name = "dodajLinijuButton";
             this.dodajLinijuButton.Size = new System.Drawing.Size(117, 52);
             this.dodajLinijuButton.TabIndex = 12;
@@ -118,7 +120,7 @@
             // 
             this.odustaniButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odustaniButton.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.odustaniButton.Location = new System.Drawing.Point(403, 467);
+            this.odustaniButton.Location = new System.Drawing.Point(403, 518);
             this.odustaniButton.Name = "odustaniButton";
             this.odustaniButton.Size = new System.Drawing.Size(117, 52);
             this.odustaniButton.TabIndex = 13;
@@ -216,12 +218,30 @@
             this.autoprijevoznikTextBox.Size = new System.Drawing.Size(256, 28);
             this.autoprijevoznikTextBox.TabIndex = 20;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(35, 475);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 21);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Broj mjesta:";
+            // 
+            // brojMjestaTextBox
+            // 
+            this.brojMjestaTextBox.Location = new System.Drawing.Point(264, 468);
+            this.brojMjestaTextBox.Name = "brojMjestaTextBox";
+            this.brojMjestaTextBox.Size = new System.Drawing.Size(256, 28);
+            this.brojMjestaTextBox.TabIndex = 22;
+            // 
             // DodavanjeLinije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(573, 566);
+            this.ClientSize = new System.Drawing.Size(573, 607);
+            this.Controls.Add(this.brojMjestaTextBox);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.autoprijevoznikTextBox);
             this.Controls.Add(this.udaljenostTextBox);
             this.Controls.Add(this.dateTimePicker);
@@ -266,5 +286,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.TextBox udaljenostTextBox;
         private System.Windows.Forms.TextBox autoprijevoznikTextBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox brojMjestaTextBox;
     }
 }
