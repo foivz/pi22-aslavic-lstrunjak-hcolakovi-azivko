@@ -76,6 +76,7 @@ namespace Forme
                 context.Linija.Add(linija);
                 context.SaveChanges();
                 MessageBox.Show("Uspješno ste dodali liniju!");
+                this.Close();
             }
         }
     }
