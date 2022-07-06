@@ -42,7 +42,7 @@ namespace Forme
 
         private void RegistriraniKorisnikForm_Load(object sender, EventArgs e)
         {
-            using(var context = new PI2229_DBEntities())
+            using(var context = new LinkBusEntities())
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
@@ -53,7 +53,7 @@ namespace Forme
         private void pretraziButton_Click(object sender, EventArgs e)
         {
             List<Linija> linije = new List<Linija>();
-            using (var context = new PI2229_DBEntities())
+            using (var context = new LinkBusEntities())
             {
                 foreach (Linija linija in context.Linija)
                 {
@@ -73,7 +73,7 @@ namespace Forme
         {
             List<Linija> linije = new List<Linija>();
             string filtriranDatum = dateTimePicker.Value.ToShortDateString();
-            using (var context = new PI2229_DBEntities())
+            using (var context = new LinkBusEntities())
             {
                 foreach(Linija linija in context.Linija)
                 {

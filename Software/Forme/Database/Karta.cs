@@ -21,7 +21,7 @@ namespace Forme.Database
         public bool povratna { get; set; }
         public bool prtljaga { get; set; }
         public double cijena { get; set; }
-        public byte[] datum_i_vrijeme_rezeravcije { get; set; }
+        public string datum_i_vrijeme_rezeravcije { get; set; }
     
         public virtual Korisnik Korisnik { get; set; }
         public virtual Linija Linija { get; set; }

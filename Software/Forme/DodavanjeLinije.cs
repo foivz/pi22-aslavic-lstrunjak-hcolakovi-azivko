@@ -21,7 +21,7 @@ namespace Forme
 
         private void DodavanjeLinije_Load(object sender, EventArgs e)
         {
-            using(var context = new PI2229_DBEntities())
+            using(var context = new LinkBusEntities())
             {
                 foreach(Autoprijevoznik autoprijevoznik in context.Autoprijevoznik)
                 {
@@ -51,7 +51,7 @@ namespace Forme
             int autoprijevoznik_id = 0;
             int brojMjesta = int.Parse(brojMjestaTextBox.Text);
 
-            using(var context = new PI2229_DBEntities())
+            using(var context = new LinkBusEntities())
             {
                 foreach (Autoprijevoznik item in context.Autoprijevoznik)
                 {

@@ -34,7 +34,7 @@ namespace Forme
 
         public object DohvatiLinije()
         {
-            using (var context = new PI2229_DBEntities())
+            using (var context = new LinkBusEntities())
             {
                 return context.Linija.ToList();
             }
@@ -42,7 +42,7 @@ namespace Forme
 
         private void NeregistriraniKorisnikForm_Load(object sender, EventArgs e)
         {
-            using(var context = new PI2229_DBEntities())
+            using(var context = new LinkBusEntities())
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = DohvatiLinije();
@@ -57,11 +57,11 @@ namespace Forme
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             List<Linija> linije = new List<Linija>();
-            using(var context = new PI2229_DBEntities())
+            using(var context = new LinkBusEntities())
             {
                 foreach(Linija linija in context.Linija)
                 {
-                    if(linija.odrediste.Contains(searchTextBox.Text))
+                    if(linija.odrediste.StartsWith(searchTextBox.Text))
                     {
                         linije.Add(linija);
                     }

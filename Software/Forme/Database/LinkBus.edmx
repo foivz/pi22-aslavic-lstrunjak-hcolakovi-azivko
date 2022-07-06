@@ -23,7 +23,7 @@
           <Property Name="povratna" Type="bit" Nullable="false" />
           <Property Name="prtljaga" Type="bit" Nullable="false" />
           <Property Name="cijena" Type="float" Nullable="false" />
-          <Property Name="datum_i_vrijeme_rezeravcije" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="datum_i_vrijeme_rezeravcije" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="Korisnik">
           <Key>
@@ -154,7 +154,7 @@
           <Property Name="povratna" Type="Boolean" Nullable="false" />
           <Property Name="prtljaga" Type="Boolean" Nullable="false" />
           <Property Name="cijena" Type="Double" Nullable="false" />
-          <Property Name="datum_i_vrijeme_rezeravcije" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="datum_i_vrijeme_rezeravcije" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Korisnik" Relationship="Self.FK_Karta_Korisnik" FromRole="Karta" ToRole="Korisnik" />
           <NavigationProperty Name="Linija" Relationship="Self.FK_Karta_Linija" FromRole="Karta" ToRole="Linija" />
         </EntityType>
@@ -245,7 +245,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="PI2229_DBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="LinkBusEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Autoprijevoznik" EntityType="Self.Autoprijevoznik" />
           <EntitySet Name="Karta" EntityType="Self.Karta" />
           <EntitySet Name="Korisnik" EntityType="Self.Korisnik" />
@@ -273,7 +273,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PI2229_DBModelStoreContainer" CdmEntityContainer="PI2229_DBEntities">
+        <EntityContainerMapping StorageEntityContainer="PI2229_DBModelStoreContainer" CdmEntityContainer="LinkBusEntities">
           <EntitySetMapping Name="Autoprijevoznik">
             <EntityTypeMapping TypeName="PI2229_DBModel.Autoprijevoznik">
               <MappingFragment StoreEntitySet="Autoprijevoznik">
