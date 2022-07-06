@@ -22,15 +22,9 @@ namespace Forme
             linija = odabranaLinija;
         }
 
-        public KupiKartuForm(Linija odabranaLinija)
-        {
-            InitializeComponent();
-            linija = odabranaLinija;
-        }
-
         private void odaberiLinijuButton_Click(object sender, EventArgs e)
         {
-            OdaberiLinijuForm odaberiLinijuForm = new OdaberiLinijuForm();
+            OdaberiLinijuForm odaberiLinijuForm = new OdaberiLinijuForm(korisnik);
             odaberiLinijuForm.ShowDialog();
         }
 

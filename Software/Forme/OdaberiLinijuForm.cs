@@ -13,9 +13,11 @@ namespace Forme
 {
     public partial class OdaberiLinijuForm : Form
     {
-        public OdaberiLinijuForm()
+        Korisnik korisnik;
+        public OdaberiLinijuForm(Korisnik logiraniKorisnik)
         {
             InitializeComponent();
+            korisnik = logiraniKorisnik;
         }
 
         private void nazadButton_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace Forme
         private void odaberiLinijuButton_Click(object sender, EventArgs e)
         {
             Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
-            KupiKartuForm kupiKartu = new KupiKartuForm(linija);
+            KupiKartuForm kupiKartu = new KupiKartuForm(korisnik, linija);
             this.Hide();
             kupiKartu.ShowDialog();
         }
