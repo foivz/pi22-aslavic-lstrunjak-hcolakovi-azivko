@@ -83,6 +83,7 @@
             // 
             // autoprijevoznikTextBox
             // 
+            this.autoprijevoznikTextBox.Enabled = false;
             this.autoprijevoznikTextBox.Location = new System.Drawing.Point(168, 176);
             this.autoprijevoznikTextBox.Name = "autoprijevoznikTextBox";
             this.autoprijevoznikTextBox.Size = new System.Drawing.Size(200, 29);
@@ -90,6 +91,7 @@
             // 
             // udaljenostTextBox
             // 
+            this.udaljenostTextBox.Enabled = false;
             this.udaljenostTextBox.Location = new System.Drawing.Point(168, 129);
             this.udaljenostTextBox.Name = "udaljenostTextBox";
             this.udaljenostTextBox.Size = new System.Drawing.Size(200, 29);
@@ -97,6 +99,7 @@
             // 
             // odredisteTextBox
             // 
+            this.odredisteTextBox.Enabled = false;
             this.odredisteTextBox.Location = new System.Drawing.Point(168, 83);
             this.odredisteTextBox.Name = "odredisteTextBox";
             this.odredisteTextBox.Size = new System.Drawing.Size(200, 29);
@@ -104,6 +107,7 @@
             // 
             // polazisteTextBox
             // 
+            this.polazisteTextBox.Enabled = false;
             this.polazisteTextBox.Location = new System.Drawing.Point(168, 34);
             this.polazisteTextBox.Name = "polazisteTextBox";
             this.polazisteTextBox.Size = new System.Drawing.Size(200, 29);
@@ -160,7 +164,7 @@
             // umirovljenikRdioButton
             // 
             this.umirovljenikRdioButton.AutoSize = true;
-            this.umirovljenikRdioButton.Location = new System.Drawing.Point(281, 50);
+            this.umirovljenikRdioButton.Location = new System.Drawing.Point(285, 50);
             this.umirovljenikRdioButton.Name = "umirovljenikRdioButton";
             this.umirovljenikRdioButton.Size = new System.Drawing.Size(135, 26);
             this.umirovljenikRdioButton.TabIndex = 2;
@@ -170,7 +174,7 @@
             // studentskaRadioButton
             // 
             this.studentskaRadioButton.AutoSize = true;
-            this.studentskaRadioButton.Location = new System.Drawing.Point(142, 50);
+            this.studentskaRadioButton.Location = new System.Drawing.Point(152, 50);
             this.studentskaRadioButton.Name = "studentskaRadioButton";
             this.studentskaRadioButton.Size = new System.Drawing.Size(123, 26);
             this.studentskaRadioButton.TabIndex = 1;
@@ -181,7 +185,7 @@
             // 
             this.regularnaRadioButton.AutoSize = true;
             this.regularnaRadioButton.Checked = true;
-            this.regularnaRadioButton.Location = new System.Drawing.Point(10, 50);
+            this.regularnaRadioButton.Location = new System.Drawing.Point(20, 50);
             this.regularnaRadioButton.Name = "regularnaRadioButton";
             this.regularnaRadioButton.Size = new System.Drawing.Size(116, 26);
             this.regularnaRadioButton.TabIndex = 0;
@@ -230,6 +234,7 @@
             this.kupiKartuButton.TabIndex = 3;
             this.kupiKartuButton.Text = "Kupi kartu";
             this.kupiKartuButton.UseVisualStyleBackColor = true;
+            this.kupiKartuButton.Click += new System.EventHandler(this.kupiKartuButton_Click);
             // 
             // odustaniButton
             // 
@@ -259,6 +264,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KupiKartuForm";
             this.Text = "Kupovina karte";
+            this.Load += new System.EventHandler(this.KupiKartuForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
