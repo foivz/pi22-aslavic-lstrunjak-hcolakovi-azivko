@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.dodajLinijuButton = new System.Windows.Forms.Button();
@@ -44,36 +45,44 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pretraziButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // popisLinijaDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 94);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(654, 414);
-            this.dataGridView1.TabIndex = 0;
+            this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            this.popisLinijaDataGridView.Location = new System.Drawing.Point(43, 94);
+            this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
+            this.popisLinijaDataGridView.RowHeadersWidth = 51;
+            this.popisLinijaDataGridView.RowTemplate.Height = 24;
+            this.popisLinijaDataGridView.Size = new System.Drawing.Size(654, 414);
+            this.popisLinijaDataGridView.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(39, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 22);
+            this.label1.Size = new System.Drawing.Size(159, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Pretraži linije:";
+            this.label1.Text = "Unesite odredište:";
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(181, 47);
+            this.searchTextBox.Location = new System.Drawing.Point(193, 45);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(256, 29);
             this.searchTextBox.TabIndex = 2;
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
             // 
             // dodajLinijuButton
             // 
@@ -106,6 +115,7 @@
             this.obirsiLinijuButton.TabIndex = 5;
             this.obirsiLinijuButton.Text = "Obriši liniju";
             this.obirsiLinijuButton.UseVisualStyleBackColor = true;
+            this.obirsiLinijuButton.Click += new System.EventHandler(this.obirsiLinijuButton_Click);
             // 
             // odjaviSeButton
             // 
@@ -127,6 +137,7 @@
             this.profilButton.TabIndex = 7;
             this.profilButton.Text = "Profil";
             this.profilButton.UseVisualStyleBackColor = true;
+            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // groupBox1
             // 
@@ -153,6 +164,7 @@
             this.filtrirajButton.TabIndex = 6;
             this.filtrirajButton.Text = "Filtriraj";
             this.filtrirajButton.UseVisualStyleBackColor = true;
+            this.filtrirajButton.Click += new System.EventHandler(this.filtrirajButton_Click);
             // 
             // dateTimePicker
             // 
@@ -202,23 +214,12 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Polazište:";
             // 
-            // pretraziButton
-            // 
-            this.pretraziButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pretraziButton.Location = new System.Drawing.Point(464, 41);
-            this.pretraziButton.Name = "pretraziButton";
-            this.pretraziButton.Size = new System.Drawing.Size(126, 41);
-            this.pretraziButton.TabIndex = 9;
-            this.pretraziButton.Text = "Pretraži";
-            this.pretraziButton.UseVisualStyleBackColor = true;
-            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1025, 619);
-            this.Controls.Add(this.pretraziButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.profilButton);
             this.Controls.Add(this.odjaviSeButton);
@@ -227,14 +228,15 @@
             this.Controls.Add(this.dodajLinijuButton);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.popisLinijaDataGridView);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminForm";
             this.Text = "LinkBus";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.AdminForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -244,7 +246,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView popisLinijaDataGridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Button dodajLinijuButton;
@@ -260,6 +262,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button pretraziButton;
     }
 }

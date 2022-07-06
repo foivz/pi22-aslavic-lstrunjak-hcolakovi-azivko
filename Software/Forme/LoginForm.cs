@@ -42,7 +42,7 @@ namespace Forme
                     if (korisnickoImeTextBox.Text == korisnik.korisnicko_ime && lozinkaTextBox.Text == korisnik.lozinka && korisnik.uloga_korisnika_id == 1)
                     {
                         pronadjen = true;
-                        AdminForm adminForm = new AdminForm();
+                        AdminForm adminForm = new AdminForm(korisnik);
                         this.Hide();
                         adminForm.ShowDialog();
                     }

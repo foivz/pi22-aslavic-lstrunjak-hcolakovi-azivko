@@ -43,6 +43,13 @@ namespace Forme
                 povijestPutovanjaDataGridView.ReadOnly = true;
                 povijestPutovanjaDataGridView.DataSource = listaKarata;
 
+                if(this.povijestPutovanjaDataGridView.Rows.Count == 0)
+                {
+                    label5.Visible = false;
+                    label6.Text = "Niste kupili nijednu kartu!";
+                    label6.Visible = true;
+                }
+
                 povijestPutovanjaDataGridView.Columns["karta_id"].Visible = false;
                 povijestPutovanjaDataGridView.Columns["korisnik_id"].Visible = false;
                 povijestPutovanjaDataGridView.Columns["Korisnik"].Visible = false;
