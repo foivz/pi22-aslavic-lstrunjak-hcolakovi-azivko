@@ -37,8 +37,26 @@ namespace Forme
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
             Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
-            KupiKartuForm kupiKartuForm = new KupiKartuForm(korisnik, linija);
-            kupiKartuForm.ShowDialog();
+
+            using(var context = new LinkBusEntities())
+            {
+                foreach(Linija item in context.Linija)
+                {
+                    if(item.linija_id == linija.linija_id)
+                    {
+                        if(item.broj_slobodnih_mjesta == 0)
+                        {
+                            MessageBox.Show("Ne možete kupiti kartu za tu liniju jer nema više slobodnih mjesta!");
+                            break;
+                        }
+                        else
+                        {
+                            KupiKartuForm kupiKartuForm = new KupiKartuForm(korisnik, linija);
+                            kupiKartuForm.ShowDialog();
+                        }
+                    }
+                }
+            }
         }
 
         private void RegistriraniKorisnikForm_Load(object sender, EventArgs e)
@@ -47,6 +65,13 @@ namespace Forme
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
+                foreach (DataGridViewRow row in popisLinijaDataGridView.Rows)
+                {
+                    if (Convert.ToInt32(row.Cells[8].Value) == 0)
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                    }
+                }
                 SkriveneKolone();
             }
         }

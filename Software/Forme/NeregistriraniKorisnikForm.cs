@@ -47,7 +47,6 @@ namespace Forme
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = DohvatiLinije();
 
-
                 popisLinijaDataGridView.Columns["linija_id"].Visible = false;
                 popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
                 popisLinijaDataGridView.Columns["Karta"].Visible = false;
