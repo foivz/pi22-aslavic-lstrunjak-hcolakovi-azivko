@@ -78,9 +78,16 @@ namespace Forme
                     datum_i_vrijeme_rezeravcije = DateTime.Now.ToString()
                 };
 
+                // Ažuriranje broja slobodnih mjesta
+                context.Linija.Attach(linija);
+                linija.broj_slobodnih_mjesta -= 1;
+                context.SaveChanges();
+
+                // Dodavanje karte u tablicu Karta
                 context.Karta.Add(karta);
                 context.SaveChanges();
-                linija.broj_slobodnih_mjesta--;
+
+                // Povratna informacija korisniku
                 MessageBox.Show($"Uspješno ste rezervirali kartu na relaciji {linija.polaziste} - {linija.odrediste}. Ukupna cijena je: {cijena} HRK.");
                 this.Close();
             }
