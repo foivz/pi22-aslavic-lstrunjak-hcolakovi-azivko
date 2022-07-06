@@ -246,6 +246,7 @@
             this.odustaniButton.TabIndex = 4;
             this.odustaniButton.Text = "Odustani";
             this.odustaniButton.UseVisualStyleBackColor = true;
+            this.odustaniButton.Click += new System.EventHandler(this.odustaniButton_Click);
             // 
             // KupiKartuForm
             // 

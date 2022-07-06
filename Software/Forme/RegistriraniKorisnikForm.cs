@@ -36,26 +36,38 @@ namespace Forme
 
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
-            Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
-
-            using(var context = new LinkBusEntities())
+            try
             {
-                foreach(Linija item in context.Linija)
+                if(popisLinijaDataGridView.CurrentRow == null)
                 {
-                    if(item.linija_id == linija.linija_id)
+                    throw new Iznimke.Exception("Ukoliko želite kupiti kartu morate odabrati liniju!");
+                }
+
+                Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+
+                using (var context = new LinkBusEntities())
+                {
+                    foreach (Linija item in context.Linija)
                     {
-                        if(item.broj_slobodnih_mjesta == 0)
+                        if (item.linija_id == linija.linija_id)
                         {
-                            MessageBox.Show("Ne možete kupiti kartu za tu liniju jer nema više slobodnih mjesta!");
-                            break;
-                        }
-                        else
-                        {
-                            KupiKartuForm kupiKartuForm = new KupiKartuForm(korisnik, linija);
-                            kupiKartuForm.ShowDialog();
+                            if (item.broj_slobodnih_mjesta == 0)
+                            {
+                                MessageBox.Show("Ne možete kupiti kartu za tu liniju jer nema više slobodnih mjesta!");
+                                break;
+                            }
+                            else
+                            {
+                                KupiKartuForm kupiKartuForm = new KupiKartuForm(korisnik, linija);
+                                kupiKartuForm.ShowDialog();
+                            }
                         }
                     }
                 }
+            }
+            catch (Iznimke.Exception ex)
+            {
+                MessageBox.Show(ex.Poruka);
             }
         }
 
