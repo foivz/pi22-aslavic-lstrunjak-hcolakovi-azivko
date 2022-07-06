@@ -36,7 +36,8 @@ namespace Forme
 
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
-            KupiKartuForm kupiKartuForm = new KupiKartuForm();
+            Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+            KupiKartuForm kupiKartuForm = new KupiKartuForm(korisnik, linija);
             kupiKartuForm.ShowDialog();
         }
 
