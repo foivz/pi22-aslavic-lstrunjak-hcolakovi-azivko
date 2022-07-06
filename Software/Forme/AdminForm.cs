@@ -57,7 +57,8 @@ namespace Forme
 
         private void azurirajLinijuButton_Click(object sender, EventArgs e)
         {
-            AzuriranjeLinijeForm azuriranjeLinijeForm = new AzuriranjeLinijeForm();
+            Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+            AzuriranjeLinijeForm azuriranjeLinijeForm = new AzuriranjeLinijeForm(linija);
             azuriranjeLinijeForm.ShowDialog();
         }
 
