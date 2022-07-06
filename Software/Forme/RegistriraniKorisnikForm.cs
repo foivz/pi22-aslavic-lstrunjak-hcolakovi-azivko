@@ -34,6 +34,17 @@ namespace Forme
             popisLinijaDataGridView.Columns["Karta"].Visible = false;
         }
 
+        public void PopunjeneLinije()
+        {
+            foreach (DataGridViewRow row in popisLinijaDataGridView.Rows)
+            {
+                if (Convert.ToInt32(row.Cells[8].Value) == 0)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+            }
+        }
+
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
             try
@@ -77,13 +88,7 @@ namespace Forme
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
-                foreach (DataGridViewRow row in popisLinijaDataGridView.Rows)
-                {
-                    if (Convert.ToInt32(row.Cells[8].Value) == 0)
-                    {
-                        row.DefaultCellStyle.BackColor = Color.Red;
-                    }
-                }
+                PopunjeneLinije();
                 SkriveneKolone();
             }
         }
@@ -103,6 +108,7 @@ namespace Forme
 
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = linije;
+                PopunjeneLinije();
                 SkriveneKolone();
             }
         }
@@ -125,6 +131,7 @@ namespace Forme
 
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = linije;
+                PopunjeneLinije();
                 SkriveneKolone();
             }
         }
