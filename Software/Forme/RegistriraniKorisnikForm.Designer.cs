@@ -95,6 +95,7 @@
             this.profilButton.TabIndex = 5;
             this.profilButton.Text = "Profil";
             this.profilButton.UseVisualStyleBackColor = true;
+            this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // label2
             // 

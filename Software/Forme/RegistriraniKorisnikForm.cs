@@ -135,5 +135,11 @@ namespace Forme
                 SkriveneKolone();
             }
         }
+
+        private void profilButton_Click(object sender, EventArgs e)
+        {
+            ProfilKorisnikaForm profilKorisnika = new ProfilKorisnikaForm(korisnik);
+            profilKorisnika.ShowDialog();
+        }
     }
 }
