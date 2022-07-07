@@ -53,24 +53,42 @@ namespace Forme
         {
             DodavanjeLinije dodavanjeLinije = new DodavanjeLinije();
             dodavanjeLinije.ShowDialog();
+            Osvjezi();
         }
 
         private void azurirajLinijuButton_Click(object sender, EventArgs e)
         {
-            Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
-            AzuriranjeLinijeForm azuriranjeLinijeForm = new AzuriranjeLinijeForm(linija);
-            azuriranjeLinijeForm.ShowDialog();
+            try
+            {
+                if(popisLinijaDataGridView.CurrentRow == null)
+                {
+                    throw new Iznimke.Exception("Odaberite onu liniju koju želite ažurirati");
+                }
+
+                Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+                AzuriranjeLinijeForm azuriranjeLinijeForm = new AzuriranjeLinijeForm(linija);
+                azuriranjeLinijeForm.ShowDialog();
+            }
+            catch (Iznimke.Exception ex)
+            {
+                MessageBox.Show(ex.Poruka);
+            }
         }
 
-        private void AdminForm_Load(object sender, EventArgs e)
+        public void Osvjezi()
         {
-            using(var context = new LinkBusEntities())
+            using (var context = new LinkBusEntities())
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
                 SkriveneKolone();
                 PopunjeneLinije();
             }
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+            Osvjezi();
         }
 
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -121,6 +139,7 @@ namespace Forme
                     context.Linija.Remove(linija);
                     context.SaveChanges();
                     MessageBox.Show($"Uspješno ste izbrisali liniju {linija.polaziste} - {linija.odrediste}");
+                    Osvjezi();
                 }
             }
             catch (Iznimke.Exception ex)

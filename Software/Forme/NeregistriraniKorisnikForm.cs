@@ -40,12 +40,24 @@ namespace Forme
             }
         }
 
+        public void PopunjeneLinije()
+        {
+            foreach (DataGridViewRow row in popisLinijaDataGridView.Rows)
+            {
+                if (Convert.ToInt32(row.Cells[8].Value) == 0)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+            }
+        }
+
         private void NeregistriraniKorisnikForm_Load(object sender, EventArgs e)
         {
             using(var context = new LinkBusEntities())
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = DohvatiLinije();
+                PopunjeneLinije();
 
                 popisLinijaDataGridView.Columns["linija_id"].Visible = false;
                 popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
@@ -68,6 +80,7 @@ namespace Forme
 
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = linije;
+                PopunjeneLinije();
             }
         }
     }

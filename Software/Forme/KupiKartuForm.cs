@@ -25,6 +25,7 @@ namespace Forme
         private void odaberiLinijuButton_Click(object sender, EventArgs e)
         {
             OdaberiLinijuForm odaberiLinijuForm = new OdaberiLinijuForm(korisnik);
+            this.Hide();
             odaberiLinijuForm.ShowDialog();
         }
 

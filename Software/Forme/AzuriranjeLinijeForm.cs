@@ -21,6 +21,11 @@ namespace Forme
             linija = odabranaLinija;
         }
 
+        public AzuriranjeLinijeForm()
+        {
+            InitializeComponent();
+        }
+
         private void AzuriranjeLinijeForm_Load(object sender, EventArgs e)
         {
             brojLinijeTextBox.Text = linija.broj_linije;
