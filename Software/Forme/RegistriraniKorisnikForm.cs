@@ -30,6 +30,8 @@ namespace Forme
         public void SkriveneKolone()
         {
             popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+            popisLinijaDataGridView.Columns["broj_linije"].Visible = false;
+            popisLinijaDataGridView.Columns["autoprijevoznik_id"].Visible = false;
             popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
             popisLinijaDataGridView.Columns["Karta"].Visible = false;
         }
@@ -140,6 +142,25 @@ namespace Forme
         {
             ProfilKorisnikaForm profilKorisnika = new ProfilKorisnikaForm(korisnik);
             profilKorisnika.ShowDialog();
+        }
+
+        private void prikazDetaljaButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (popisLinijaDataGridView.CurrentRow == null)
+                {
+                    throw new Iznimke.Exception("Morate odabrati liniju za prikaz njenih detalja!");
+                }
+
+                Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+                DetaljiLinijeForm detaljiLinije = new DetaljiLinijeForm(linija);
+                detaljiLinije.ShowDialog();
+            }
+            catch (Iznimke.Exception ex)
+            {
+                MessageBox.Show(ex.Poruka);
+            }
         }
     }
 }

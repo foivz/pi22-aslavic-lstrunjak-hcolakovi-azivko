@@ -60,6 +60,8 @@ namespace Forme
                 PopunjeneLinije();
 
                 popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+                popisLinijaDataGridView.Columns["broj_linije"].Visible = false;
+                popisLinijaDataGridView.Columns["autoprijevoznik_id"].Visible = false;
                 popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
                 popisLinijaDataGridView.Columns["Karta"].Visible = false;
             }
@@ -81,6 +83,25 @@ namespace Forme
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = linije;
                 PopunjeneLinije();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(popisLinijaDataGridView.CurrentRow == null)
+                {
+                    throw new Iznimke.Exception("Morate odabrati liniju za prikaz njenih detalja!");
+                }
+
+                Linija linija = popisLinijaDataGridView.CurrentRow.DataBoundItem as Linija;
+                DetaljiLinijeForm detaljiLinije = new DetaljiLinijeForm(linija);
+                detaljiLinije.ShowDialog();
+            }
+            catch(Iznimke.Exception ex)
+            {
+                MessageBox.Show(ex.Poruka);
             }
         }
     }

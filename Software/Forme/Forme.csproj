@@ -97,6 +97,12 @@
     <Compile Include="Database\Uloga_korisnika.cs">
       <DependentUpon>LinkBus.tt</DependentUpon>
     </Compile>
+    <Compile Include="DetaljiLinijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiLinijeForm.Designer.cs">
+      <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DodavanjeLinije.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AzuriranjeLinijeForm.resx">
       <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaljiLinijeForm.resx">
+      <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DodavanjeLinije.resx">
       <DependentUpon>DodavanjeLinije.cs</DependentUpon>

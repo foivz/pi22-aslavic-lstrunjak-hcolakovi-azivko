@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odjaviSeButton = new System.Windows.Forms.Button();
             this.kupiKartuButton = new System.Windows.Forms.Button();
@@ -42,6 +42,7 @@
             this.filtrirajButton = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.pretraziButton = new System.Windows.Forms.Button();
+            this.prikazDetaljaButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -49,14 +50,14 @@
             // popisLinijaDataGridView
             // 
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(50, 118);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
@@ -184,12 +185,24 @@
             this.pretraziButton.UseVisualStyleBackColor = true;
             this.pretraziButton.Click += new System.EventHandler(this.pretraziButton_Click);
             // 
+            // prikazDetaljaButton
+            // 
+            this.prikazDetaljaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prikazDetaljaButton.Location = new System.Drawing.Point(497, 527);
+            this.prikazDetaljaButton.Name = "prikazDetaljaButton";
+            this.prikazDetaljaButton.Size = new System.Drawing.Size(137, 71);
+            this.prikazDetaljaButton.TabIndex = 15;
+            this.prikazDetaljaButton.Text = "Prikaži detalje";
+            this.prikazDetaljaButton.UseVisualStyleBackColor = true;
+            this.prikazDetaljaButton.Click += new System.EventHandler(this.prikazDetaljaButton_Click);
+            // 
             // RegistriraniKorisnikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(988, 613);
+            this.Controls.Add(this.prikazDetaljaButton);
             this.Controls.Add(this.pretraziButton);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.label4);
@@ -230,5 +243,6 @@
         private System.Windows.Forms.Button filtrirajButton;
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button pretraziButton;
+        private System.Windows.Forms.Button prikazDetaljaButton;
     }
 }
