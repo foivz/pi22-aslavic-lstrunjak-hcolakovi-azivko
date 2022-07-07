@@ -16,7 +16,7 @@ Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra
 
 ## Projektni tim
 
-Ime i prezime   | E-mail adresa (FOI) | JMBAG      | Github korisničko ime
+Ime i prezime   | E-mail adresa (FOI) | JMBAG      | GitHub korisničko ime
 ------------    | ------------------- | -----      | ---------------------
 Hasan Čolaković | hcolakovi@foi.hr    | 0016145973 |    HasanColakovic99
 Andrija Živko   | azivko@foi.hr       | 0016143755 |    Z1V3
@@ -38,4 +38,4 @@ F06 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojal
 F07 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Hasan Čolaković
 F08 | Povijest putovanja | Mogućnost pregleda prošlih putovanja | Andrija Živko
 ## Tehnologije i oprema
-Tehnologije koje ćemo koristiti su: Visual Studio 2019/2022, Github, MySQL DBMS, MySQL Workbench, Microsoft Word.
+Tehnologije koje ćemo koristiti su: Visual Studio 2019/2022, Git, GitHub, GitHub Desktop, Microsoft SQL Server Managment Studio, Visual Paradigm, .NET Framework.
