@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36662c5d36ed4e1e9e1a84da7f6fadb3" Name="Diagram1">
+        <EntityTypeShape EntityType="PI2229_DBModel.Autoprijevoznik" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI2229_DBModel.Karta" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI2229_DBModel.Korisnik" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI2229_DBModel.Linija" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI2229_DBModel.Uloga_korisnika" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="PI2229_DBModel.FK_Linija_Autoprijevoznik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI2229_DBModel.FK_Karta_Korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI2229_DBModel.FK_Karta_Linija" ManuallyRouted="false" />
+        <AssociationConnector Association="PI2229_DBModel.FK_Korisnik_Uloga_korisnika" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

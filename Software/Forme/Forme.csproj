@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF2D509D-9C3B-4222-9C2A-54EEE68E6CEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Forme</RootNamespace>
+    <AssemblyName>Forme</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AzuriranjeLinijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzuriranjeLinijeForm.Designer.cs">
+      <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Autoprijevoznik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Karta.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Korisnik.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Linija.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LinkBus.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LinkBus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LinkBus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Uloga_korisnika.cs">
+      <DependentUpon>LinkBus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetaljiLinijeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiLinijeForm.Designer.cs">
+      <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodavanjeLinije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodavanjeLinije.Designer.cs">
+      <DependentUpon>DodavanjeLinije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iznimke\Exception.cs" />
+    <Compile Include="KupiKartuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KupiKartuForm.Designer.cs">
+      <DependentUpon>KupiKartuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NeregistriraniKorisnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NeregistriraniKorisnikForm.Designer.cs">
+      <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaberiLinijuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaberiLinijuForm.Designer.cs">
+      <DependentUpon>OdaberiLinijuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PocetnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaForm.Designer.cs">
+      <DependentUpon>PocetnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilKorisnikaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilKorisnikaForm.Designer.cs">
+      <DependentUpon>ProfilKorisnikaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistriraniKorisnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistriraniKorisnikForm.Designer.cs">
+      <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzuriranjeLinijeForm.resx">
+      <DependentUpon>AzuriranjeLinijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaljiLinijeForm.resx">
+      <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodavanjeLinije.resx">
+      <DependentUpon>DodavanjeLinije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KupiKartuForm.resx">
+      <DependentUpon>KupiKartuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NeregistriraniKorisnikForm.resx">
+      <DependentUpon>NeregistriraniKorisnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaberiLinijuForm.resx">
+      <DependentUpon>OdaberiLinijuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaForm.resx">
+      <DependentUpon>PocetnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilKorisnikaForm.resx">
+      <DependentUpon>ProfilKorisnikaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistriraniKorisnikForm.resx">
+      <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Database\LinkBus.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LinkBus.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\LinkBus.edmx.diagram">
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\LinkBus.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+      <LastGenOutput>LinkBus.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\LinkBus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LinkBus.edmx</DependentUpon>
+      <LastGenOutput>LinkBus.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
