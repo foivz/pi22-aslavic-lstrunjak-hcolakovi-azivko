@@ -58,6 +58,8 @@
             // 
             // korisnickoImeTextBox
             // 
+            this.korisnickoImeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.korisnickoImeTextBox.ForeColor = System.Drawing.Color.White;
             this.korisnickoImeTextBox.Location = new System.Drawing.Point(211, 48);
             this.korisnickoImeTextBox.Name = "korisnickoImeTextBox";
             this.korisnickoImeTextBox.Size = new System.Drawing.Size(310, 32);
@@ -65,6 +67,8 @@
             // 
             // lozinkaTextBox
             // 
+            this.lozinkaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.lozinkaTextBox.ForeColor = System.Drawing.Color.White;
             this.lozinkaTextBox.Location = new System.Drawing.Point(211, 110);
             this.lozinkaTextBox.Name = "lozinkaTextBox";
             this.lozinkaTextBox.Size = new System.Drawing.Size(310, 32);
@@ -73,24 +77,28 @@
             // 
             // prijaviSeButton
             // 
+            this.prijaviSeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.prijaviSeButton.FlatAppearance.BorderSize = 0;
             this.prijaviSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prijaviSeButton.Location = new System.Drawing.Point(211, 172);
             this.prijaviSeButton.Name = "prijaviSeButton";
             this.prijaviSeButton.Size = new System.Drawing.Size(128, 57);
             this.prijaviSeButton.TabIndex = 4;
             this.prijaviSeButton.Text = "Prijavi se";
-            this.prijaviSeButton.UseVisualStyleBackColor = true;
+            this.prijaviSeButton.UseVisualStyleBackColor = false;
             this.prijaviSeButton.Click += new System.EventHandler(this.prijaviSeButton_Click);
             // 
             // nazadButton
             // 
+            this.nazadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.nazadButton.FlatAppearance.BorderSize = 0;
             this.nazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nazadButton.Location = new System.Drawing.Point(393, 172);
             this.nazadButton.Name = "nazadButton";
             this.nazadButton.Size = new System.Drawing.Size(128, 57);
             this.nazadButton.TabIndex = 5;
             this.nazadButton.Text = "Nazad";
-            this.nazadButton.UseVisualStyleBackColor = true;
+            this.nazadButton.UseVisualStyleBackColor = false;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
             // LoginForm
@@ -107,7 +115,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.Text = "Login";

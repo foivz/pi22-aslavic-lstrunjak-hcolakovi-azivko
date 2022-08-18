@@ -73,12 +73,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(39, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 22);
+            this.label1.Size = new System.Drawing.Size(162, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Unesite odredište:";
             // 
             // searchTextBox
             // 
+            this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.searchTextBox.ForeColor = System.Drawing.Color.White;
             this.searchTextBox.Location = new System.Drawing.Point(204, 39);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(263, 29);
@@ -90,34 +92,40 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(39, 529);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 22);
+            this.label2.Size = new System.Drawing.Size(131, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nemaš račun?";
             // 
             // registrirajSeButton
             // 
+            this.registrirajSeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.registrirajSeButton.FlatAppearance.BorderSize = 0;
             this.registrirajSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registrirajSeButton.Location = new System.Drawing.Point(172, 517);
             this.registrirajSeButton.Name = "registrirajSeButton";
             this.registrirajSeButton.Size = new System.Drawing.Size(158, 47);
             this.registrirajSeButton.TabIndex = 4;
             this.registrirajSeButton.Text = "Registriraj se";
-            this.registrirajSeButton.UseVisualStyleBackColor = true;
+            this.registrirajSeButton.UseVisualStyleBackColor = false;
             this.registrirajSeButton.Click += new System.EventHandler(this.registrirajSeButton_Click);
             // 
             // nazadButton
             // 
+            this.nazadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.nazadButton.FlatAppearance.BorderSize = 0;
             this.nazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nazadButton.Location = new System.Drawing.Point(682, 517);
             this.nazadButton.Name = "nazadButton";
             this.nazadButton.Size = new System.Drawing.Size(132, 47);
             this.nazadButton.TabIndex = 5;
             this.nazadButton.Text = "Nazad";
-            this.nazadButton.UseVisualStyleBackColor = true;
+            this.nazadButton.UseVisualStyleBackColor = false;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(526, 517);
@@ -125,7 +133,7 @@
             this.button1.Size = new System.Drawing.Size(132, 47);
             this.button1.TabIndex = 6;
             this.button1.Text = "Prikaži detalje";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NeregistriraniKorisnikForm
@@ -143,7 +151,7 @@
             this.Controls.Add(this.popisLinijaDataGridView);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NeregistriraniKorisnikForm";
             this.Text = "Popis autobusnih linija";

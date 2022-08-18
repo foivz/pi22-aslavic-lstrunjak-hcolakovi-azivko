@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odaberiLinijuButton = new System.Windows.Forms.Button();
@@ -42,21 +42,21 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(36, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 28);
+            this.label1.Size = new System.Drawing.Size(133, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Popis linija:";
             // 
             // popisLinijaDataGridView
             // 
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(41, 81);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
@@ -66,24 +66,28 @@
             // 
             // odaberiLinijuButton
             // 
+            this.odaberiLinijuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.odaberiLinijuButton.FlatAppearance.BorderSize = 0;
             this.odaberiLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odaberiLinijuButton.Location = new System.Drawing.Point(477, 478);
             this.odaberiLinijuButton.Name = "odaberiLinijuButton";
             this.odaberiLinijuButton.Size = new System.Drawing.Size(134, 70);
             this.odaberiLinijuButton.TabIndex = 2;
             this.odaberiLinijuButton.Text = "Odaberi liniju";
-            this.odaberiLinijuButton.UseVisualStyleBackColor = true;
+            this.odaberiLinijuButton.UseVisualStyleBackColor = false;
             this.odaberiLinijuButton.Click += new System.EventHandler(this.odaberiLinijuButton_Click);
             // 
             // nazadButton
             // 
+            this.nazadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.nazadButton.FlatAppearance.BorderSize = 0;
             this.nazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nazadButton.Location = new System.Drawing.Point(642, 478);
             this.nazadButton.Name = "nazadButton";
             this.nazadButton.Size = new System.Drawing.Size(134, 70);
             this.nazadButton.TabIndex = 3;
             this.nazadButton.Text = "Nazad";
-            this.nazadButton.UseVisualStyleBackColor = true;
+            this.nazadButton.UseVisualStyleBackColor = false;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
             // OdaberiLinijuForm
@@ -98,7 +102,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OdaberiLinijuForm";
             this.Text = "Odabir linije";

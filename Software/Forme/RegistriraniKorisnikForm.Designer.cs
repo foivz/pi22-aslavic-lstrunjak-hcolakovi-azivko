@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odjaviSeButton = new System.Windows.Forms.Button();
             this.kupiKartuButton = new System.Windows.Forms.Button();
@@ -43,21 +43,23 @@
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.pretraziButton = new System.Windows.Forms.Button();
             this.prikazDetaljaButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // popisLinijaDataGridView
             // 
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(50, 118);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
@@ -67,35 +69,41 @@
             // 
             // odjaviSeButton
             // 
+            this.odjaviSeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.odjaviSeButton.FlatAppearance.BorderSize = 0;
             this.odjaviSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odjaviSeButton.Location = new System.Drawing.Point(809, 538);
             this.odjaviSeButton.Name = "odjaviSeButton";
             this.odjaviSeButton.Size = new System.Drawing.Size(142, 60);
             this.odjaviSeButton.TabIndex = 3;
             this.odjaviSeButton.Text = "Odjavi se";
-            this.odjaviSeButton.UseVisualStyleBackColor = true;
+            this.odjaviSeButton.UseVisualStyleBackColor = false;
             this.odjaviSeButton.Click += new System.EventHandler(this.odjaviSeButton_Click);
             // 
             // kupiKartuButton
             // 
+            this.kupiKartuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.kupiKartuButton.FlatAppearance.BorderSize = 0;
             this.kupiKartuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kupiKartuButton.Location = new System.Drawing.Point(50, 527);
             this.kupiKartuButton.Name = "kupiKartuButton";
-            this.kupiKartuButton.Size = new System.Drawing.Size(137, 71);
+            this.kupiKartuButton.Size = new System.Drawing.Size(247, 71);
             this.kupiKartuButton.TabIndex = 4;
             this.kupiKartuButton.Text = "Kupi kartu";
-            this.kupiKartuButton.UseVisualStyleBackColor = true;
+            this.kupiKartuButton.UseVisualStyleBackColor = false;
             this.kupiKartuButton.Click += new System.EventHandler(this.kupiKartuButton_Click);
             // 
             // profilButton
             // 
+            this.profilButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.profilButton.FlatAppearance.BorderSize = 0;
             this.profilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profilButton.Location = new System.Drawing.Point(809, 12);
             this.profilButton.Name = "profilButton";
-            this.profilButton.Size = new System.Drawing.Size(142, 60);
+            this.profilButton.Size = new System.Drawing.Size(167, 79);
             this.profilButton.TabIndex = 5;
             this.profilButton.Text = "Profil";
-            this.profilButton.UseVisualStyleBackColor = true;
+            this.profilButton.UseVisualStyleBackColor = false;
             this.profilButton.Click += new System.EventHandler(this.profilButton_Click);
             // 
             // label2
@@ -118,6 +126,8 @@
             // 
             // polazisteTextBox
             // 
+            this.polazisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.polazisteTextBox.ForeColor = System.Drawing.Color.White;
             this.polazisteTextBox.Location = new System.Drawing.Point(151, 18);
             this.polazisteTextBox.Name = "polazisteTextBox";
             this.polazisteTextBox.Size = new System.Drawing.Size(251, 32);
@@ -125,6 +135,8 @@
             // 
             // odredisteTextBox
             // 
+            this.odredisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.odredisteTextBox.ForeColor = System.Drawing.Color.White;
             this.odredisteTextBox.Location = new System.Drawing.Point(151, 64);
             this.odredisteTextBox.Name = "odredisteTextBox";
             this.odredisteTextBox.Size = new System.Drawing.Size(251, 32);
@@ -152,13 +164,15 @@
             // 
             // filtrirajButton
             // 
+            this.filtrirajButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.filtrirajButton.FlatAppearance.BorderSize = 0;
             this.filtrirajButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.filtrirajButton.Location = new System.Drawing.Point(25, 138);
             this.filtrirajButton.Name = "filtrirajButton";
             this.filtrirajButton.Size = new System.Drawing.Size(242, 38);
             this.filtrirajButton.TabIndex = 12;
             this.filtrirajButton.Text = "Filtriraj";
-            this.filtrirajButton.UseVisualStyleBackColor = true;
+            this.filtrirajButton.UseVisualStyleBackColor = false;
             this.filtrirajButton.Click += new System.EventHandler(this.filtrirajButton_Click);
             // 
             // groupBox
@@ -176,25 +190,39 @@
             // 
             // pretraziButton
             // 
+            this.pretraziButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.pretraziButton.FlatAppearance.BorderSize = 0;
             this.pretraziButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pretraziButton.Location = new System.Drawing.Point(437, 31);
             this.pretraziButton.Name = "pretraziButton";
             this.pretraziButton.Size = new System.Drawing.Size(142, 60);
             this.pretraziButton.TabIndex = 14;
             this.pretraziButton.Text = "Pretraži";
-            this.pretraziButton.UseVisualStyleBackColor = true;
+            this.pretraziButton.UseVisualStyleBackColor = false;
             this.pretraziButton.Click += new System.EventHandler(this.pretraziButton_Click);
             // 
             // prikazDetaljaButton
             // 
+            this.prikazDetaljaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.prikazDetaljaButton.FlatAppearance.BorderSize = 0;
             this.prikazDetaljaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prikazDetaljaButton.Location = new System.Drawing.Point(497, 527);
+            this.prikazDetaljaButton.Location = new System.Drawing.Point(392, 527);
             this.prikazDetaljaButton.Name = "prikazDetaljaButton";
-            this.prikazDetaljaButton.Size = new System.Drawing.Size(137, 71);
+            this.prikazDetaljaButton.Size = new System.Drawing.Size(242, 71);
             this.prikazDetaljaButton.TabIndex = 15;
             this.prikazDetaljaButton.Text = "Prikaži detalje";
-            this.prikazDetaljaButton.UseVisualStyleBackColor = true;
+            this.prikazDetaljaButton.UseVisualStyleBackColor = false;
             this.prikazDetaljaButton.Click += new System.EventHandler(this.prikazDetaljaButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Forme.Properties.Resources.user_login_png_transparent_6_Transparent_Images;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(724, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // RegistriraniKorisnikForm
             // 
@@ -202,6 +230,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(988, 613);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.prikazDetaljaButton);
             this.Controls.Add(this.pretraziButton);
             this.Controls.Add(this.groupBox);
@@ -215,7 +244,7 @@
             this.Controls.Add(this.popisLinijaDataGridView);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistriraniKorisnikForm";
             this.Text = "LinkBus";
@@ -223,6 +252,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +274,6 @@
         private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Button pretraziButton;
         private System.Windows.Forms.Button prikazDetaljaButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

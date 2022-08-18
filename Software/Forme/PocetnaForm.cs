@@ -18,12 +18,6 @@ namespace Forme
             InitializeComponent();
         }
 
-        private void adminButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            loginForm.ShowDialog();
-        }
-
         private void registriraniKorisnikButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -35,12 +29,13 @@ namespace Forme
             this.Close();
         }
 
-
+        
         private void neregistriraniKorisnikButton_Click(object sender, EventArgs e)
         {
             NeregistriraniKorisnikForm neregistriraniKorisnikForm = new NeregistriraniKorisnikForm();
             this.Hide();
             neregistriraniKorisnikForm.ShowDialog();
         }
+
     }
 }

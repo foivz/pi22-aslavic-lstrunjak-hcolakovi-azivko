@@ -63,6 +63,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(23, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(579, 222);
@@ -72,13 +73,15 @@
             // 
             // odaberiLinijuButton
             // 
+            this.odaberiLinijuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.odaberiLinijuButton.FlatAppearance.BorderSize = 0;
             this.odaberiLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odaberiLinijuButton.Location = new System.Drawing.Point(390, 34);
             this.odaberiLinijuButton.Name = "odaberiLinijuButton";
             this.odaberiLinijuButton.Size = new System.Drawing.Size(170, 78);
             this.odaberiLinijuButton.TabIndex = 8;
             this.odaberiLinijuButton.Text = "Odaberi drugu liniju";
-            this.odaberiLinijuButton.UseVisualStyleBackColor = true;
+            this.odaberiLinijuButton.UseVisualStyleBackColor = false;
             this.odaberiLinijuButton.Click += new System.EventHandler(this.odaberiLinijuButton_Click);
             // 
             // autoprijevoznikTextBox
@@ -118,7 +121,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 22);
+            this.label4.Size = new System.Drawing.Size(146, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Autoprijevoznik:";
             // 
@@ -127,7 +130,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 22);
+            this.label3.Size = new System.Drawing.Size(147, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Udaljenost (km):";
             // 
@@ -136,7 +139,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 22);
+            this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Odredište:";
             // 
@@ -145,7 +148,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 22);
+            this.label1.Size = new System.Drawing.Size(91, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Polazište:";
             // 
@@ -154,6 +157,7 @@
             this.groupBox2.Controls.Add(this.umirovljenikRdioButton);
             this.groupBox2.Controls.Add(this.studentskaRadioButton);
             this.groupBox2.Controls.Add(this.regularnaRadioButton);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(23, 273);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(435, 100);
@@ -166,7 +170,7 @@
             this.umirovljenikRdioButton.AutoSize = true;
             this.umirovljenikRdioButton.Location = new System.Drawing.Point(285, 50);
             this.umirovljenikRdioButton.Name = "umirovljenikRdioButton";
-            this.umirovljenikRdioButton.Size = new System.Drawing.Size(135, 26);
+            this.umirovljenikRdioButton.Size = new System.Drawing.Size(139, 27);
             this.umirovljenikRdioButton.TabIndex = 2;
             this.umirovljenikRdioButton.Text = "Umirovljenik";
             this.umirovljenikRdioButton.UseVisualStyleBackColor = true;
@@ -176,7 +180,7 @@
             this.studentskaRadioButton.AutoSize = true;
             this.studentskaRadioButton.Location = new System.Drawing.Point(152, 50);
             this.studentskaRadioButton.Name = "studentskaRadioButton";
-            this.studentskaRadioButton.Size = new System.Drawing.Size(123, 26);
+            this.studentskaRadioButton.Size = new System.Drawing.Size(127, 27);
             this.studentskaRadioButton.TabIndex = 1;
             this.studentskaRadioButton.Text = "Studentska";
             this.studentskaRadioButton.UseVisualStyleBackColor = true;
@@ -187,7 +191,7 @@
             this.regularnaRadioButton.Checked = true;
             this.regularnaRadioButton.Location = new System.Drawing.Point(20, 50);
             this.regularnaRadioButton.Name = "regularnaRadioButton";
-            this.regularnaRadioButton.Size = new System.Drawing.Size(116, 26);
+            this.regularnaRadioButton.Size = new System.Drawing.Size(119, 27);
             this.regularnaRadioButton.TabIndex = 0;
             this.regularnaRadioButton.TabStop = true;
             this.regularnaRadioButton.Text = "Regularna";
@@ -197,6 +201,7 @@
             // 
             this.groupBox3.Controls.Add(this.prtljagaCheckBox);
             this.groupBox3.Controls.Add(this.povratnaKartaCheckBox);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(23, 398);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(435, 100);
@@ -209,7 +214,7 @@
             this.prtljagaCheckBox.AutoSize = true;
             this.prtljagaCheckBox.Location = new System.Drawing.Point(212, 47);
             this.prtljagaCheckBox.Name = "prtljagaCheckBox";
-            this.prtljagaCheckBox.Size = new System.Drawing.Size(97, 26);
+            this.prtljagaCheckBox.Size = new System.Drawing.Size(99, 27);
             this.prtljagaCheckBox.TabIndex = 1;
             this.prtljagaCheckBox.Text = "Prtljaga";
             this.prtljagaCheckBox.UseVisualStyleBackColor = true;
@@ -219,13 +224,15 @@
             this.povratnaKartaCheckBox.AutoSize = true;
             this.povratnaKartaCheckBox.Location = new System.Drawing.Point(41, 47);
             this.povratnaKartaCheckBox.Name = "povratnaKartaCheckBox";
-            this.povratnaKartaCheckBox.Size = new System.Drawing.Size(154, 26);
+            this.povratnaKartaCheckBox.Size = new System.Drawing.Size(157, 27);
             this.povratnaKartaCheckBox.TabIndex = 0;
             this.povratnaKartaCheckBox.Text = "Povratna karta";
             this.povratnaKartaCheckBox.UseVisualStyleBackColor = true;
             // 
             // kupiKartuButton
             // 
+            this.kupiKartuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.kupiKartuButton.FlatAppearance.BorderSize = 0;
             this.kupiKartuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kupiKartuButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.kupiKartuButton.Location = new System.Drawing.Point(156, 549);
@@ -233,11 +240,13 @@
             this.kupiKartuButton.Size = new System.Drawing.Size(148, 76);
             this.kupiKartuButton.TabIndex = 3;
             this.kupiKartuButton.Text = "Kupi kartu";
-            this.kupiKartuButton.UseVisualStyleBackColor = true;
+            this.kupiKartuButton.UseVisualStyleBackColor = false;
             this.kupiKartuButton.Click += new System.EventHandler(this.kupiKartuButton_Click);
             // 
             // odustaniButton
             // 
+            this.odustaniButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.odustaniButton.FlatAppearance.BorderSize = 0;
             this.odustaniButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odustaniButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.odustaniButton.Location = new System.Drawing.Point(345, 549);
@@ -245,7 +254,7 @@
             this.odustaniButton.Size = new System.Drawing.Size(148, 76);
             this.odustaniButton.TabIndex = 4;
             this.odustaniButton.Text = "Odustani";
-            this.odustaniButton.UseVisualStyleBackColor = true;
+            this.odustaniButton.UseVisualStyleBackColor = false;
             this.odustaniButton.Click += new System.EventHandler(this.odustaniButton_Click);
             // 
             // KupiKartuForm
@@ -261,7 +270,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KupiKartuForm";
             this.Text = "Kupovina karte";

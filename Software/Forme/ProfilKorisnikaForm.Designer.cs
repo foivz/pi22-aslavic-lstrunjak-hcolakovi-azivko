@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(49, 373);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 22);
+            this.label1.Size = new System.Drawing.Size(45, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ime:";
             // 
@@ -60,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(49, 431);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 22);
+            this.label2.Size = new System.Drawing.Size(84, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Prezime:";
             // 
@@ -69,7 +69,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(49, 492);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
+            this.label3.Size = new System.Drawing.Size(62, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Email:";
             // 
@@ -78,7 +78,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(49, 550);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 22);
+            this.label4.Size = new System.Drawing.Size(127, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Broj mobitela:";
             // 
@@ -117,14 +117,14 @@
             // povijestPutovanjaDataGridView
             // 
             this.povijestPutovanjaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.povijestPutovanjaDataGridView.Location = new System.Drawing.Point(510, 82);
             this.povijestPutovanjaDataGridView.Name = "povijestPutovanjaDataGridView";
             this.povijestPutovanjaDataGridView.RowHeadersWidth = 51;
@@ -138,7 +138,7 @@
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(505, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(173, 28);
+            this.label5.Size = new System.Drawing.Size(179, 29);
             this.label5.TabIndex = 10;
             this.label5.Text = "Vaša putovanja:";
             // 
@@ -169,7 +169,7 @@
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(684, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 28);
+            this.label6.Size = new System.Drawing.Size(78, 29);
             this.label6.TabIndex = 13;
             this.label6.Text = "label6";
             this.label6.Visible = false;
@@ -195,7 +195,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfilKorisnikaForm";
             this.Text = "Profil korisnika";

@@ -119,6 +119,8 @@
             // 
             // registirajSeButton
             // 
+            this.registirajSeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.registirajSeButton.FlatAppearance.BorderSize = 0;
             this.registirajSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registirajSeButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registirajSeButton.Location = new System.Drawing.Point(239, 432);
@@ -126,7 +128,7 @@
             this.registirajSeButton.Size = new System.Drawing.Size(274, 48);
             this.registirajSeButton.TabIndex = 13;
             this.registirajSeButton.Text = "Registriraj se";
-            this.registirajSeButton.UseVisualStyleBackColor = true;
+            this.registirajSeButton.UseVisualStyleBackColor = false;
             this.registirajSeButton.Click += new System.EventHandler(this.registirajSeButton_Click);
             // 
             // label8
@@ -140,6 +142,8 @@
             // 
             // prijaviSeButton
             // 
+            this.prijaviSeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.prijaviSeButton.FlatAppearance.BorderSize = 0;
             this.prijaviSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prijaviSeButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.prijaviSeButton.Location = new System.Drawing.Point(171, 525);
@@ -147,11 +151,13 @@
             this.prijaviSeButton.Size = new System.Drawing.Size(134, 43);
             this.prijaviSeButton.TabIndex = 15;
             this.prijaviSeButton.Text = "Prijavi se";
-            this.prijaviSeButton.UseVisualStyleBackColor = true;
+            this.prijaviSeButton.UseVisualStyleBackColor = false;
             this.prijaviSeButton.Click += new System.EventHandler(this.prijaviSeButton_Click);
             // 
             // nazadButton
             // 
+            this.nazadButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.nazadButton.FlatAppearance.BorderSize = 0;
             this.nazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nazadButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nazadButton.Location = new System.Drawing.Point(379, 525);
@@ -159,11 +165,13 @@
             this.nazadButton.Size = new System.Drawing.Size(134, 43);
             this.nazadButton.TabIndex = 16;
             this.nazadButton.Text = "Nazad";
-            this.nazadButton.UseVisualStyleBackColor = true;
+            this.nazadButton.UseVisualStyleBackColor = false;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
             // imeTextBox
             // 
+            this.imeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.imeTextBox.ForeColor = System.Drawing.Color.White;
             this.imeTextBox.Location = new System.Drawing.Point(239, 105);
             this.imeTextBox.Name = "imeTextBox";
             this.imeTextBox.Size = new System.Drawing.Size(274, 28);
@@ -171,6 +179,8 @@
             // 
             // prezimeTextBox
             // 
+            this.prezimeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.prezimeTextBox.ForeColor = System.Drawing.Color.White;
             this.prezimeTextBox.Location = new System.Drawing.Point(239, 156);
             this.prezimeTextBox.Name = "prezimeTextBox";
             this.prezimeTextBox.Size = new System.Drawing.Size(274, 28);
@@ -178,6 +188,8 @@
             // 
             // emailTextBox
             // 
+            this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.emailTextBox.ForeColor = System.Drawing.Color.White;
             this.emailTextBox.Location = new System.Drawing.Point(239, 213);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(274, 28);
@@ -185,6 +197,8 @@
             // 
             // korisnickoImeTextBox
             // 
+            this.korisnickoImeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.korisnickoImeTextBox.ForeColor = System.Drawing.Color.White;
             this.korisnickoImeTextBox.Location = new System.Drawing.Point(239, 263);
             this.korisnickoImeTextBox.Name = "korisnickoImeTextBox";
             this.korisnickoImeTextBox.Size = new System.Drawing.Size(274, 28);
@@ -192,6 +206,8 @@
             // 
             // lozinkaTextBox
             // 
+            this.lozinkaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.lozinkaTextBox.ForeColor = System.Drawing.Color.White;
             this.lozinkaTextBox.Location = new System.Drawing.Point(239, 322);
             this.lozinkaTextBox.Name = "lozinkaTextBox";
             this.lozinkaTextBox.Size = new System.Drawing.Size(274, 28);
@@ -200,6 +216,8 @@
             // 
             // brojMobitelaTextBox
             // 
+            this.brojMobitelaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.brojMobitelaTextBox.ForeColor = System.Drawing.Color.White;
             this.brojMobitelaTextBox.Location = new System.Drawing.Point(239, 379);
             this.brojMobitelaTextBox.Name = "brojMobitelaTextBox";
             this.brojMobitelaTextBox.Size = new System.Drawing.Size(274, 28);
@@ -230,7 +248,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegisterForm";
             this.Text = "Registracija";
