@@ -13,6 +13,8 @@ namespace Forme
 {
     public partial class RegistriraniKorisnikForm : Form
     {
+        private bool mouseDown;
+        private Point lastLocation;
         Korisnik korisnik;
         public RegistriraniKorisnikForm(Korisnik logiranKorisnik)
         {
@@ -163,5 +165,32 @@ namespace Forme
             }
         }
 
+        private void buttonNav_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void buttonNav_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void buttonNav_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            ProfilKorisnikaForm profilKorisnika = new ProfilKorisnikaForm(korisnik);
+            profilKorisnika.ShowDialog();
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace Forme
 {
     public partial class DetaljiLinijeForm : Form
     {
+        private bool mouseDown;
+        private Point lastLocation;
         Linija linija;
         public DetaljiLinijeForm(Linija odabranaLinija)
         {
@@ -46,6 +48,28 @@ namespace Forme
             brojSlobodnihMjestaTextBox.Text = linija.broj_slobodnih_mjesta.ToString();
             double cijena = linija.udaljenost * 0.7;
             cijenaTextBox.Text = cijena.ToString() + " HRK";
+        }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void button1_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

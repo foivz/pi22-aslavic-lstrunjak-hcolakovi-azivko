@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonNav = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,15 +53,15 @@
             // popisLinijaDataGridView
             // 
             this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.popisLinijaDataGridView.Location = new System.Drawing.Point(43, 94);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.popisLinijaDataGridView.Location = new System.Drawing.Point(43, 119);
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
             this.popisLinijaDataGridView.RowTemplate.Height = 24;
@@ -70,7 +71,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 48);
+            this.label1.Location = new System.Drawing.Point(39, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 23);
             this.label1.TabIndex = 1;
@@ -78,7 +79,7 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(193, 45);
+            this.searchTextBox.Location = new System.Drawing.Point(193, 70);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(256, 29);
             this.searchTextBox.TabIndex = 2;
@@ -87,7 +88,7 @@
             // dodajLinijuButton
             // 
             this.dodajLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dodajLinijuButton.Location = new System.Drawing.Point(43, 528);
+            this.dodajLinijuButton.Location = new System.Drawing.Point(43, 553);
             this.dodajLinijuButton.Name = "dodajLinijuButton";
             this.dodajLinijuButton.Size = new System.Drawing.Size(122, 64);
             this.dodajLinijuButton.TabIndex = 3;
@@ -98,7 +99,7 @@
             // azurirajLinijuButton
             // 
             this.azurirajLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.azurirajLinijuButton.Location = new System.Drawing.Point(181, 528);
+            this.azurirajLinijuButton.Location = new System.Drawing.Point(181, 553);
             this.azurirajLinijuButton.Name = "azurirajLinijuButton";
             this.azurirajLinijuButton.Size = new System.Drawing.Size(122, 64);
             this.azurirajLinijuButton.TabIndex = 4;
@@ -109,7 +110,7 @@
             // obirsiLinijuButton
             // 
             this.obirsiLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.obirsiLinijuButton.Location = new System.Drawing.Point(315, 528);
+            this.obirsiLinijuButton.Location = new System.Drawing.Point(315, 553);
             this.obirsiLinijuButton.Name = "obirsiLinijuButton";
             this.obirsiLinijuButton.Size = new System.Drawing.Size(122, 64);
             this.obirsiLinijuButton.TabIndex = 5;
@@ -120,7 +121,7 @@
             // odjaviSeButton
             // 
             this.odjaviSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.odjaviSeButton.Location = new System.Drawing.Point(882, 528);
+            this.odjaviSeButton.Location = new System.Drawing.Point(882, 553);
             this.odjaviSeButton.Name = "odjaviSeButton";
             this.odjaviSeButton.Size = new System.Drawing.Size(122, 64);
             this.odjaviSeButton.TabIndex = 6;
@@ -131,7 +132,7 @@
             // profilButton
             // 
             this.profilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.profilButton.Location = new System.Drawing.Point(882, 12);
+            this.profilButton.Location = new System.Drawing.Point(882, 37);
             this.profilButton.Name = "profilButton";
             this.profilButton.Size = new System.Drawing.Size(122, 64);
             this.profilButton.TabIndex = 7;
@@ -148,7 +149,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(714, 94);
+            this.groupBox1.Location = new System.Drawing.Point(714, 119);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(290, 363);
             this.groupBox1.TabIndex = 8;
@@ -214,12 +215,27 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Polazište:";
             // 
+            // buttonNav
+            // 
+            this.buttonNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.buttonNav.FlatAppearance.BorderSize = 0;
+            this.buttonNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNav.Location = new System.Drawing.Point(-1, 0);
+            this.buttonNav.Name = "buttonNav";
+            this.buttonNav.Size = new System.Drawing.Size(1030, 30);
+            this.buttonNav.TabIndex = 9;
+            this.buttonNav.UseVisualStyleBackColor = false;
+            this.buttonNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseDown);
+            this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
+            this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1025, 619);
+            this.ClientSize = new System.Drawing.Size(1025, 641);
+            this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.profilButton);
             this.Controls.Add(this.odjaviSeButton);
@@ -262,5 +278,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonNav;
     }
 }

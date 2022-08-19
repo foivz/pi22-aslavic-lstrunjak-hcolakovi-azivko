@@ -48,6 +48,7 @@
             this.brojLinijeTextBox = new System.Windows.Forms.TextBox();
             this.brojMjestaTextBox = new System.Windows.Forms.TextBox();
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -244,12 +245,28 @@
             this.cijenaTextBox.Size = new System.Drawing.Size(228, 29);
             this.cijenaTextBox.TabIndex = 18;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(-1, -2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(544, 37);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
+            // 
             // DetaljiLinijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(541, 744);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nazadButton);
             this.Controls.Add(this.cijenaTextBox);
             this.Controls.Add(this.brojSlobodnihMjestaTextBox);
@@ -304,5 +321,6 @@
         private System.Windows.Forms.TextBox brojLinijeTextBox;
         private System.Windows.Forms.TextBox brojMjestaTextBox;
         private System.Windows.Forms.TextBox cijenaTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }

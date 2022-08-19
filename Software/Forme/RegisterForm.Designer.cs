@@ -45,6 +45,7 @@
             this.korisnickoImeTextBox = new System.Windows.Forms.TextBox();
             this.lozinkaTextBox = new System.Windows.Forms.TextBox();
             this.brojMobitelaTextBox = new System.Windows.Forms.TextBox();
+            this.buttonNav = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -223,12 +224,27 @@
             this.brojMobitelaTextBox.Size = new System.Drawing.Size(274, 28);
             this.brojMobitelaTextBox.TabIndex = 22;
             // 
+            // buttonNav
+            // 
+            this.buttonNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.buttonNav.FlatAppearance.BorderSize = 0;
+            this.buttonNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNav.Location = new System.Drawing.Point(-3, 0);
+            this.buttonNav.Name = "buttonNav";
+            this.buttonNav.Size = new System.Drawing.Size(591, 30);
+            this.buttonNav.TabIndex = 23;
+            this.buttonNav.UseVisualStyleBackColor = false;
+            this.buttonNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseDown);
+            this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
+            this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(588, 596);
+            this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.brojMobitelaTextBox);
             this.Controls.Add(this.lozinkaTextBox);
             this.Controls.Add(this.korisnickoImeTextBox);
@@ -276,5 +292,6 @@
         private System.Windows.Forms.TextBox korisnickoImeTextBox;
         private System.Windows.Forms.TextBox lozinkaTextBox;
         private System.Windows.Forms.TextBox brojMobitelaTextBox;
+        private System.Windows.Forms.Button buttonNav;
     }
 }

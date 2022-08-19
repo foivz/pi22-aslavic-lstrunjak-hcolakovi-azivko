@@ -243,8 +243,6 @@
     </Content>
     <None Include="Resources\free-school-bus-icon-1767-thumb.png" />
     <None Include="Resources\user-login-png-transparent-6-Transparent-Images.png" />
-    <None Include="Resources\RegisterButtonImage.png" />
-    <None Include="Resources\LoginButtonImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

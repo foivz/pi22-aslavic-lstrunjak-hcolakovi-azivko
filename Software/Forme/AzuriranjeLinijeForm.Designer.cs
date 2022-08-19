@@ -47,6 +47,7 @@
             this.autoprijevozniciComboBox = new System.Windows.Forms.ComboBox();
             this.brojMjestaTextBox = new System.Windows.Forms.TextBox();
             this.brojSlobodnihMjestaTextBox = new System.Windows.Forms.TextBox();
+            this.buttonNav = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -227,12 +228,27 @@
             this.brojSlobodnihMjestaTextBox.Size = new System.Drawing.Size(249, 29);
             this.brojSlobodnihMjestaTextBox.TabIndex = 26;
             // 
+            // buttonNav
+            // 
+            this.buttonNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.buttonNav.FlatAppearance.BorderSize = 0;
+            this.buttonNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNav.Location = new System.Drawing.Point(1, -3);
+            this.buttonNav.Name = "buttonNav";
+            this.buttonNav.Size = new System.Drawing.Size(574, 30);
+            this.buttonNav.TabIndex = 27;
+            this.buttonNav.UseVisualStyleBackColor = false;
+            this.buttonNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseDown);
+            this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
+            this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
+            // 
             // AzuriranjeLinijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(572, 710);
+            this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.brojSlobodnihMjestaTextBox);
             this.Controls.Add(this.brojMjestaTextBox);
             this.Controls.Add(this.autoprijevozniciComboBox);
@@ -285,5 +301,6 @@
         private System.Windows.Forms.ComboBox autoprijevozniciComboBox;
         private System.Windows.Forms.TextBox brojMjestaTextBox;
         private System.Windows.Forms.TextBox brojSlobodnihMjestaTextBox;
+        private System.Windows.Forms.Button buttonNav;
     }
 }

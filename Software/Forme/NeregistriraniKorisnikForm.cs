@@ -13,6 +13,9 @@ namespace Forme
 {
     public partial class NeregistriraniKorisnikForm : Form
     {
+        private bool mouseDown;
+        private Point lastLocation;
+
         public NeregistriraniKorisnikForm()
         {
             InitializeComponent();
@@ -103,6 +106,28 @@ namespace Forme
             {
                 MessageBox.Show(ex.Poruka);
             }
+        }
+
+        private void buttonNav_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void buttonNav_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void buttonNav_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

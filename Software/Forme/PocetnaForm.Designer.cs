@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonNav = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 122F);
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(208, -20);
+            this.label1.Location = new System.Drawing.Point(208, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(844, 245);
             this.label1.TabIndex = 4;
@@ -121,12 +122,27 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonNav
+            // 
+            this.buttonNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.buttonNav.FlatAppearance.BorderSize = 0;
+            this.buttonNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNav.Location = new System.Drawing.Point(0, -1);
+            this.buttonNav.Name = "buttonNav";
+            this.buttonNav.Size = new System.Drawing.Size(1020, 27);
+            this.buttonNav.TabIndex = 7;
+            this.buttonNav.UseVisualStyleBackColor = false;
+            this.buttonNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseDown);
+            this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
+            this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1019, 559);
+            this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -154,6 +170,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonNav;
     }
 }
 

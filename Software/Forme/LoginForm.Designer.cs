@@ -34,6 +34,7 @@
             this.lozinkaTextBox = new System.Windows.Forms.TextBox();
             this.prijaviSeButton = new System.Windows.Forms.Button();
             this.nazadButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -101,12 +102,27 @@
             this.nazadButton.UseVisualStyleBackColor = false;
             this.nazadButton.Click += new System.EventHandler(this.nazadButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(573, 23);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(574, 268);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nazadButton);
             this.Controls.Add(this.prijaviSeButton);
             this.Controls.Add(this.lozinkaTextBox);
@@ -132,5 +148,6 @@
         private System.Windows.Forms.TextBox lozinkaTextBox;
         private System.Windows.Forms.Button prijaviSeButton;
         private System.Windows.Forms.Button nazadButton;
+        private System.Windows.Forms.Button button1;
     }
 }

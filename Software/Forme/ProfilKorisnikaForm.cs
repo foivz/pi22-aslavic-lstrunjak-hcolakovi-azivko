@@ -13,6 +13,8 @@ namespace Forme
 {
     public partial class ProfilKorisnikaForm : Form
     {
+        private bool mouseDown;
+        private Point lastLocation;
         Korisnik korisnik;
         public ProfilKorisnikaForm(Korisnik logiraniKorisnik)
         {
@@ -60,6 +62,28 @@ namespace Forme
         private void zatvoriButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonNav_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void buttonNav_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void buttonNav_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

@@ -47,6 +47,7 @@
             this.povratnaKartaCheckBox = new System.Windows.Forms.CheckBox();
             this.kupiKartuButton = new System.Windows.Forms.Button();
             this.odustaniButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -257,12 +258,27 @@
             this.odustaniButton.UseVisualStyleBackColor = false;
             this.odustaniButton.Click += new System.EventHandler(this.odustaniButton_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(-1, -2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(648, 31);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
+            // 
             // KupiKartuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(645, 658);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.odustaniButton);
             this.Controls.Add(this.kupiKartuButton);
             this.Controls.Add(this.groupBox3);
@@ -306,5 +322,6 @@
         private System.Windows.Forms.CheckBox povratnaKartaCheckBox;
         private System.Windows.Forms.Button kupiKartuButton;
         private System.Windows.Forms.Button odustaniButton;
+        private System.Windows.Forms.Button button1;
     }
 }
