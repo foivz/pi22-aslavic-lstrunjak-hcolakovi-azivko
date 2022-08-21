@@ -110,6 +110,7 @@
       <DependentUpon>DodavanjeLinije.cs</DependentUpon>
     </Compile>
     <Compile Include="Iznimke\Exception.cs" />
+    <Compile Include="Iznimke\InvalidInputException.cs" />
     <Compile Include="KupiKartuForm.cs">
       <SubType>Form</SubType>
     </Compile>

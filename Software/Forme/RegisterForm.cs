@@ -36,9 +36,15 @@ namespace Forme
 
         private void registirajSeButton_Click(object sender, EventArgs e)
         {
+            int i = 0;
+
+            labelPhoneNumber.Visible = false;
+            labelEmail.Visible = false;
+            labelPassword.Visible = false;
+            labelUsername.Visible = false;
+
             bool pronadjen = false;
-            bool greska = false;
-            using(var context = new LinkBusEntities())
+            using (var context = new LinkBusEntities())
             {
                 string ime = imeTextBox.Text;
                 string prezime = prezimeTextBox.Text;
@@ -47,39 +53,48 @@ namespace Forme
                 string lozinka = lozinkaTextBox.Text;
                 string brojMobitela = brojMobitelaTextBox.Text;
 
-                if (ime == string.Empty || prezime == string.Empty || email == string.Empty || korisnickoIme == string.Empty || lozinka == string.Empty || brojMobitela == string.Empty)
+                try
                 {
-                    greska = true;
-                    MessageBox.Show("Morate popuniti sva polja!");
+                    if (brojMobitela.Length > 25 || brojMobitela.Length < 9)
+                    {
+                        labelPhoneNumber.Visible = true;
+                        i++;
+                    }
+                    if (email.Length > 50 || !email.Contains("@"))
+                    {
+                        labelEmail.Visible = true;
+                        i++;
+                    }
+                    if (lozinka.Length > 25 || lozinka.Length < 8)
+                    {
+                        labelPassword.Visible = true;
+                        i++;
+                    }
+                    if (i > 0) 
+                    {
+                        throw new Iznimke.InvalidInputException();
+                    }
                 }
-                else if (brojMobitela.Length > 25)
+                catch (Iznimke.InvalidInputException)
                 {
-                    greska = true;
-                    MessageBox.Show("Broj mobitela mora imati manje od 25 znakova!");
+                    if (ime == string.Empty || prezime == string.Empty || email == string.Empty || korisnickoIme == string.Empty || lozinka == string.Empty || brojMobitela == string.Empty)
+                    {
+                        MessageBox.Show("Morate popuniti sva polja!");
+                    }
+                    return;
                 }
-                else if (email.Length > 50)
-                {
-                    greska = true;
-                    MessageBox.Show("Email mora imati manje od 50 znakova!");
-                }
-                else if (lozinka.Length > 25)
-                {
-                    greska = true;
-                    MessageBox.Show("Lozinka mora imati manje od 25 znakova!");
-                }
-
 
                 foreach (Korisnik korisnik in context.Korisnik)
                 {
                     if(korisnickoIme == korisnik.korisnicko_ime)
                     {
                         pronadjen = true;
-                        MessageBox.Show("Korisničko ime koje ste unijeli je zauzeto!");
+                        labelUsername.Visible = true;
                         break;
                     }
                 }
 
-                if(pronadjen == false && greska == false)
+                if(pronadjen == false)
                 {
                     Korisnik korisnik = new Korisnik
                     {

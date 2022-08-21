@@ -46,6 +46,10 @@
             this.lozinkaTextBox = new System.Windows.Forms.TextBox();
             this.brojMobitelaTextBox = new System.Windows.Forms.TextBox();
             this.buttonNav = new System.Windows.Forms.Button();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,7 +76,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(52, 262);
+            this.label3.Location = new System.Drawing.Point(52, 294);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 24);
             this.label3.TabIndex = 2;
@@ -82,7 +86,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(52, 212);
+            this.label4.Location = new System.Drawing.Point(52, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 3;
@@ -92,7 +96,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(52, 321);
+            this.label5.Location = new System.Drawing.Point(52, 373);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 24);
             this.label5.TabIndex = 4;
@@ -102,7 +106,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(52, 378);
+            this.label6.Location = new System.Drawing.Point(52, 457);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 24);
             this.label6.TabIndex = 5;
@@ -124,7 +128,7 @@
             this.registirajSeButton.FlatAppearance.BorderSize = 0;
             this.registirajSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registirajSeButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.registirajSeButton.Location = new System.Drawing.Point(239, 432);
+            this.registirajSeButton.Location = new System.Drawing.Point(348, 539);
             this.registirajSeButton.Name = "registirajSeButton";
             this.registirajSeButton.Size = new System.Drawing.Size(274, 48);
             this.registirajSeButton.TabIndex = 13;
@@ -135,7 +139,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(52, 536);
+            this.label8.Location = new System.Drawing.Point(52, 640);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 21);
             this.label8.TabIndex = 14;
@@ -147,7 +151,7 @@
             this.prijaviSeButton.FlatAppearance.BorderSize = 0;
             this.prijaviSeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prijaviSeButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.prijaviSeButton.Location = new System.Drawing.Point(171, 525);
+            this.prijaviSeButton.Location = new System.Drawing.Point(171, 629);
             this.prijaviSeButton.Name = "prijaviSeButton";
             this.prijaviSeButton.Size = new System.Drawing.Size(134, 43);
             this.prijaviSeButton.TabIndex = 15;
@@ -161,7 +165,7 @@
             this.nazadButton.FlatAppearance.BorderSize = 0;
             this.nazadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nazadButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nazadButton.Location = new System.Drawing.Point(379, 525);
+            this.nazadButton.Location = new System.Drawing.Point(488, 629);
             this.nazadButton.Name = "nazadButton";
             this.nazadButton.Size = new System.Drawing.Size(134, 43);
             this.nazadButton.TabIndex = 16;
@@ -175,7 +179,7 @@
             this.imeTextBox.ForeColor = System.Drawing.Color.White;
             this.imeTextBox.Location = new System.Drawing.Point(239, 105);
             this.imeTextBox.Name = "imeTextBox";
-            this.imeTextBox.Size = new System.Drawing.Size(274, 28);
+            this.imeTextBox.Size = new System.Drawing.Size(383, 28);
             this.imeTextBox.TabIndex = 17;
             // 
             // prezimeTextBox
@@ -184,34 +188,34 @@
             this.prezimeTextBox.ForeColor = System.Drawing.Color.White;
             this.prezimeTextBox.Location = new System.Drawing.Point(239, 156);
             this.prezimeTextBox.Name = "prezimeTextBox";
-            this.prezimeTextBox.Size = new System.Drawing.Size(274, 28);
+            this.prezimeTextBox.Size = new System.Drawing.Size(383, 28);
             this.prezimeTextBox.TabIndex = 18;
             // 
             // emailTextBox
             // 
             this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.emailTextBox.ForeColor = System.Drawing.Color.White;
-            this.emailTextBox.Location = new System.Drawing.Point(239, 213);
+            this.emailTextBox.Location = new System.Drawing.Point(239, 208);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(274, 28);
+            this.emailTextBox.Size = new System.Drawing.Size(383, 28);
             this.emailTextBox.TabIndex = 19;
             // 
             // korisnickoImeTextBox
             // 
             this.korisnickoImeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.korisnickoImeTextBox.ForeColor = System.Drawing.Color.White;
-            this.korisnickoImeTextBox.Location = new System.Drawing.Point(239, 263);
+            this.korisnickoImeTextBox.Location = new System.Drawing.Point(239, 295);
             this.korisnickoImeTextBox.Name = "korisnickoImeTextBox";
-            this.korisnickoImeTextBox.Size = new System.Drawing.Size(274, 28);
+            this.korisnickoImeTextBox.Size = new System.Drawing.Size(383, 28);
             this.korisnickoImeTextBox.TabIndex = 20;
             // 
             // lozinkaTextBox
             // 
             this.lozinkaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.lozinkaTextBox.ForeColor = System.Drawing.Color.White;
-            this.lozinkaTextBox.Location = new System.Drawing.Point(239, 322);
+            this.lozinkaTextBox.Location = new System.Drawing.Point(239, 374);
             this.lozinkaTextBox.Name = "lozinkaTextBox";
-            this.lozinkaTextBox.Size = new System.Drawing.Size(274, 28);
+            this.lozinkaTextBox.Size = new System.Drawing.Size(383, 28);
             this.lozinkaTextBox.TabIndex = 21;
             this.lozinkaTextBox.UseSystemPasswordChar = true;
             // 
@@ -219,9 +223,9 @@
             // 
             this.brojMobitelaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.brojMobitelaTextBox.ForeColor = System.Drawing.Color.White;
-            this.brojMobitelaTextBox.Location = new System.Drawing.Point(239, 379);
+            this.brojMobitelaTextBox.Location = new System.Drawing.Point(239, 458);
             this.brojMobitelaTextBox.Name = "brojMobitelaTextBox";
-            this.brojMobitelaTextBox.Size = new System.Drawing.Size(274, 28);
+            this.brojMobitelaTextBox.Size = new System.Drawing.Size(383, 28);
             this.brojMobitelaTextBox.TabIndex = 22;
             // 
             // buttonNav
@@ -231,19 +235,63 @@
             this.buttonNav.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNav.Location = new System.Drawing.Point(-3, 0);
             this.buttonNav.Name = "buttonNav";
-            this.buttonNav.Size = new System.Drawing.Size(591, 30);
+            this.buttonNav.Size = new System.Drawing.Size(725, 30);
             this.buttonNav.TabIndex = 23;
             this.buttonNav.UseVisualStyleBackColor = false;
             this.buttonNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseDown);
             this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
             this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
             // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(240, 245);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(399, 21);
+            this.labelEmail.TabIndex = 24;
+            this.labelEmail.Text = "Email mora biti valjan i imati manje od 50 znakova!";
+            this.labelEmail.Visible = false;
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Location = new System.Drawing.Point(241, 331);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(133, 21);
+            this.labelUsername.TabIndex = 25;
+            this.labelUsername.Text = "Korisnik postoji!";
+            this.labelUsername.Visible = false;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Location = new System.Drawing.Point(241, 412);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(457, 21);
+            this.labelPassword.TabIndex = 26;
+            this.labelPassword.Text = "Lozinka mora imati minimalno 8 i maksimalno 25 znakova!";
+            this.labelPassword.Visible = false;
+            // 
+            // labelPhoneNumber
+            // 
+            this.labelPhoneNumber.AutoSize = true;
+            this.labelPhoneNumber.Location = new System.Drawing.Point(241, 493);
+            this.labelPhoneNumber.Name = "labelPhoneNumber";
+            this.labelPhoneNumber.Size = new System.Drawing.Size(201, 21);
+            this.labelPhoneNumber.TabIndex = 27;
+            this.labelPhoneNumber.Text = "Broj mobitela nije valjan!";
+            this.labelPhoneNumber.Visible = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(588, 596);
+            this.ClientSize = new System.Drawing.Size(719, 693);
+            this.Controls.Add(this.labelPhoneNumber);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelUsername);
+            this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.brojMobitelaTextBox);
             this.Controls.Add(this.lozinkaTextBox);
@@ -293,5 +341,9 @@
         private System.Windows.Forms.TextBox lozinkaTextBox;
         private System.Windows.Forms.TextBox brojMobitelaTextBox;
         private System.Windows.Forms.Button buttonNav;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label labelPhoneNumber;
     }
 }
