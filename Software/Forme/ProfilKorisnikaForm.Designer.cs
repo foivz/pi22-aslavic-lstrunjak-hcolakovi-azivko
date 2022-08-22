@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +43,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonNav = new System.Windows.Forms.Button();
+            this.buttonPromijeniSliku = new System.Windows.Forms.Button();
+            this.buttonPromijeniPodatke = new System.Windows.Forms.Button();
+            this.buttonPohrani = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.povijestPutovanjaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 373);
+            this.label1.Location = new System.Drawing.Point(49, 433);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 23);
             this.label1.TabIndex = 1;
@@ -59,7 +62,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 431);
+            this.label2.Location = new System.Drawing.Point(49, 491);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 23);
             this.label2.TabIndex = 2;
@@ -68,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 492);
+            this.label3.Location = new System.Drawing.Point(49, 552);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 23);
             this.label3.TabIndex = 3;
@@ -77,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 550);
+            this.label4.Location = new System.Drawing.Point(49, 610);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 23);
             this.label4.TabIndex = 4;
@@ -86,7 +89,7 @@
             // brojMobitelaTextBox
             // 
             this.brojMobitelaTextBox.Enabled = false;
-            this.brojMobitelaTextBox.Location = new System.Drawing.Point(185, 550);
+            this.brojMobitelaTextBox.Location = new System.Drawing.Point(185, 610);
             this.brojMobitelaTextBox.Name = "brojMobitelaTextBox";
             this.brojMobitelaTextBox.Size = new System.Drawing.Size(274, 29);
             this.brojMobitelaTextBox.TabIndex = 5;
@@ -94,7 +97,7 @@
             // emailTextBox
             // 
             this.emailTextBox.Enabled = false;
-            this.emailTextBox.Location = new System.Drawing.Point(185, 489);
+            this.emailTextBox.Location = new System.Drawing.Point(185, 549);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(274, 29);
             this.emailTextBox.TabIndex = 6;
@@ -102,7 +105,7 @@
             // prezimeTextBox
             // 
             this.prezimeTextBox.Enabled = false;
-            this.prezimeTextBox.Location = new System.Drawing.Point(185, 430);
+            this.prezimeTextBox.Location = new System.Drawing.Point(185, 490);
             this.prezimeTextBox.Name = "prezimeTextBox";
             this.prezimeTextBox.Size = new System.Drawing.Size(274, 29);
             this.prezimeTextBox.TabIndex = 7;
@@ -110,7 +113,7 @@
             // imeTextBox
             // 
             this.imeTextBox.Enabled = false;
-            this.imeTextBox.Location = new System.Drawing.Point(185, 372);
+            this.imeTextBox.Location = new System.Drawing.Point(185, 432);
             this.imeTextBox.Name = "imeTextBox";
             this.imeTextBox.Size = new System.Drawing.Size(274, 29);
             this.imeTextBox.TabIndex = 8;
@@ -118,14 +121,14 @@
             // povijestPutovanjaDataGridView
             // 
             this.povijestPutovanjaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.povijestPutovanjaDataGridView.Location = new System.Drawing.Point(510, 82);
             this.povijestPutovanjaDataGridView.Name = "povijestPutovanjaDataGridView";
             this.povijestPutovanjaDataGridView.RowHeadersWidth = 51;
@@ -145,14 +148,16 @@
             // 
             // zatvoriButton
             // 
+            this.zatvoriButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.zatvoriButton.FlatAppearance.BorderSize = 0;
             this.zatvoriButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zatvoriButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zatvoriButton.Location = new System.Drawing.Point(949, 526);
+            this.zatvoriButton.Location = new System.Drawing.Point(949, 506);
             this.zatvoriButton.Name = "zatvoriButton";
             this.zatvoriButton.Size = new System.Drawing.Size(131, 53);
             this.zatvoriButton.TabIndex = 11;
             this.zatvoriButton.Text = "Zatvori";
-            this.zatvoriButton.UseVisualStyleBackColor = true;
+            this.zatvoriButton.UseVisualStyleBackColor = false;
             this.zatvoriButton.Click += new System.EventHandler(this.zatvoriButton_Click);
             // 
             // pictureBox1
@@ -189,12 +194,55 @@
             this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
             this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
             // 
+            // buttonPromijeniSliku
+            // 
+            this.buttonPromijeniSliku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.buttonPromijeniSliku.FlatAppearance.BorderSize = 0;
+            this.buttonPromijeniSliku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPromijeniSliku.Location = new System.Drawing.Point(53, 347);
+            this.buttonPromijeniSliku.Name = "buttonPromijeniSliku";
+            this.buttonPromijeniSliku.Size = new System.Drawing.Size(406, 47);
+            this.buttonPromijeniSliku.TabIndex = 15;
+            this.buttonPromijeniSliku.Text = "Promijeni sliku";
+            this.buttonPromijeniSliku.UseVisualStyleBackColor = false;
+            this.buttonPromijeniSliku.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonPromijeniPodatke
+            // 
+            this.buttonPromijeniPodatke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.buttonPromijeniPodatke.FlatAppearance.BorderSize = 0;
+            this.buttonPromijeniPodatke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPromijeniPodatke.Location = new System.Drawing.Point(510, 506);
+            this.buttonPromijeniPodatke.Name = "buttonPromijeniPodatke";
+            this.buttonPromijeniPodatke.Size = new System.Drawing.Size(205, 53);
+            this.buttonPromijeniPodatke.TabIndex = 16;
+            this.buttonPromijeniPodatke.Text = "Promijeni podatke";
+            this.buttonPromijeniPodatke.UseVisualStyleBackColor = false;
+            this.buttonPromijeniPodatke.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // buttonPohrani
+            // 
+            this.buttonPohrani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.buttonPohrani.FlatAppearance.BorderSize = 0;
+            this.buttonPohrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPohrani.Location = new System.Drawing.Point(185, 650);
+            this.buttonPohrani.Name = "buttonPohrani";
+            this.buttonPohrani.Size = new System.Drawing.Size(273, 35);
+            this.buttonPohrani.TabIndex = 17;
+            this.buttonPohrani.Text = "Pohrani promjene";
+            this.buttonPohrani.UseVisualStyleBackColor = false;
+            this.buttonPohrani.Visible = false;
+            this.buttonPohrani.Click += new System.EventHandler(this.buttonPohrani_Click);
+            // 
             // ProfilKorisnikaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1123, 613);
+            this.ClientSize = new System.Drawing.Size(1123, 697);
+            this.Controls.Add(this.buttonPohrani);
+            this.Controls.Add(this.buttonPromijeniPodatke);
+            this.Controls.Add(this.buttonPromijeniSliku);
             this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
@@ -238,5 +286,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonNav;
+        private System.Windows.Forms.Button buttonPromijeniSliku;
+        private System.Windows.Forms.Button buttonPromijeniPodatke;
+        private System.Windows.Forms.Button buttonPohrani;
     }
 }

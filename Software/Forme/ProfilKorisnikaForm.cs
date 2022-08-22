@@ -31,11 +31,11 @@ namespace Forme
             emailTextBox.Text = korisnik.email;
             brojMobitelaTextBox.Text = korisnik.broj_mobitela;
 
-            using(var context = new LinkBusEntities())
+            using (var context = new LinkBusEntities())
             {
-                foreach(Karta item in context.Karta)
+                foreach (Karta item in context.Karta)
                 {
-                    if(item.korisnik_id == korisnik.korisnik_id)
+                    if (item.korisnik_id == korisnik.korisnik_id)
                     {
                         listaKarata.Add(item);
                     }
@@ -45,7 +45,7 @@ namespace Forme
                 povijestPutovanjaDataGridView.ReadOnly = true;
                 povijestPutovanjaDataGridView.DataSource = listaKarata;
 
-                if(this.povijestPutovanjaDataGridView.Rows.Count == 0)
+                if (this.povijestPutovanjaDataGridView.Rows.Count == 0)
                 {
                     label5.Visible = false;
                     label6.Text = "Niste kupili nijednu kartu!";
@@ -84,6 +84,48 @@ namespace Forme
         private void buttonNav_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = new Bitmap(open.FileName);
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            buttonPohrani.Visible = true;
+            imeTextBox.Enabled = true;
+            prezimeTextBox.Enabled = true;
+            emailTextBox.Enabled = true;
+            brojMobitelaTextBox.Enabled = true;
+        }
+
+        private void buttonPohrani_Click(object sender, EventArgs e)
+        {
+            using (var context = new LinkBusEntities())
+            {
+                Korisnik kor = context.Korisnik.Where(k => k.korisnik_id == korisnik.korisnik_id).FirstOrDefault();
+                kor.ime = imeTextBox.Text;
+                kor.prezime = prezimeTextBox.Text;
+                kor.email = emailTextBox.Text;
+                kor.broj_mobitela = brojMobitelaTextBox.Text;
+
+                context.SaveChanges();
+            }
+                buttonPohrani.Visible = false;
+                imeTextBox.Enabled = false;
+                prezimeTextBox.Enabled = false;
+                emailTextBox.Enabled = false;
+                brojMobitelaTextBox.Enabled = false;
+                MessageBox.Show("Uspješno ste ažurirali profil!");
+
         }
     }
 }
