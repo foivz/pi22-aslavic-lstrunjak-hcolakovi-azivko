@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Forme.Database;
+using System.Globalization;
 
 namespace Forme
 {
@@ -44,7 +45,8 @@ namespace Forme
             {
                 if (Convert.ToInt32(row.Cells[8].Value) == 0)
                 {
-                    row.DefaultCellStyle.BackColor = Color.Red;
+                    row.DefaultCellStyle.BackColor = Color.White;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
                 }
             }
         }
@@ -95,6 +97,15 @@ namespace Forme
                 PopunjeneLinije();
                 SkriveneKolone();
             }
+            popisLinijaDataGridView.BorderStyle = BorderStyle.None;
+            popisLinijaDataGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            popisLinijaDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            popisLinijaDataGridView.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            popisLinijaDataGridView.DefaultCellStyle.SelectionForeColor = Color.FromArgb(41, 74, 84);
+            popisLinijaDataGridView.BackgroundColor = Color.FromArgb(41, 74, 84);
+            popisLinijaDataGridView.EnableHeadersVisualStyles = false;
+            popisLinijaDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            popisLinijaDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Bahnschrift", 10);
         }
 
         private void pretraziButton_Click(object sender, EventArgs e)
@@ -120,14 +131,14 @@ namespace Forme
         private void filtrirajButton_Click(object sender, EventArgs e)
         {
             List<Linija> linije = new List<Linija>();
-            string filtriranDatum = dateTimePicker.Value.ToShortDateString();
+            string filtriranDatum = dateTimePicker.Value.ToString();     //US
+            var date = DateTime.ParseExact(filtriranDatum, "M/d/yyyy hh:mm:ss tt", CultureInfo.InvariantCulture);
             using (var context = new LinkBusEntities())
             {
                 foreach(Linija linija in context.Linija)
                 {
                     string[] splitanDatum = linija.datum_i_vrijeme_polaska.Split(' ');
-
-                    if (splitanDatum[0] == filtriranDatum)
+                    if (splitanDatum[0] == date.ToString("d.M.yyyy")+".")
                     {
                         linije.Add(linija);
                     }
