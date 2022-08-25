@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +39,7 @@
             this.textboxEmail = new System.Windows.Forms.TextBox();
             this.textboxPrezime = new System.Windows.Forms.TextBox();
             this.textboxIme = new System.Windows.Forms.TextBox();
-            this.povijestPutovanjaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dgvPovijestPutovanja = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonZatvori = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,7 +50,7 @@
             this.buttonPohrani = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelBrojMobitela = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.povijestPutovanjaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,23 +134,48 @@
             this.textboxIme.Size = new System.Drawing.Size(274, 29);
             this.textboxIme.TabIndex = 8;
             // 
-            // povijestPutovanjaDataGridView
+            // dgvPovijestPutovanja
             // 
-            this.povijestPutovanjaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPovijestPutovanja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.dgvPovijestPutovanja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(114)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPovijestPutovanja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-            this.povijestPutovanjaDataGridView.Location = new System.Drawing.Point(510, 82);
-            this.povijestPutovanjaDataGridView.Name = "povijestPutovanjaDataGridView";
-            this.povijestPutovanjaDataGridView.RowHeadersWidth = 51;
-            this.povijestPutovanjaDataGridView.RowTemplate.Height = 24;
-            this.povijestPutovanjaDataGridView.Size = new System.Drawing.Size(570, 418);
-            this.povijestPutovanjaDataGridView.TabIndex = 9;
+            this.dgvPovijestPutovanja.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPovijestPutovanja.EnableHeadersVisualStyles = false;
+            this.dgvPovijestPutovanja.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dgvPovijestPutovanja.Location = new System.Drawing.Point(510, 82);
+            this.dgvPovijestPutovanja.MultiSelect = false;
+            this.dgvPovijestPutovanja.Name = "dgvPovijestPutovanja";
+            this.dgvPovijestPutovanja.ReadOnly = true;
+            this.dgvPovijestPutovanja.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPovijestPutovanja.RowHeadersWidth = 51;
+            this.dgvPovijestPutovanja.RowTemplate.Height = 24;
+            this.dgvPovijestPutovanja.RowTemplate.ReadOnly = true;
+            this.dgvPovijestPutovanja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPovijestPutovanja.Size = new System.Drawing.Size(570, 418);
+            this.dgvPovijestPutovanja.TabIndex = 9;
             // 
             // label5
             // 
@@ -282,7 +309,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonZatvori);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.povijestPutovanjaDataGridView);
+            this.Controls.Add(this.dgvPovijestPutovanja);
             this.Controls.Add(this.textboxIme);
             this.Controls.Add(this.textboxPrezime);
             this.Controls.Add(this.textboxEmail);
@@ -298,7 +325,7 @@
             this.Name = "ProfilKorisnikaForm";
             this.Text = "Profil korisnika";
             this.Load += new System.EventHandler(this.ProfilKorisnikaForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.povijestPutovanjaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -314,7 +341,7 @@
         private System.Windows.Forms.TextBox textboxEmail;
         private System.Windows.Forms.TextBox textboxPrezime;
         private System.Windows.Forms.TextBox textboxIme;
-        private System.Windows.Forms.DataGridView povijestPutovanjaDataGridView;
+        private System.Windows.Forms.DataGridView dgvPovijestPutovanja;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonZatvori;
         private System.Windows.Forms.PictureBox pictureBox1;

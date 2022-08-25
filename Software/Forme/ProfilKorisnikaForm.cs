@@ -34,25 +34,25 @@ namespace Forme
             using (var context = new LinkBusEntities())
             {
                 var query = from k in context.Karta
+                            from a in context.Autoprijevoznik
+                            from l in context.Linija
                             where k.korisnik_id == korisnik.korisnik_id
-                            select k;
+                            where k.Linija.linija_id == l.linija_id
+                            where l.Autoprijevoznik.autoprijevoznik_id == a.autoprijevoznik_id
+                            select new {a.naziv_prijevoznika, l.broj_linije, l.polaziste, l.odrediste, l.datum_i_vrijeme_polaska, k.povratna, k.prtljaga, k.vrsta_karte, k.cijena };
 
-                povijestPutovanjaDataGridView.DataSource = null;
-                povijestPutovanjaDataGridView.ReadOnly = true;
-                povijestPutovanjaDataGridView.DataSource = query.ToList();
+                dgvPovijestPutovanja.DataSource = null;
+                dgvPovijestPutovanja.ReadOnly = true;
+                dgvPovijestPutovanja.DataSource = query.ToList();
 
-                if (this.povijestPutovanjaDataGridView.Rows.Count == 0)
+                if (this.dgvPovijestPutovanja.Rows.Count == 0)
                 {
                     label5.Visible = false;
                     label6.Text = "Niste kupili nijednu kartu!";
                     label6.Visible = true;
                 }
 
-                povijestPutovanjaDataGridView.Columns["linija_id"].Visible = false;
-                povijestPutovanjaDataGridView.Columns["karta_id"].Visible = false;
-                povijestPutovanjaDataGridView.Columns["korisnik_id"].Visible = false;
-                povijestPutovanjaDataGridView.Columns["Korisnik"].Visible = false;
-                povijestPutovanjaDataGridView.Columns["Linija"].Visible = false;
+
             }
 
         }
