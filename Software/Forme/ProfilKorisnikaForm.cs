@@ -45,6 +45,16 @@ namespace Forme
                 dgvPovijestPutovanja.ReadOnly = true;
                 dgvPovijestPutovanja.DataSource = query.ToList();
 
+                dgvPovijestPutovanja.Columns[0].HeaderText = "Autoprijevoznik";
+                dgvPovijestPutovanja.Columns[1].HeaderText = "Broj linije";
+                dgvPovijestPutovanja.Columns[2].HeaderText = "Polazište";
+                dgvPovijestPutovanja.Columns[3].HeaderText = "Odredište";
+                dgvPovijestPutovanja.Columns[4].HeaderText = "Datum i vrijeme polaska";
+                dgvPovijestPutovanja.Columns[5].HeaderText = "Povratna karta";
+                dgvPovijestPutovanja.Columns[6].HeaderText = "Prtljaga";
+                dgvPovijestPutovanja.Columns[7].HeaderText = "Vrsta karte";
+                dgvPovijestPutovanja.Columns[8].HeaderText = "Cijena karte";
+
                 if (this.dgvPovijestPutovanja.Rows.Count == 0)
                 {
                     label5.Visible = false;
