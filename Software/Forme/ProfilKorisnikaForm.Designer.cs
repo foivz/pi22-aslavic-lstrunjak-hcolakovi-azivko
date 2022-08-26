@@ -29,24 +29,28 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.brojMobitelaTextBox = new System.Windows.Forms.TextBox();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.prezimeTextBox = new System.Windows.Forms.TextBox();
-            this.imeTextBox = new System.Windows.Forms.TextBox();
-            this.povijestPutovanjaDataGridView = new System.Windows.Forms.DataGridView();
+            this.textboxBrojMobitela = new System.Windows.Forms.TextBox();
+            this.textboxEmail = new System.Windows.Forms.TextBox();
+            this.textboxPrezime = new System.Windows.Forms.TextBox();
+            this.textboxIme = new System.Windows.Forms.TextBox();
+            this.dgvPovijestPutovanja = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
-            this.zatvoriButton = new System.Windows.Forms.Button();
+            this.buttonZatvori = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonNav = new System.Windows.Forms.Button();
             this.buttonPromijeniSliku = new System.Windows.Forms.Button();
             this.buttonPromijeniPodatke = new System.Windows.Forms.Button();
             this.buttonPohrani = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.povijestPutovanjaDataGridView)).BeginInit();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelBrojMobitela = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,61 +84,98 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 610);
+            this.label4.Location = new System.Drawing.Point(49, 644);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Broj mobitela:";
             // 
-            // brojMobitelaTextBox
+            // textboxBrojMobitela
             // 
-            this.brojMobitelaTextBox.Enabled = false;
-            this.brojMobitelaTextBox.Location = new System.Drawing.Point(185, 610);
-            this.brojMobitelaTextBox.Name = "brojMobitelaTextBox";
-            this.brojMobitelaTextBox.Size = new System.Drawing.Size(274, 29);
-            this.brojMobitelaTextBox.TabIndex = 5;
+            this.textboxBrojMobitela.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textboxBrojMobitela.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxBrojMobitela.ForeColor = System.Drawing.Color.White;
+            this.textboxBrojMobitela.Location = new System.Drawing.Point(185, 644);
+            this.textboxBrojMobitela.Name = "textboxBrojMobitela";
+            this.textboxBrojMobitela.ReadOnly = true;
+            this.textboxBrojMobitela.Size = new System.Drawing.Size(274, 29);
+            this.textboxBrojMobitela.TabIndex = 5;
             // 
-            // emailTextBox
+            // textboxEmail
             // 
-            this.emailTextBox.Enabled = false;
-            this.emailTextBox.Location = new System.Drawing.Point(185, 549);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(274, 29);
-            this.emailTextBox.TabIndex = 6;
+            this.textboxEmail.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textboxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxEmail.ForeColor = System.Drawing.Color.White;
+            this.textboxEmail.Location = new System.Drawing.Point(185, 549);
+            this.textboxEmail.Name = "textboxEmail";
+            this.textboxEmail.ReadOnly = true;
+            this.textboxEmail.Size = new System.Drawing.Size(274, 29);
+            this.textboxEmail.TabIndex = 6;
             // 
-            // prezimeTextBox
+            // textboxPrezime
             // 
-            this.prezimeTextBox.Enabled = false;
-            this.prezimeTextBox.Location = new System.Drawing.Point(185, 490);
-            this.prezimeTextBox.Name = "prezimeTextBox";
-            this.prezimeTextBox.Size = new System.Drawing.Size(274, 29);
-            this.prezimeTextBox.TabIndex = 7;
+            this.textboxPrezime.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textboxPrezime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxPrezime.ForeColor = System.Drawing.Color.White;
+            this.textboxPrezime.Location = new System.Drawing.Point(185, 490);
+            this.textboxPrezime.Name = "textboxPrezime";
+            this.textboxPrezime.ReadOnly = true;
+            this.textboxPrezime.Size = new System.Drawing.Size(274, 29);
+            this.textboxPrezime.TabIndex = 7;
             // 
-            // imeTextBox
+            // textboxIme
             // 
-            this.imeTextBox.Enabled = false;
-            this.imeTextBox.Location = new System.Drawing.Point(185, 432);
-            this.imeTextBox.Name = "imeTextBox";
-            this.imeTextBox.Size = new System.Drawing.Size(274, 29);
-            this.imeTextBox.TabIndex = 8;
+            this.textboxIme.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textboxIme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxIme.ForeColor = System.Drawing.Color.White;
+            this.textboxIme.Location = new System.Drawing.Point(185, 432);
+            this.textboxIme.Name = "textboxIme";
+            this.textboxIme.ReadOnly = true;
+            this.textboxIme.Size = new System.Drawing.Size(274, 29);
+            this.textboxIme.TabIndex = 8;
             // 
-            // povijestPutovanjaDataGridView
+            // dgvPovijestPutovanja
             // 
-            this.povijestPutovanjaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPovijestPutovanja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.dgvPovijestPutovanja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.povijestPutovanjaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
-            this.povijestPutovanjaDataGridView.Location = new System.Drawing.Point(510, 82);
-            this.povijestPutovanjaDataGridView.Name = "povijestPutovanjaDataGridView";
-            this.povijestPutovanjaDataGridView.RowHeadersWidth = 51;
-            this.povijestPutovanjaDataGridView.RowTemplate.Height = 24;
-            this.povijestPutovanjaDataGridView.Size = new System.Drawing.Size(570, 418);
-            this.povijestPutovanjaDataGridView.TabIndex = 9;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(114)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPovijestPutovanja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPovijestPutovanja.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPovijestPutovanja.EnableHeadersVisualStyles = false;
+            this.dgvPovijestPutovanja.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
+            this.dgvPovijestPutovanja.Location = new System.Drawing.Point(510, 82);
+            this.dgvPovijestPutovanja.MultiSelect = false;
+            this.dgvPovijestPutovanja.Name = "dgvPovijestPutovanja";
+            this.dgvPovijestPutovanja.ReadOnly = true;
+            this.dgvPovijestPutovanja.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPovijestPutovanja.RowHeadersWidth = 51;
+            this.dgvPovijestPutovanja.RowTemplate.Height = 24;
+            this.dgvPovijestPutovanja.RowTemplate.ReadOnly = true;
+            this.dgvPovijestPutovanja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPovijestPutovanja.Size = new System.Drawing.Size(570, 418);
+            this.dgvPovijestPutovanja.TabIndex = 9;
             // 
             // label5
             // 
@@ -146,19 +187,19 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Vaša putovanja:";
             // 
-            // zatvoriButton
+            // buttonZatvori
             // 
-            this.zatvoriButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
-            this.zatvoriButton.FlatAppearance.BorderSize = 0;
-            this.zatvoriButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.zatvoriButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zatvoriButton.Location = new System.Drawing.Point(949, 506);
-            this.zatvoriButton.Name = "zatvoriButton";
-            this.zatvoriButton.Size = new System.Drawing.Size(131, 53);
-            this.zatvoriButton.TabIndex = 11;
-            this.zatvoriButton.Text = "Zatvori";
-            this.zatvoriButton.UseVisualStyleBackColor = false;
-            this.zatvoriButton.Click += new System.EventHandler(this.zatvoriButton_Click);
+            this.buttonZatvori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.buttonZatvori.FlatAppearance.BorderSize = 0;
+            this.buttonZatvori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonZatvori.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonZatvori.Location = new System.Drawing.Point(949, 506);
+            this.buttonZatvori.Name = "buttonZatvori";
+            this.buttonZatvori.Size = new System.Drawing.Size(131, 53);
+            this.buttonZatvori.TabIndex = 11;
+            this.buttonZatvori.Text = "Zatvori";
+            this.buttonZatvori.UseVisualStyleBackColor = false;
+            this.buttonZatvori.Click += new System.EventHandler(this.zatvoriButton_Click);
             // 
             // pictureBox1
             // 
@@ -225,7 +266,7 @@
             this.buttonPohrani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.buttonPohrani.FlatAppearance.BorderSize = 0;
             this.buttonPohrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPohrani.Location = new System.Drawing.Point(185, 650);
+            this.buttonPohrani.Location = new System.Drawing.Point(185, 731);
             this.buttonPohrani.Name = "buttonPohrani";
             this.buttonPohrani.Size = new System.Drawing.Size(273, 35);
             this.buttonPohrani.TabIndex = 17;
@@ -234,25 +275,45 @@
             this.buttonPohrani.Visible = false;
             this.buttonPohrani.Click += new System.EventHandler(this.buttonPohrani_Click);
             // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(49, 594);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(440, 23);
+            this.labelEmail.TabIndex = 18;
+            this.labelEmail.Text = "Email mora sadržavati @ i biti kraći od 50 znakova!";
+            // 
+            // labelBrojMobitela
+            // 
+            this.labelBrojMobitela.AutoSize = true;
+            this.labelBrojMobitela.Location = new System.Drawing.Point(49, 688);
+            this.labelBrojMobitela.Name = "labelBrojMobitela";
+            this.labelBrojMobitela.Size = new System.Drawing.Size(306, 23);
+            this.labelBrojMobitela.TabIndex = 19;
+            this.labelBrojMobitela.Text = "Broj mobitela sadržava 10 znakova!";
+            // 
             // ProfilKorisnikaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1123, 697);
+            this.ClientSize = new System.Drawing.Size(1123, 787);
+            this.Controls.Add(this.labelBrojMobitela);
+            this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.buttonPohrani);
             this.Controls.Add(this.buttonPromijeniPodatke);
             this.Controls.Add(this.buttonPromijeniSliku);
             this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.zatvoriButton);
+            this.Controls.Add(this.buttonZatvori);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.povijestPutovanjaDataGridView);
-            this.Controls.Add(this.imeTextBox);
-            this.Controls.Add(this.prezimeTextBox);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.brojMobitelaTextBox);
+            this.Controls.Add(this.dgvPovijestPutovanja);
+            this.Controls.Add(this.textboxIme);
+            this.Controls.Add(this.textboxPrezime);
+            this.Controls.Add(this.textboxEmail);
+            this.Controls.Add(this.textboxBrojMobitela);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -264,7 +325,7 @@
             this.Name = "ProfilKorisnikaForm";
             this.Text = "Profil korisnika";
             this.Load += new System.EventHandler(this.ProfilKorisnikaForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.povijestPutovanjaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,18 +337,20 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox brojMobitelaTextBox;
-        private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox prezimeTextBox;
-        private System.Windows.Forms.TextBox imeTextBox;
-        private System.Windows.Forms.DataGridView povijestPutovanjaDataGridView;
+        private System.Windows.Forms.TextBox textboxBrojMobitela;
+        private System.Windows.Forms.TextBox textboxEmail;
+        private System.Windows.Forms.TextBox textboxPrezime;
+        private System.Windows.Forms.TextBox textboxIme;
+        private System.Windows.Forms.DataGridView dgvPovijestPutovanja;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button zatvoriButton;
+        private System.Windows.Forms.Button buttonZatvori;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonNav;
         private System.Windows.Forms.Button buttonPromijeniSliku;
         private System.Windows.Forms.Button buttonPromijeniPodatke;
         private System.Windows.Forms.Button buttonPohrani;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelBrojMobitela;
     }
 }
