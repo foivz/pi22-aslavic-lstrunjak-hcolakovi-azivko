@@ -90,10 +90,15 @@ namespace Forme
 
         private void RegistriraniKorisnikForm_Load(object sender, EventArgs e)
         {
+            List<Linija> linije = new List<Linija>();
             using(var context = new LinkBusEntities())
             {
+                foreach (var l in context.Linija)
+                {
+                    linije.Add(l);
+                }
                 popisLinijaDataGridView.DataSource = null;
-                popisLinijaDataGridView.DataSource = context.Linija.ToList();
+                popisLinijaDataGridView.DataSource = linije;
                 PopunjeneLinije();
                 SkriveneKolone();
             }
