@@ -103,6 +103,12 @@
     <Compile Include="DetaljiLinijeForm.Designer.cs">
       <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetaljiPutovanjaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiPutovanjaForm.Designer.cs">
+      <DependentUpon>DetaljiPutovanjaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DodavanjeLinije.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DetaljiLinijeForm.resx">
       <DependentUpon>DetaljiLinijeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaljiPutovanjaForm.resx">
+      <DependentUpon>DetaljiPutovanjaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DodavanjeLinije.resx">
       <DependentUpon>DodavanjeLinije.cs</DependentUpon>
