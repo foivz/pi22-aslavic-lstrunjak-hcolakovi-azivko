@@ -40,22 +40,13 @@ namespace Forme
                             where k.korisnik_id == korisnik.korisnik_id
                             where k.Linija.linija_id == l.linija_id
                             where l.Autoprijevoznik.autoprijevoznik_id == a.autoprijevoznik_id
-                            select new {k.karta_id, a.naziv_prijevoznika, l.broj_linije, l.polaziste, l.odrediste, l.datum_i_vrijeme_polaska, k.povratna, k.prtljaga, k.vrsta_karte, k.cijena };
+                            select new {k.karta_id};
 
                 dgvPovijestPutovanja.DataSource = null;
                 dgvPovijestPutovanja.ReadOnly = true;
                 dgvPovijestPutovanja.DataSource = query.ToList();
 
                 dgvPovijestPutovanja.Columns[0].HeaderText = "Broj karte";
-                dgvPovijestPutovanja.Columns[1].HeaderText = "Autoprijevoznik";
-                dgvPovijestPutovanja.Columns[2].HeaderText = "Broj linije";
-                dgvPovijestPutovanja.Columns[3].HeaderText = "Polazište";
-                dgvPovijestPutovanja.Columns[4].HeaderText = "Odredište";
-                dgvPovijestPutovanja.Columns[5].HeaderText = "Datum i vrijeme polaska";
-                dgvPovijestPutovanja.Columns[6].HeaderText = "Povratna karta";
-                dgvPovijestPutovanja.Columns[7].HeaderText = "Prtljaga";
-                dgvPovijestPutovanja.Columns[8].HeaderText = "Vrsta karte";
-                dgvPovijestPutovanja.Columns[9].HeaderText = "Cijena karte";
 
                 if (this.dgvPovijestPutovanja.Rows.Count == 0)
                 {
@@ -66,6 +57,8 @@ namespace Forme
 
 
             }
+
+
 
         }
 
@@ -198,8 +191,18 @@ namespace Forme
                 MessageBox.Show("Niste izabrali ni jednu kartu!");
                 return;
             }
-            DetaljiPutovanjaForm dlf = new DetaljiPutovanjaForm(/*selektiranaKarta, */korisnik);
+            DetaljiPutovanjaForm dlf = new DetaljiPutovanjaForm(korisnik);
             dlf.Show();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
