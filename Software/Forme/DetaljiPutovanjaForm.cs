@@ -63,7 +63,34 @@ namespace Forme
                             where k.Linija.linija_id == l.linija_id
                             where l.Autoprijevoznik.autoprijevoznik_id == a.autoprijevoznik_id
                             select new { k.karta_id, a.naziv_prijevoznika, l.broj_linije, l.polaziste, l.odrediste, l.datum_i_vrijeme_polaska, k.povratna, k.prtljaga, k.vrsta_karte, k.cijena };
-            
+
+                var listaquery = query.ToList();
+                UCputovanja[] listaPutovanja = new UCputovanja[listaquery.Count()];
+
+                for (int i = 0; i < listaPutovanja.Length; i++)
+                {
+                    var prviElem = listaquery.First();
+                    listaPutovanja[i] = new UCputovanja();
+                    listaPutovanja[i].Broj_karte = Convert.ToString(prviElem.karta_id);
+                    listaPutovanja[i].Datum_i_vrijeme_polaska = prviElem.datum_i_vrijeme_polaska;
+                    listaPutovanja[i].Polaziste = prviElem.polaziste;
+                    listaPutovanja[i].Odrediste = prviElem.odrediste;
+                    listaPutovanja[i].Povratna = prviElem.povratna;
+                    listaPutovanja[i].Prtljaga = prviElem.prtljaga;
+                    listaPutovanja[i].Vrsta_karte = prviElem.vrsta_karte;
+                    listaPutovanja[i].Cijena = Convert.ToString(prviElem.cijena);
+
+                    if (flowLayoutPanel1.Controls.Count < 0)
+                    {
+                        flowLayoutPanel1.Controls.Clear();
+                    }
+                    else
+                    {
+                        flowLayoutPanel1.Controls.Add(listaPutovanja[i]);
+                    }
+                    listaquery.Remove(prviElem);
+                }
+
             }
         }
     }

@@ -167,6 +167,12 @@
     <Compile Include="RegistriraniKorisnikForm.Designer.cs">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCputovanja.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCputovanja.Designer.cs">
+      <DependentUpon>UCputovanja.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistriraniKorisnikForm.resx">
       <DependentUpon>RegistriraniKorisnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCputovanja.resx">
+      <DependentUpon>UCputovanja.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Database\LinkBus.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
