@@ -165,33 +165,6 @@ namespace Forme
 
         private void buttonDetaljiPutovanja_Click(object sender, EventArgs e)
         {
-            try 
-            {
-                if (dgvPovijestPutovanja.SelectedRows.Count > 0)
-                {
-                    int kartaId = Convert.ToInt32(dgvPovijestPutovanja.CurrentRow.Cells[0].Value);
-                    using (var context = new LinkBusEntities()) 
-                    {
-                        foreach (var item in context.Karta)
-                        {
-                            if(item.karta_id == kartaId)
-                            {
-                                selektiranaKarta = item;
-                            }
-                        }
-                    }
-                }
-                else 
-                {
-                    throw new Iznimke.InvalidInputException();
-                }
-            
-            }
-            catch (Iznimke.InvalidInputException) 
-            {
-                MessageBox.Show("Niste izabrali ni jednu kartu!");
-                return;
-            }
             DetaljiPutovanjaForm dlf = new DetaljiPutovanjaForm(korisnik);
             dlf.ShowDialog();
         }

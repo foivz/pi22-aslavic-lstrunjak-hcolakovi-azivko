@@ -72,6 +72,7 @@ namespace Forme
                     var prviElem = listaquery.First();
                     listaPutovanja[i] = new UCputovanja();
                     listaPutovanja[i].Broj_karte = Convert.ToString(prviElem.karta_id);
+                    listaPutovanja[i].Naziv_prijevoznika = prviElem.naziv_prijevoznika;
                     listaPutovanja[i].Datum_i_vrijeme_polaska = prviElem.datum_i_vrijeme_polaska;
                     listaPutovanja[i].Polaziste = prviElem.polaziste;
                     listaPutovanja[i].Odrediste = prviElem.odrediste;
