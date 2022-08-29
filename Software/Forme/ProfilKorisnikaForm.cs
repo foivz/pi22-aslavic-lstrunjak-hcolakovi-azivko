@@ -16,6 +16,7 @@ namespace Forme
         private bool mouseDown;
         private Point lastLocation;
         Korisnik korisnik;
+        Karta selektiranaKarta;
         public ProfilKorisnikaForm(Korisnik logiraniKorisnik)
         {
             InitializeComponent();
@@ -39,21 +40,13 @@ namespace Forme
                             where k.korisnik_id == korisnik.korisnik_id
                             where k.Linija.linija_id == l.linija_id
                             where l.Autoprijevoznik.autoprijevoznik_id == a.autoprijevoznik_id
-                            select new {a.naziv_prijevoznika, l.broj_linije, l.polaziste, l.odrediste, l.datum_i_vrijeme_polaska, k.povratna, k.prtljaga, k.vrsta_karte, k.cijena };
+                            select new {k.karta_id};
 
                 dgvPovijestPutovanja.DataSource = null;
                 dgvPovijestPutovanja.ReadOnly = true;
                 dgvPovijestPutovanja.DataSource = query.ToList();
 
-                dgvPovijestPutovanja.Columns[0].HeaderText = "Autoprijevoznik";
-                dgvPovijestPutovanja.Columns[1].HeaderText = "Broj linije";
-                dgvPovijestPutovanja.Columns[2].HeaderText = "Polazište";
-                dgvPovijestPutovanja.Columns[3].HeaderText = "Odredište";
-                dgvPovijestPutovanja.Columns[4].HeaderText = "Datum i vrijeme polaska";
-                dgvPovijestPutovanja.Columns[5].HeaderText = "Povratna karta";
-                dgvPovijestPutovanja.Columns[6].HeaderText = "Prtljaga";
-                dgvPovijestPutovanja.Columns[7].HeaderText = "Vrsta karte";
-                dgvPovijestPutovanja.Columns[8].HeaderText = "Cijena karte";
+                dgvPovijestPutovanja.Columns[0].HeaderText = "Broj karte";
 
                 if (this.dgvPovijestPutovanja.Rows.Count == 0)
                 {
@@ -64,6 +57,8 @@ namespace Forme
 
 
             }
+
+
 
         }
 
@@ -164,6 +159,49 @@ namespace Forme
                 textboxEmail.ReadOnly= true;
                 textboxBrojMobitela.ReadOnly= true;
                 MessageBox.Show("Uspješno ste ažurirali profil!");
+
+        }
+
+        private void buttonDetaljiPutovanja_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                if (dgvPovijestPutovanja.SelectedRows.Count > 0)
+                {
+                    int kartaId = Convert.ToInt32(dgvPovijestPutovanja.CurrentRow.Cells[0].Value);
+                    using (var context = new LinkBusEntities()) 
+                    {
+                        foreach (var item in context.Karta)
+                        {
+                            if(item.karta_id == kartaId)
+                            {
+                                selektiranaKarta = item;
+                            }
+                        }
+                    }
+                }
+                else 
+                {
+                    throw new Iznimke.InvalidInputException();
+                }
+            
+            }
+            catch (Iznimke.InvalidInputException) 
+            {
+                MessageBox.Show("Niste izabrali ni jednu kartu!");
+                return;
+            }
+            DetaljiPutovanjaForm dlf = new DetaljiPutovanjaForm(korisnik);
+            dlf.Show();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
 
         }
     }
