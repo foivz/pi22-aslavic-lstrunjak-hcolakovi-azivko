@@ -48,6 +48,12 @@ namespace Forme
             this.textboxVrstaKarte = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,62 +158,62 @@ namespace Forme
             // 
             // textboxPolaziste
             // 
-            this.textboxPolaziste.BackColor = System.Drawing.Color.White;
-            this.textboxPolaziste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxPolaziste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxPolaziste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPolaziste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxPolaziste.ForeColor = System.Drawing.Color.Black;
+            this.textboxPolaziste.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxPolaziste.Location = new System.Drawing.Point(41, 149);
             this.textboxPolaziste.Name = "textboxPolaziste";
             this.textboxPolaziste.ReadOnly = true;
-            this.textboxPolaziste.Size = new System.Drawing.Size(173, 32);
+            this.textboxPolaziste.Size = new System.Drawing.Size(173, 25);
             this.textboxPolaziste.TabIndex = 9;
             // 
             // textboxOdrediste
             // 
-            this.textboxOdrediste.BackColor = System.Drawing.Color.White;
-            this.textboxOdrediste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxOdrediste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxOdrediste.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxOdrediste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxOdrediste.ForeColor = System.Drawing.Color.Black;
+            this.textboxOdrediste.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxOdrediste.Location = new System.Drawing.Point(41, 230);
             this.textboxOdrediste.Name = "textboxOdrediste";
             this.textboxOdrediste.ReadOnly = true;
-            this.textboxOdrediste.Size = new System.Drawing.Size(173, 32);
+            this.textboxOdrediste.Size = new System.Drawing.Size(173, 25);
             this.textboxOdrediste.TabIndex = 10;
             // 
             // textboxNazivPrijevoznika
             // 
-            this.textboxNazivPrijevoznika.BackColor = System.Drawing.Color.White;
-            this.textboxNazivPrijevoznika.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxNazivPrijevoznika.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxNazivPrijevoznika.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxNazivPrijevoznika.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxNazivPrijevoznika.ForeColor = System.Drawing.Color.Black;
+            this.textboxNazivPrijevoznika.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxNazivPrijevoznika.Location = new System.Drawing.Point(341, 64);
             this.textboxNazivPrijevoznika.Name = "textboxNazivPrijevoznika";
             this.textboxNazivPrijevoznika.ReadOnly = true;
-            this.textboxNazivPrijevoznika.Size = new System.Drawing.Size(173, 32);
+            this.textboxNazivPrijevoznika.Size = new System.Drawing.Size(173, 25);
             this.textboxNazivPrijevoznika.TabIndex = 11;
             // 
             // textboxDatumVrijemePolaska
             // 
-            this.textboxDatumVrijemePolaska.BackColor = System.Drawing.Color.White;
-            this.textboxDatumVrijemePolaska.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxDatumVrijemePolaska.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxDatumVrijemePolaska.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxDatumVrijemePolaska.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxDatumVrijemePolaska.ForeColor = System.Drawing.Color.Black;
+            this.textboxDatumVrijemePolaska.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxDatumVrijemePolaska.Location = new System.Drawing.Point(568, 64);
             this.textboxDatumVrijemePolaska.Name = "textboxDatumVrijemePolaska";
             this.textboxDatumVrijemePolaska.ReadOnly = true;
-            this.textboxDatumVrijemePolaska.Size = new System.Drawing.Size(173, 32);
+            this.textboxDatumVrijemePolaska.Size = new System.Drawing.Size(173, 25);
             this.textboxDatumVrijemePolaska.TabIndex = 12;
             // 
             // textboxCijena
             // 
-            this.textboxCijena.BackColor = System.Drawing.Color.White;
-            this.textboxCijena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxCijena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxCijena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxCijena.Font = new System.Drawing.Font("Bahnschrift Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxCijena.ForeColor = System.Drawing.Color.Black;
+            this.textboxCijena.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxCijena.Location = new System.Drawing.Point(568, 230);
             this.textboxCijena.Name = "textboxCijena";
             this.textboxCijena.ReadOnly = true;
-            this.textboxCijena.Size = new System.Drawing.Size(173, 38);
+            this.textboxCijena.Size = new System.Drawing.Size(173, 31);
             this.textboxCijena.TabIndex = 13;
             // 
             // checkboxPovratna
@@ -232,14 +238,14 @@ namespace Forme
             // 
             // textboxVrstaKarte
             // 
-            this.textboxVrstaKarte.BackColor = System.Drawing.Color.White;
-            this.textboxVrstaKarte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxVrstaKarte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.textboxVrstaKarte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxVrstaKarte.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxVrstaKarte.ForeColor = System.Drawing.Color.Black;
+            this.textboxVrstaKarte.ForeColor = System.Drawing.Color.LightGreen;
             this.textboxVrstaKarte.Location = new System.Drawing.Point(568, 149);
             this.textboxVrstaKarte.Name = "textboxVrstaKarte";
             this.textboxVrstaKarte.ReadOnly = true;
-            this.textboxVrstaKarte.Size = new System.Drawing.Size(173, 32);
+            this.textboxVrstaKarte.Size = new System.Drawing.Size(173, 25);
             this.textboxVrstaKarte.TabIndex = 16;
             // 
             // panel1
@@ -263,12 +269,66 @@ namespace Forme
             this.label9.TabIndex = 18;
             this.label9.Text = "Karta br.";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(41, 175);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(173, 1);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(41, 255);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(173, 1);
+            this.panel3.TabIndex = 20;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(341, 90);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(173, 1);
+            this.panel4.TabIndex = 21;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(568, 90);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(173, 1);
+            this.panel5.TabIndex = 22;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(568, 175);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(173, 1);
+            this.panel6.TabIndex = 23;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(568, 261);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(173, 1);
+            this.panel7.TabIndex = 24;
+            // 
             // UCputovanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textboxVrstaKarte);
@@ -317,5 +377,11 @@ namespace Forme
         private System.Windows.Forms.TextBox textboxVrstaKarte;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
     }
 }
