@@ -16,6 +16,7 @@ namespace Forme
         private bool mouseDown;
         private Point lastLocation;
         LoginForm loginForm = new LoginForm();
+        int i = 0;
         public RegisterForm()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace Forme
         {
             this.Hide();
             loginForm.ShowDialog();
+            this.Close();
         }
 
         private void nazadButton_Click(object sender, EventArgs e)
@@ -32,6 +34,7 @@ namespace Forme
             NeregistriraniKorisnikForm neregistriraniKorisnikForm = new NeregistriraniKorisnikForm();
             this.Hide();
             neregistriraniKorisnikForm.ShowDialog();
+            this.Close();
         }
 
         private void registirajSeButton_Click(object sender, EventArgs e)
@@ -110,6 +113,10 @@ namespace Forme
                     context.Korisnik.Add(korisnik);
                     context.SaveChanges();
                     MessageBox.Show("Uspješno ste se registrirali!");
+                    this.Hide();
+                    LoginForm lf1 = new LoginForm();
+                    lf1.ShowDialog();
+                    this.Close();
                 }
             }
         }
@@ -134,6 +141,19 @@ namespace Forme
         private void buttonNav_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void pictureboxPassVisible_Click(object sender, EventArgs e)
+        {
+            if(i % 2 == 0) 
+            {
+                lozinkaTextBox.UseSystemPasswordChar = false;
+            }
+            else 
+            {
+                lozinkaTextBox.UseSystemPasswordChar = true;
+            }
+            i++;
         }
     }
 }

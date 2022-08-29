@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +51,8 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
+            this.pictureboxPassVisible = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxPassVisible)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -282,12 +285,24 @@
             this.labelPhoneNumber.Text = "Broj mobitela nije valjan!";
             this.labelPhoneNumber.Visible = false;
             // 
+            // pictureboxPassVisible
+            // 
+            this.pictureboxPassVisible.Image = ((System.Drawing.Image)(resources.GetObject("pictureboxPassVisible.Image")));
+            this.pictureboxPassVisible.Location = new System.Drawing.Point(628, 372);
+            this.pictureboxPassVisible.Name = "pictureboxPassVisible";
+            this.pictureboxPassVisible.Size = new System.Drawing.Size(30, 30);
+            this.pictureboxPassVisible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureboxPassVisible.TabIndex = 28;
+            this.pictureboxPassVisible.TabStop = false;
+            this.pictureboxPassVisible.Click += new System.EventHandler(this.pictureboxPassVisible_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(719, 693);
+            this.Controls.Add(this.pictureboxPassVisible);
             this.Controls.Add(this.labelPhoneNumber);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelUsername);
@@ -316,6 +331,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegisterForm";
             this.Text = "Registracija";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxPassVisible)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +361,6 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelPhoneNumber;
+        private System.Windows.Forms.PictureBox pictureboxPassVisible;
     }
 }
