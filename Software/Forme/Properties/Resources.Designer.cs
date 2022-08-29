@@ -93,6 +93,16 @@ namespace Forme.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free_school_bus_icon_1767_thumb {
             get {
                 object obj = ResourceManager.GetObject("free-school-bus-icon-1767-thumb", resourceCulture);
@@ -106,6 +116,16 @@ namespace Forme.Properties {
         internal static System.Drawing.Bitmap user_login_png_transparent_6_Transparent_Images {
             get {
                 object obj = ResourceManager.GetObject("user-login-png-transparent-6-Transparent-Images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view {
+            get {
+                object obj = ResourceManager.GetObject("view", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

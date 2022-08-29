@@ -260,6 +260,9 @@
       <DependentUpon>LinkBus.edmx</DependentUpon>
       <LastGenOutput>LinkBus.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\view.png" />
     <None Include="Resources\free-school-bus-icon-1767-thumb.png" />
     <None Include="Resources\user-login-png-transparent-6-Transparent-Images.png" />
   </ItemGroup>
