@@ -208,5 +208,10 @@ namespace Forme
             ProfilKorisnikaForm profilKorisnika = new ProfilKorisnikaForm(korisnik);
             profilKorisnika.ShowDialog();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
