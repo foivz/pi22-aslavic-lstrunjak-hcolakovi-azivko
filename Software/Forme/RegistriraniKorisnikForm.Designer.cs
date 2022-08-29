@@ -50,6 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonNav = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,12 +60,17 @@
             // 
             // popisLinijaDataGridView
             // 
+            this.popisLinijaDataGridView.AllowUserToAddRows = false;
+            this.popisLinijaDataGridView.AllowUserToDeleteRows = false;
+            this.popisLinijaDataGridView.AllowUserToResizeColumns = false;
+            this.popisLinijaDataGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.popisLinijaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.popisLinijaDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.popisLinijaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -83,6 +90,7 @@
             this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.popisLinijaDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(158, 161);
+            this.popisLinijaDataGridView.MultiSelect = false;
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
             this.popisLinijaDataGridView.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -172,26 +180,28 @@
             // polazisteTextBox
             // 
             this.polazisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.polazisteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.polazisteTextBox.ForeColor = System.Drawing.Color.White;
             this.polazisteTextBox.Location = new System.Drawing.Point(259, 61);
             this.polazisteTextBox.Name = "polazisteTextBox";
-            this.polazisteTextBox.Size = new System.Drawing.Size(251, 32);
+            this.polazisteTextBox.Size = new System.Drawing.Size(251, 25);
             this.polazisteTextBox.TabIndex = 8;
             // 
             // odredisteTextBox
             // 
             this.odredisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.odredisteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.odredisteTextBox.ForeColor = System.Drawing.Color.White;
             this.odredisteTextBox.Location = new System.Drawing.Point(259, 107);
             this.odredisteTextBox.Name = "odredisteTextBox";
-            this.odredisteTextBox.Size = new System.Drawing.Size(251, 32);
+            this.odredisteTextBox.Size = new System.Drawing.Size(251, 25);
             this.odredisteTextBox.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(154, 67);
+            this.label3.Location = new System.Drawing.Point(154, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 21);
             this.label3.TabIndex = 10;
@@ -201,7 +211,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(154, 113);
+            this.label4.Location = new System.Drawing.Point(154, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 21);
             this.label4.TabIndex = 11;
@@ -294,12 +304,30 @@
             this.panel1.Size = new System.Drawing.Size(125, 663);
             this.panel1.TabIndex = 18;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(259, 82);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 1);
+            this.panel2.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(260, 128);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(250, 1);
+            this.panel3.TabIndex = 20;
+            // 
             // RegistriraniKorisnikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1101, 664);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonNav);
             this.Controls.Add(this.prikazDetaljaButton);
@@ -349,5 +377,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonNav;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

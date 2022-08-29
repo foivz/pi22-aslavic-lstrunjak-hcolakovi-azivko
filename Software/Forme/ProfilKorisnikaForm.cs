@@ -103,6 +103,7 @@ namespace Forme
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            buttonOdustani.Visible = true;
             buttonPohrani.Visible = true;
             textboxIme.ReadOnly = false;
             textboxPrezime.ReadOnly = false;
@@ -195,14 +196,14 @@ namespace Forme
             dlf.Show();
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void buttonOdustani_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            buttonPohrani.Visible = false;
+            textboxIme.ReadOnly = true;
+            textboxPrezime.ReadOnly = true;
+            textboxEmail.ReadOnly = true;
+            textboxBrojMobitela.ReadOnly = true;
+            buttonOdustani.Visible = false;
         }
     }
 }

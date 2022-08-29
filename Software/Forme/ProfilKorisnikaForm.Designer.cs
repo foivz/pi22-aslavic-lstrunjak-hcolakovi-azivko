@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.buttonOdustani = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -145,38 +146,38 @@
             this.dgvPovijestPutovanja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.dgvPovijestPutovanja.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPovijestPutovanja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(114)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPovijestPutovanja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(114)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPovijestPutovanja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(100)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPovijestPutovanja.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(100)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPovijestPutovanja.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPovijestPutovanja.EnableHeadersVisualStyles = false;
             this.dgvPovijestPutovanja.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.dgvPovijestPutovanja.Location = new System.Drawing.Point(465, 89);
+            this.dgvPovijestPutovanja.Location = new System.Drawing.Point(556, 89);
             this.dgvPovijestPutovanja.MultiSelect = false;
             this.dgvPovijestPutovanja.Name = "dgvPovijestPutovanja";
             this.dgvPovijestPutovanja.ReadOnly = true;
             this.dgvPovijestPutovanja.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPovijestPutovanja.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPovijestPutovanja.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPovijestPutovanja.RowHeadersWidth = 51;
             this.dgvPovijestPutovanja.RowTemplate.Height = 24;
             this.dgvPovijestPutovanja.RowTemplate.ReadOnly = true;
@@ -188,7 +189,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(468, 47);
+            this.label5.Location = new System.Drawing.Point(527, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 29);
             this.label5.TabIndex = 10;
@@ -221,7 +222,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(647, 47);
+            this.label6.Location = new System.Drawing.Point(706, 47);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 29);
             this.label6.TabIndex = 13;
@@ -260,7 +261,7 @@
             this.buttonPromijeniPodatke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.buttonPromijeniPodatke.FlatAppearance.BorderSize = 0;
             this.buttonPromijeniPodatke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPromijeniPodatke.Location = new System.Drawing.Point(465, 355);
+            this.buttonPromijeniPodatke.Location = new System.Drawing.Point(486, 634);
             this.buttonPromijeniPodatke.Name = "buttonPromijeniPodatke";
             this.buttonPromijeniPodatke.Size = new System.Drawing.Size(201, 47);
             this.buttonPromijeniPodatke.TabIndex = 16;
@@ -306,7 +307,7 @@
             this.buttonDetaljiPutovanja.FlatAppearance.BorderSize = 0;
             this.buttonDetaljiPutovanja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDetaljiPutovanja.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonDetaljiPutovanja.Location = new System.Drawing.Point(672, 90);
+            this.buttonDetaljiPutovanja.Location = new System.Drawing.Point(576, 355);
             this.buttonDetaljiPutovanja.Name = "buttonDetaljiPutovanja";
             this.buttonDetaljiPutovanja.Size = new System.Drawing.Size(161, 53);
             this.buttonDetaljiPutovanja.TabIndex = 20;
@@ -336,7 +337,6 @@
             this.label7.Size = new System.Drawing.Size(141, 100);
             this.label7.TabIndex = 23;
             this.label7.Text = "Bus";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -349,7 +349,20 @@
             this.label8.Size = new System.Drawing.Size(157, 100);
             this.label8.TabIndex = 22;
             this.label8.Text = "Link";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // buttonOdustani
+            // 
+            this.buttonOdustani.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.buttonOdustani.FlatAppearance.BorderSize = 0;
+            this.buttonOdustani.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOdustani.Location = new System.Drawing.Point(486, 731);
+            this.buttonOdustani.Name = "buttonOdustani";
+            this.buttonOdustani.Size = new System.Drawing.Size(201, 35);
+            this.buttonOdustani.TabIndex = 22;
+            this.buttonOdustani.Text = "Odustani";
+            this.buttonOdustani.UseVisualStyleBackColor = false;
+            this.buttonOdustani.Visible = false;
+            this.buttonOdustani.Click += new System.EventHandler(this.buttonOdustani_Click);
             // 
             // ProfilKorisnikaForm
             // 
@@ -357,6 +370,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1123, 787);
+            this.Controls.Add(this.buttonOdustani);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonDetaljiPutovanja);
             this.Controls.Add(this.labelBrojMobitela);
@@ -417,5 +431,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button buttonOdustani;
     }
 }

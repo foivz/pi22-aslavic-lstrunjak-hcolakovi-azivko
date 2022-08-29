@@ -49,7 +49,7 @@ namespace Forme
             {
                 if (Convert.ToInt32(row.Cells[8].Value) == 0)
                 {
-                    row.DefaultCellStyle.BackColor = Color.Red;
+                    row.DefaultCellStyle.BackColor = Color.DarkGray;
                 }
             }
         }
