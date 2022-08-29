@@ -349,6 +349,8 @@ namespace Forme
             this.Controls.Add(this.label1);
             this.Name = "UCputovanja";
             this.Size = new System.Drawing.Size(758, 283);
+            this.MouseEnter += new System.EventHandler(this.UCputovanja_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UCputovanja_MouseLeave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

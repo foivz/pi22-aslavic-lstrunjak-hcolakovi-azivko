@@ -92,5 +92,27 @@ namespace Forme
         }
 
         #endregion
+
+        private void UCputovanja_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(41, 94, 104);
+            textboxCijena.BackColor = Color.FromArgb(41, 94, 104);
+            textboxDatumVrijemePolaska.BackColor = Color.FromArgb(41, 94, 104);
+            textboxNazivPrijevoznika.BackColor = Color.FromArgb(41, 94, 104);
+            textboxOdrediste.BackColor = Color.FromArgb(41, 94, 104);
+            textboxPolaziste.BackColor = Color.FromArgb(41, 94, 104);
+            textboxVrstaKarte.BackColor = Color.FromArgb(41, 94, 104);
+        }
+
+        private void UCputovanja_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(41, 74, 84);
+            textboxCijena.BackColor = Color.FromArgb(41, 74, 84);
+            textboxDatumVrijemePolaska.BackColor = Color.FromArgb(41, 74, 84);
+            textboxNazivPrijevoznika.BackColor = Color.FromArgb(41, 74, 84);
+            textboxOdrediste.BackColor = Color.FromArgb(41, 74, 84);
+            textboxPolaziste.BackColor = Color.FromArgb(41, 74, 84);
+            textboxVrstaKarte.BackColor = Color.FromArgb(41, 74, 84);
+        }
     }
 }
