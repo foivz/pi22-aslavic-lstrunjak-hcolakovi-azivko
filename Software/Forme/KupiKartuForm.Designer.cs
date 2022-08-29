@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.odaberiLinijuButton = new System.Windows.Forms.Button();
             this.autoprijevoznikTextBox = new System.Windows.Forms.TextBox();
             this.udaljenostTextBox = new System.Windows.Forms.TextBox();
@@ -55,6 +59,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel4);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.odaberiLinijuButton);
             this.groupBox1.Controls.Add(this.autoprijevoznikTextBox);
             this.groupBox1.Controls.Add(this.udaljenostTextBox);
@@ -65,12 +73,44 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(23, 27);
+            this.groupBox1.Location = new System.Drawing.Point(23, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(579, 222);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Odabrana linija:";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(168, 199);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 1);
+            this.panel4.TabIndex = 23;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(168, 152);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 22;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(168, 106);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(168, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.TabIndex = 20;
             // 
             // odaberiLinijuButton
             // 
@@ -87,34 +127,42 @@
             // 
             // autoprijevoznikTextBox
             // 
+            this.autoprijevoznikTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.autoprijevoznikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.autoprijevoznikTextBox.Enabled = false;
             this.autoprijevoznikTextBox.Location = new System.Drawing.Point(168, 176);
             this.autoprijevoznikTextBox.Name = "autoprijevoznikTextBox";
-            this.autoprijevoznikTextBox.Size = new System.Drawing.Size(200, 29);
+            this.autoprijevoznikTextBox.Size = new System.Drawing.Size(200, 22);
             this.autoprijevoznikTextBox.TabIndex = 7;
             // 
             // udaljenostTextBox
             // 
+            this.udaljenostTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.udaljenostTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.udaljenostTextBox.Enabled = false;
             this.udaljenostTextBox.Location = new System.Drawing.Point(168, 129);
             this.udaljenostTextBox.Name = "udaljenostTextBox";
-            this.udaljenostTextBox.Size = new System.Drawing.Size(200, 29);
+            this.udaljenostTextBox.Size = new System.Drawing.Size(200, 22);
             this.udaljenostTextBox.TabIndex = 6;
             // 
             // odredisteTextBox
             // 
+            this.odredisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.odredisteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.odredisteTextBox.Enabled = false;
             this.odredisteTextBox.Location = new System.Drawing.Point(168, 83);
             this.odredisteTextBox.Name = "odredisteTextBox";
-            this.odredisteTextBox.Size = new System.Drawing.Size(200, 29);
+            this.odredisteTextBox.Size = new System.Drawing.Size(200, 22);
             this.odredisteTextBox.TabIndex = 5;
             // 
             // polazisteTextBox
             // 
+            this.polazisteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.polazisteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.polazisteTextBox.Enabled = false;
             this.polazisteTextBox.Location = new System.Drawing.Point(168, 34);
             this.polazisteTextBox.Name = "polazisteTextBox";
-            this.polazisteTextBox.Size = new System.Drawing.Size(200, 29);
+            this.polazisteTextBox.Size = new System.Drawing.Size(200, 22);
             this.polazisteTextBox.TabIndex = 4;
             // 
             // label4
@@ -159,7 +207,7 @@
             this.groupBox2.Controls.Add(this.studentskaRadioButton);
             this.groupBox2.Controls.Add(this.regularnaRadioButton);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(23, 273);
+            this.groupBox2.Location = new System.Drawing.Point(23, 290);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(435, 100);
             this.groupBox2.TabIndex = 1;
@@ -203,7 +251,7 @@
             this.groupBox3.Controls.Add(this.prtljagaCheckBox);
             this.groupBox3.Controls.Add(this.povratnaKartaCheckBox);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(23, 398);
+            this.groupBox3.Location = new System.Drawing.Point(23, 415);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(435, 100);
             this.groupBox3.TabIndex = 2;
@@ -260,7 +308,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(-1, -2);
@@ -323,5 +371,9 @@
         private System.Windows.Forms.Button kupiKartuButton;
         private System.Windows.Forms.Button odustaniButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -26,9 +26,7 @@ namespace Forme
 
         private void odaberiLinijuButton_Click(object sender, EventArgs e)
         {
-            OdaberiLinijuForm odaberiLinijuForm = new OdaberiLinijuForm(korisnik);
-            this.Hide();
-            odaberiLinijuForm.ShowDialog();
+            this.Close();
         }
 
         private void kupiKartuButton_Click(object sender, EventArgs e)
