@@ -38,14 +38,14 @@ namespace Forme
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBoxPolaziste = new System.Windows.Forms.TextBox();
-            this.textBoxOdrediste = new System.Windows.Forms.TextBox();
-            this.textBoxNazivPrijevoznika = new System.Windows.Forms.TextBox();
-            this.textBoxDatumVrijemePolaska = new System.Windows.Forms.TextBox();
-            this.textBoxCijena = new System.Windows.Forms.TextBox();
-            this.checkBoxPovratna = new System.Windows.Forms.CheckBox();
-            this.checkBoxPrtljaga = new System.Windows.Forms.CheckBox();
-            this.textBoxVrstaKarte = new System.Windows.Forms.TextBox();
+            this.textboxPolaziste = new System.Windows.Forms.TextBox();
+            this.textboxOdrediste = new System.Windows.Forms.TextBox();
+            this.textboxNazivPrijevoznika = new System.Windows.Forms.TextBox();
+            this.textboxDatumVrijemePolaska = new System.Windows.Forms.TextBox();
+            this.textboxCijena = new System.Windows.Forms.TextBox();
+            this.checkboxPovratna = new System.Windows.Forms.CheckBox();
+            this.checkboxPrtljaga = new System.Windows.Forms.CheckBox();
+            this.textboxVrstaKarte = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -150,97 +150,97 @@ namespace Forme
             this.label8.TabIndex = 8;
             this.label8.Text = "Cijena";
             // 
-            // textBoxPolaziste
+            // textboxPolaziste
             // 
-            this.textBoxPolaziste.BackColor = System.Drawing.Color.White;
-            this.textBoxPolaziste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPolaziste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPolaziste.ForeColor = System.Drawing.Color.Black;
-            this.textBoxPolaziste.Location = new System.Drawing.Point(41, 149);
-            this.textBoxPolaziste.Name = "textBoxPolaziste";
-            this.textBoxPolaziste.ReadOnly = true;
-            this.textBoxPolaziste.Size = new System.Drawing.Size(173, 32);
-            this.textBoxPolaziste.TabIndex = 9;
+            this.textboxPolaziste.BackColor = System.Drawing.Color.White;
+            this.textboxPolaziste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxPolaziste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxPolaziste.ForeColor = System.Drawing.Color.Black;
+            this.textboxPolaziste.Location = new System.Drawing.Point(41, 149);
+            this.textboxPolaziste.Name = "textboxPolaziste";
+            this.textboxPolaziste.ReadOnly = true;
+            this.textboxPolaziste.Size = new System.Drawing.Size(173, 32);
+            this.textboxPolaziste.TabIndex = 9;
             // 
-            // textBoxOdrediste
+            // textboxOdrediste
             // 
-            this.textBoxOdrediste.BackColor = System.Drawing.Color.White;
-            this.textBoxOdrediste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxOdrediste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOdrediste.ForeColor = System.Drawing.Color.Black;
-            this.textBoxOdrediste.Location = new System.Drawing.Point(41, 230);
-            this.textBoxOdrediste.Name = "textBoxOdrediste";
-            this.textBoxOdrediste.ReadOnly = true;
-            this.textBoxOdrediste.Size = new System.Drawing.Size(173, 32);
-            this.textBoxOdrediste.TabIndex = 10;
+            this.textboxOdrediste.BackColor = System.Drawing.Color.White;
+            this.textboxOdrediste.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxOdrediste.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxOdrediste.ForeColor = System.Drawing.Color.Black;
+            this.textboxOdrediste.Location = new System.Drawing.Point(41, 230);
+            this.textboxOdrediste.Name = "textboxOdrediste";
+            this.textboxOdrediste.ReadOnly = true;
+            this.textboxOdrediste.Size = new System.Drawing.Size(173, 32);
+            this.textboxOdrediste.TabIndex = 10;
             // 
-            // textBoxNazivPrijevoznika
+            // textboxNazivPrijevoznika
             // 
-            this.textBoxNazivPrijevoznika.BackColor = System.Drawing.Color.White;
-            this.textBoxNazivPrijevoznika.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNazivPrijevoznika.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNazivPrijevoznika.ForeColor = System.Drawing.Color.Black;
-            this.textBoxNazivPrijevoznika.Location = new System.Drawing.Point(341, 64);
-            this.textBoxNazivPrijevoznika.Name = "textBoxNazivPrijevoznika";
-            this.textBoxNazivPrijevoznika.ReadOnly = true;
-            this.textBoxNazivPrijevoznika.Size = new System.Drawing.Size(173, 32);
-            this.textBoxNazivPrijevoznika.TabIndex = 11;
+            this.textboxNazivPrijevoznika.BackColor = System.Drawing.Color.White;
+            this.textboxNazivPrijevoznika.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxNazivPrijevoznika.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxNazivPrijevoznika.ForeColor = System.Drawing.Color.Black;
+            this.textboxNazivPrijevoznika.Location = new System.Drawing.Point(341, 64);
+            this.textboxNazivPrijevoznika.Name = "textboxNazivPrijevoznika";
+            this.textboxNazivPrijevoznika.ReadOnly = true;
+            this.textboxNazivPrijevoznika.Size = new System.Drawing.Size(173, 32);
+            this.textboxNazivPrijevoznika.TabIndex = 11;
             // 
-            // textBoxDatumVrijemePolaska
+            // textboxDatumVrijemePolaska
             // 
-            this.textBoxDatumVrijemePolaska.BackColor = System.Drawing.Color.White;
-            this.textBoxDatumVrijemePolaska.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxDatumVrijemePolaska.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDatumVrijemePolaska.ForeColor = System.Drawing.Color.Black;
-            this.textBoxDatumVrijemePolaska.Location = new System.Drawing.Point(568, 64);
-            this.textBoxDatumVrijemePolaska.Name = "textBoxDatumVrijemePolaska";
-            this.textBoxDatumVrijemePolaska.ReadOnly = true;
-            this.textBoxDatumVrijemePolaska.Size = new System.Drawing.Size(173, 32);
-            this.textBoxDatumVrijemePolaska.TabIndex = 12;
+            this.textboxDatumVrijemePolaska.BackColor = System.Drawing.Color.White;
+            this.textboxDatumVrijemePolaska.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxDatumVrijemePolaska.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxDatumVrijemePolaska.ForeColor = System.Drawing.Color.Black;
+            this.textboxDatumVrijemePolaska.Location = new System.Drawing.Point(568, 64);
+            this.textboxDatumVrijemePolaska.Name = "textboxDatumVrijemePolaska";
+            this.textboxDatumVrijemePolaska.ReadOnly = true;
+            this.textboxDatumVrijemePolaska.Size = new System.Drawing.Size(173, 32);
+            this.textboxDatumVrijemePolaska.TabIndex = 12;
             // 
-            // textBoxCijena
+            // textboxCijena
             // 
-            this.textBoxCijena.BackColor = System.Drawing.Color.White;
-            this.textBoxCijena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCijena.Font = new System.Drawing.Font("Bahnschrift Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCijena.ForeColor = System.Drawing.Color.Black;
-            this.textBoxCijena.Location = new System.Drawing.Point(568, 230);
-            this.textBoxCijena.Name = "textBoxCijena";
-            this.textBoxCijena.ReadOnly = true;
-            this.textBoxCijena.Size = new System.Drawing.Size(173, 38);
-            this.textBoxCijena.TabIndex = 13;
+            this.textboxCijena.BackColor = System.Drawing.Color.White;
+            this.textboxCijena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxCijena.Font = new System.Drawing.Font("Bahnschrift Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxCijena.ForeColor = System.Drawing.Color.Black;
+            this.textboxCijena.Location = new System.Drawing.Point(568, 230);
+            this.textboxCijena.Name = "textboxCijena";
+            this.textboxCijena.ReadOnly = true;
+            this.textboxCijena.Size = new System.Drawing.Size(173, 38);
+            this.textboxCijena.TabIndex = 13;
             // 
-            // checkBoxPovratna
+            // checkboxPovratna
             // 
-            this.checkBoxPovratna.AutoCheck = false;
-            this.checkBoxPovratna.AutoSize = true;
-            this.checkBoxPovratna.Location = new System.Drawing.Point(281, 149);
-            this.checkBoxPovratna.Name = "checkBoxPovratna";
-            this.checkBoxPovratna.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxPovratna.TabIndex = 14;
-            this.checkBoxPovratna.UseVisualStyleBackColor = true;
+            this.checkboxPovratna.AutoCheck = false;
+            this.checkboxPovratna.AutoSize = true;
+            this.checkboxPovratna.Location = new System.Drawing.Point(281, 149);
+            this.checkboxPovratna.Name = "checkboxPovratna";
+            this.checkboxPovratna.Size = new System.Drawing.Size(18, 17);
+            this.checkboxPovratna.TabIndex = 14;
+            this.checkboxPovratna.UseVisualStyleBackColor = true;
             // 
-            // checkBoxPrtljaga
+            // checkboxPrtljaga
             // 
-            this.checkBoxPrtljaga.AutoCheck = false;
-            this.checkBoxPrtljaga.AutoSize = true;
-            this.checkBoxPrtljaga.Location = new System.Drawing.Point(440, 149);
-            this.checkBoxPrtljaga.Name = "checkBoxPrtljaga";
-            this.checkBoxPrtljaga.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxPrtljaga.TabIndex = 15;
-            this.checkBoxPrtljaga.UseVisualStyleBackColor = true;
+            this.checkboxPrtljaga.AutoCheck = false;
+            this.checkboxPrtljaga.AutoSize = true;
+            this.checkboxPrtljaga.Location = new System.Drawing.Point(440, 149);
+            this.checkboxPrtljaga.Name = "checkboxPrtljaga";
+            this.checkboxPrtljaga.Size = new System.Drawing.Size(18, 17);
+            this.checkboxPrtljaga.TabIndex = 15;
+            this.checkboxPrtljaga.UseVisualStyleBackColor = true;
             // 
-            // textBoxVrstaKarte
+            // textboxVrstaKarte
             // 
-            this.textBoxVrstaKarte.BackColor = System.Drawing.Color.White;
-            this.textBoxVrstaKarte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxVrstaKarte.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVrstaKarte.ForeColor = System.Drawing.Color.Black;
-            this.textBoxVrstaKarte.Location = new System.Drawing.Point(568, 149);
-            this.textBoxVrstaKarte.Name = "textBoxVrstaKarte";
-            this.textBoxVrstaKarte.ReadOnly = true;
-            this.textBoxVrstaKarte.Size = new System.Drawing.Size(173, 32);
-            this.textBoxVrstaKarte.TabIndex = 16;
+            this.textboxVrstaKarte.BackColor = System.Drawing.Color.White;
+            this.textboxVrstaKarte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textboxVrstaKarte.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textboxVrstaKarte.ForeColor = System.Drawing.Color.Black;
+            this.textboxVrstaKarte.Location = new System.Drawing.Point(568, 149);
+            this.textboxVrstaKarte.Name = "textboxVrstaKarte";
+            this.textboxVrstaKarte.ReadOnly = true;
+            this.textboxVrstaKarte.Size = new System.Drawing.Size(173, 32);
+            this.textboxVrstaKarte.TabIndex = 16;
             // 
             // panel1
             // 
@@ -259,7 +259,7 @@ namespace Forme
             this.label9.Location = new System.Drawing.Point(94, 8);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(5);
-            this.label9.Size = new System.Drawing.Size(127, 51);
+            this.label9.Size = new System.Drawing.Size(120, 50);
             this.label9.TabIndex = 18;
             this.label9.Text = "Karta br.";
             // 
@@ -271,14 +271,14 @@ namespace Forme
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBoxVrstaKarte);
-            this.Controls.Add(this.checkBoxPrtljaga);
-            this.Controls.Add(this.checkBoxPovratna);
-            this.Controls.Add(this.textBoxCijena);
-            this.Controls.Add(this.textBoxDatumVrijemePolaska);
-            this.Controls.Add(this.textBoxNazivPrijevoznika);
-            this.Controls.Add(this.textBoxOdrediste);
-            this.Controls.Add(this.textBoxPolaziste);
+            this.Controls.Add(this.textboxVrstaKarte);
+            this.Controls.Add(this.checkboxPrtljaga);
+            this.Controls.Add(this.checkboxPovratna);
+            this.Controls.Add(this.textboxCijena);
+            this.Controls.Add(this.textboxDatumVrijemePolaska);
+            this.Controls.Add(this.textboxNazivPrijevoznika);
+            this.Controls.Add(this.textboxOdrediste);
+            this.Controls.Add(this.textboxPolaziste);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -307,14 +307,14 @@ namespace Forme
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxPolaziste;
-        private System.Windows.Forms.TextBox textBoxOdrediste;
-        private System.Windows.Forms.TextBox textBoxNazivPrijevoznika;
-        private System.Windows.Forms.TextBox textBoxDatumVrijemePolaska;
-        private System.Windows.Forms.TextBox textBoxCijena;
-        private System.Windows.Forms.CheckBox checkBoxPovratna;
-        private System.Windows.Forms.CheckBox checkBoxPrtljaga;
-        private System.Windows.Forms.TextBox textBoxVrstaKarte;
+        private System.Windows.Forms.TextBox textboxPolaziste;
+        private System.Windows.Forms.TextBox textboxOdrediste;
+        private System.Windows.Forms.TextBox textboxNazivPrijevoznika;
+        private System.Windows.Forms.TextBox textboxDatumVrijemePolaska;
+        private System.Windows.Forms.TextBox textboxCijena;
+        private System.Windows.Forms.CheckBox checkboxPovratna;
+        private System.Windows.Forms.CheckBox checkboxPrtljaga;
+        private System.Windows.Forms.TextBox textboxVrstaKarte;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
     }
