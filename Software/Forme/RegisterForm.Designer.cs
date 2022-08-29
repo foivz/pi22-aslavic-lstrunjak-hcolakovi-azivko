@@ -52,6 +52,12 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.pictureboxPassVisible = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxPassVisible)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,56 +185,62 @@
             // imeTextBox
             // 
             this.imeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.imeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.imeTextBox.ForeColor = System.Drawing.Color.White;
             this.imeTextBox.Location = new System.Drawing.Point(239, 105);
             this.imeTextBox.Name = "imeTextBox";
-            this.imeTextBox.Size = new System.Drawing.Size(383, 28);
+            this.imeTextBox.Size = new System.Drawing.Size(383, 21);
             this.imeTextBox.TabIndex = 17;
             // 
             // prezimeTextBox
             // 
             this.prezimeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.prezimeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.prezimeTextBox.ForeColor = System.Drawing.Color.White;
             this.prezimeTextBox.Location = new System.Drawing.Point(239, 156);
             this.prezimeTextBox.Name = "prezimeTextBox";
-            this.prezimeTextBox.Size = new System.Drawing.Size(383, 28);
+            this.prezimeTextBox.Size = new System.Drawing.Size(383, 21);
             this.prezimeTextBox.TabIndex = 18;
             // 
             // emailTextBox
             // 
             this.emailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailTextBox.ForeColor = System.Drawing.Color.White;
             this.emailTextBox.Location = new System.Drawing.Point(239, 208);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(383, 28);
+            this.emailTextBox.Size = new System.Drawing.Size(383, 21);
             this.emailTextBox.TabIndex = 19;
             // 
             // korisnickoImeTextBox
             // 
             this.korisnickoImeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.korisnickoImeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.korisnickoImeTextBox.ForeColor = System.Drawing.Color.White;
             this.korisnickoImeTextBox.Location = new System.Drawing.Point(239, 295);
             this.korisnickoImeTextBox.Name = "korisnickoImeTextBox";
-            this.korisnickoImeTextBox.Size = new System.Drawing.Size(383, 28);
+            this.korisnickoImeTextBox.Size = new System.Drawing.Size(383, 21);
             this.korisnickoImeTextBox.TabIndex = 20;
             // 
             // lozinkaTextBox
             // 
             this.lozinkaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.lozinkaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lozinkaTextBox.ForeColor = System.Drawing.Color.White;
             this.lozinkaTextBox.Location = new System.Drawing.Point(239, 374);
             this.lozinkaTextBox.Name = "lozinkaTextBox";
-            this.lozinkaTextBox.Size = new System.Drawing.Size(383, 28);
+            this.lozinkaTextBox.Size = new System.Drawing.Size(383, 21);
             this.lozinkaTextBox.TabIndex = 21;
             this.lozinkaTextBox.UseSystemPasswordChar = true;
             // 
             // brojMobitelaTextBox
             // 
             this.brojMobitelaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.brojMobitelaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.brojMobitelaTextBox.ForeColor = System.Drawing.Color.White;
             this.brojMobitelaTextBox.Location = new System.Drawing.Point(239, 458);
             this.brojMobitelaTextBox.Name = "brojMobitelaTextBox";
-            this.brojMobitelaTextBox.Size = new System.Drawing.Size(383, 28);
+            this.brojMobitelaTextBox.Size = new System.Drawing.Size(383, 21);
             this.brojMobitelaTextBox.TabIndex = 22;
             // 
             // buttonNav
@@ -296,12 +308,66 @@
             this.pictureboxPassVisible.TabStop = false;
             this.pictureboxPassVisible.Click += new System.EventHandler(this.pictureboxPassVisible_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(239, 127);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(380, 1);
+            this.panel2.TabIndex = 29;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(239, 178);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(380, 1);
+            this.panel1.TabIndex = 30;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(239, 230);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(380, 1);
+            this.panel3.TabIndex = 31;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(239, 317);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(380, 1);
+            this.panel4.TabIndex = 32;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(239, 396);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(380, 1);
+            this.panel5.TabIndex = 33;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(239, 480);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(380, 1);
+            this.panel6.TabIndex = 34;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(719, 693);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureboxPassVisible);
             this.Controls.Add(this.labelPhoneNumber);
             this.Controls.Add(this.labelPassword);
@@ -362,5 +428,11 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.PictureBox pictureboxPassVisible;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
