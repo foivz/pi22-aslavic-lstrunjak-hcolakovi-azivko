@@ -26,6 +26,7 @@ namespace Forme
             Form1 pocetnaForm = new Form1();
             this.Hide();
             pocetnaForm.ShowDialog();
+            this.Close();
         }
 
         private void registrirajSeButton_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace Forme
             RegisterForm registerForm = new RegisterForm();
             this.Hide();
             registerForm.ShowDialog();
+            this.Close();
         }
 
         public object DohvatiLinije()

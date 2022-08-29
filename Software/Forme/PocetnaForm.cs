@@ -25,6 +25,7 @@ namespace Forme
         {
             this.Hide();
             loginForm.ShowDialog();
+            this.Close();
         }
 
         private void izlazButton_Click(object sender, EventArgs e)
@@ -35,9 +36,10 @@ namespace Forme
         
         private void neregistriraniKorisnikButton_Click(object sender, EventArgs e)
         {
-            NeregistriraniKorisnikForm neregistriraniKorisnikForm = new NeregistriraniKorisnikForm();
             this.Hide();
+            NeregistriraniKorisnikForm neregistriraniKorisnikForm = new NeregistriraniKorisnikForm();
             neregistriraniKorisnikForm.ShowDialog();
+            this.Close();
         }
 
         private void buttonNav_MouseDown(object sender, MouseEventArgs e)

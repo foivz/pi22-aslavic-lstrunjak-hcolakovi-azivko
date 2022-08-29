@@ -26,6 +26,7 @@ namespace Forme
             Form1 pocetnaForm = new Form1();
             this.Hide();
             pocetnaForm.ShowDialog();
+            this.Close();
         }
 
         private void prijaviSeButton_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace Forme
                         AdminForm adminForm = new AdminForm(korisnik);
                         this.Hide();
                         adminForm.ShowDialog();
+                        this.Close();
                     }
                     else if (korisnickoImeTextBox.Text == korisnik.korisnicko_ime && lozinkaTextBox.Text == korisnik.lozinka && korisnik.uloga_korisnika_id != 1)
                     {
@@ -55,6 +57,7 @@ namespace Forme
                         RegistriraniKorisnikForm registriraniKorisnik = new RegistriraniKorisnikForm(korisnik);
                         this.Hide();
                         registriraniKorisnik.ShowDialog();
+                        this.Close();
                     }
                 }
 

@@ -193,7 +193,7 @@ namespace Forme
                 return;
             }
             DetaljiPutovanjaForm dlf = new DetaljiPutovanjaForm(korisnik);
-            dlf.Show();
+            dlf.ShowDialog();
         }
 
         private void buttonOdustani_Click(object sender, EventArgs e)
