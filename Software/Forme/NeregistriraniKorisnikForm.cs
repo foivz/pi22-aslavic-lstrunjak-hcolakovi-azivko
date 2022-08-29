@@ -65,11 +65,18 @@ namespace Forme
                 PopunjeneLinije();
 
                 popisLinijaDataGridView.Columns["linija_id"].Visible = false;
-                popisLinijaDataGridView.Columns["broj_linije"].Visible = false;
                 popisLinijaDataGridView.Columns["autoprijevoznik_id"].Visible = false;
                 popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
                 popisLinijaDataGridView.Columns["Karta"].Visible = false;
             }
+            popisLinijaDataGridView.Columns["broj_linije"].HeaderText = "Broj linije";
+            popisLinijaDataGridView.Columns["polaziste"].HeaderText = "Polaziste";
+            popisLinijaDataGridView.Columns["odrediste"].HeaderText = "Odrediste";
+            popisLinijaDataGridView.Columns["datum_i_vrijeme_polaska"].HeaderText = "Datum i vrijeme polaska";
+            popisLinijaDataGridView.Columns["udaljenost"].HeaderText = "Udaljenost";
+            popisLinijaDataGridView.Columns["broj_mjesta"].HeaderText = "Broj mjesta";
+            popisLinijaDataGridView.Columns["broj_slobodnih_mjesta"].HeaderText = "Broj slobodnih mjesta";
+
         }
 
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
