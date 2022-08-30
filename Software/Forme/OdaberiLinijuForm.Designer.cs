@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.popisLinijaDataGridView = new System.Windows.Forms.DataGridView();
             this.odaberiLinijuButton = new System.Windows.Forms.Button();
@@ -49,19 +50,41 @@
             // 
             // popisLinijaDataGridView
             // 
-            this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.popisLinijaDataGridView.AllowUserToAddRows = false;
+            this.popisLinijaDataGridView.AllowUserToDeleteRows = false;
+            this.popisLinijaDataGridView.AllowUserToOrderColumns = true;
+            this.popisLinijaDataGridView.AllowUserToResizeColumns = false;
+            this.popisLinijaDataGridView.AllowUserToResizeRows = false;
+            this.popisLinijaDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.popisLinijaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.popisLinijaDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.popisLinijaDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(104)))), ((int)(((byte)(144)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(64)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.popisLinijaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.popisLinijaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.popisLinijaDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.popisLinijaDataGridView.EnableHeadersVisualStyles = false;
             this.popisLinijaDataGridView.Location = new System.Drawing.Point(41, 81);
+            this.popisLinijaDataGridView.MultiSelect = false;
             this.popisLinijaDataGridView.Name = "popisLinijaDataGridView";
+            this.popisLinijaDataGridView.ReadOnly = true;
+            this.popisLinijaDataGridView.RowHeadersVisible = false;
             this.popisLinijaDataGridView.RowHeadersWidth = 51;
             this.popisLinijaDataGridView.RowTemplate.Height = 24;
+            this.popisLinijaDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.popisLinijaDataGridView.Size = new System.Drawing.Size(735, 379);
             this.popisLinijaDataGridView.TabIndex = 1;
             // 
@@ -70,7 +93,7 @@
             this.odaberiLinijuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.odaberiLinijuButton.FlatAppearance.BorderSize = 0;
             this.odaberiLinijuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.odaberiLinijuButton.Location = new System.Drawing.Point(477, 478);
+            this.odaberiLinijuButton.Location = new System.Drawing.Point(41, 478);
             this.odaberiLinijuButton.Name = "odaberiLinijuButton";
             this.odaberiLinijuButton.Size = new System.Drawing.Size(134, 70);
             this.odaberiLinijuButton.TabIndex = 2;

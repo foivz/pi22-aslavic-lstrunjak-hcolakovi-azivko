@@ -34,7 +34,18 @@ namespace Forme
             {
                 popisLinijaDataGridView.DataSource = null;
                 popisLinijaDataGridView.DataSource = context.Linija.ToList();
+                popisLinijaDataGridView.Columns["linija_id"].Visible = false;
+                popisLinijaDataGridView.Columns["autoprijevoznik_id"].Visible = false;
+                popisLinijaDataGridView.Columns["Autoprijevoznik"].Visible = false;
+                popisLinijaDataGridView.Columns["Karta"].Visible = false;
             }
+            popisLinijaDataGridView.Columns["broj_linije"].HeaderText = "Broj linije";
+            popisLinijaDataGridView.Columns["polaziste"].HeaderText = "Polaziste";
+            popisLinijaDataGridView.Columns["odrediste"].HeaderText = "Odrediste";
+            popisLinijaDataGridView.Columns["datum_i_vrijeme_polaska"].HeaderText = "Datum i vrijeme polaska";
+            popisLinijaDataGridView.Columns["udaljenost"].HeaderText = "Udaljenost";
+            popisLinijaDataGridView.Columns["broj_mjesta"].HeaderText = "Broj mjesta";
+            popisLinijaDataGridView.Columns["broj_slobodnih_mjesta"].HeaderText = "Broj slobodnih mjesta";
         }
 
         private void odaberiLinijuButton_Click(object sender, EventArgs e)
@@ -43,6 +54,7 @@ namespace Forme
             KupiKartuForm kupiKartu = new KupiKartuForm(korisnik, linija);
             this.Hide();
             kupiKartu.ShowDialog();
+            this.Close();
         }
 
         private void buttonNav_MouseDown(object sender, MouseEventArgs e)
