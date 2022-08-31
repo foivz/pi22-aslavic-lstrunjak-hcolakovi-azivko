@@ -34,31 +34,14 @@ namespace Forme
 
         private void kupiKartuButton_Click(object sender, EventArgs e)
         {
-            double cijena = 0;
             string vrstaKarte = "Regularna";
-            cijena = double.Parse(udaljenostTextBox.Text) * 0.6;
-
             if (studentskaRadioButton.Checked)
             {
-                //50% popusta za studente
-                cijena *= 0.5;
                 vrstaKarte = "Studentska";
             }
             else if (umirovljenikRdioButton.Checked)
             {
-                //30% popusta za umirovljenike
-                cijena *= 0.7;
                 vrstaKarte = "Umirovljenička";
-            }
-
-            if (povratnaKartaCheckBox.Checked)
-            {
-                cijena *= 1.90;
-            }
-
-            if (prtljagaCheckBox.Checked)
-            {
-                cijena *= 1.1;
             }
 
             // Moramo dodati tu kartu BAŠ tom korisniku koji je logiran
@@ -72,7 +55,7 @@ namespace Forme
                     vrsta_karte = vrstaKarte,
                     povratna = povratnaKartaCheckBox.Checked,
                     prtljaga = prtljagaCheckBox.Checked,
-                    cijena = cijena,
+                    cijena = izracunCijene,
                     datum_i_vrijeme_rezeravcije = DateTime.Now.ToString()
                 };
 
@@ -86,7 +69,7 @@ namespace Forme
                 context.SaveChanges();
 
                 // Povratna informacija korisniku
-                MessageBox.Show($"Uspješno ste rezervirali kartu na relaciji {linija.polaziste} - {linija.odrediste}. Ukupna cijena je: {cijena} HRK.");
+                MessageBox.Show($"Uspješno ste rezervirali kartu na relaciji {linija.polaziste} - {linija.odrediste}. Ukupna cijena je: {izracunCijene} HRK.");
                 this.Close();
             }
         }
@@ -98,7 +81,7 @@ namespace Forme
             udaljenostTextBox.Text = linija.udaljenost.ToString();
             izracunCijene = int.Parse(udaljenostTextBox.Text) * 0.6;
             izracunCijene = Math.Round(izracunCijene, 2);
-            textboxCijena.Text = Convert.ToString(izracunCijene);
+            textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
             using (var context = new LinkBusEntities())
             {
                 foreach (Autoprijevoznik autoprijevoznik in context.Autoprijevoznik)
