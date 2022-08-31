@@ -17,6 +17,7 @@ namespace Forme
         private Point lastLocation;
         Korisnik korisnik;
         Linija linija;
+        double izracunCijene = 0;
         public KupiKartuForm(Korisnik aktivniKorisnik, Linija odabranaLinija)
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace Forme
         {
             double cijena = 0;
             string vrstaKarte = "Regularna";
-            cijena = double.Parse(udaljenostTextBox.Text) * 0.7;
+            cijena = double.Parse(udaljenostTextBox.Text) * 0.6;
 
             if (studentskaRadioButton.Checked)
             {
@@ -52,12 +53,12 @@ namespace Forme
 
             if (povratnaKartaCheckBox.Checked)
             {
-                cijena *= 1.95;
+                cijena *= 1.90;
             }
 
             if (prtljagaCheckBox.Checked)
             {
-                cijena += 10;
+                cijena *= 1.1;
             }
 
             // Moramo dodati tu kartu BAŠ tom korisniku koji je logiran
@@ -95,6 +96,9 @@ namespace Forme
             polazisteTextBox.Text = linija.polaziste;
             odredisteTextBox.Text = linija.odrediste;
             udaljenostTextBox.Text = linija.udaljenost.ToString();
+            izracunCijene = int.Parse(udaljenostTextBox.Text) * 0.6;
+            izracunCijene = Math.Round(izracunCijene, 2);
+            textboxCijena.Text = Convert.ToString(izracunCijene);
             using (var context = new LinkBusEntities())
             {
                 foreach (Autoprijevoznik autoprijevoznik in context.Autoprijevoznik)
@@ -132,6 +136,70 @@ namespace Forme
         private void button1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void studentskaRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (studentskaRadioButton.Checked == true)
+            {
+                izracunCijene *= 0.5;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+            else
+            {
+                izracunCijene /= 0.5;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+        }
+
+        private void umirovljenikRdioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (umirovljenikRdioButton.Checked == true)
+            {
+                izracunCijene *= 0.7;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+            else
+            {
+                izracunCijene /= 0.7;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+        }
+
+        private void povratnaKartaCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (povratnaKartaCheckBox.Checked == true)
+            {
+                izracunCijene *= 1.9;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+            else
+            {
+                izracunCijene /= 1.9;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+        }
+
+        private void prtljagaCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (prtljagaCheckBox.Checked == true)
+            {
+                izracunCijene *= 1.1;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
+            else
+            {
+                izracunCijene /= 1.1;
+                izracunCijene = Math.Round(izracunCijene, 2);
+                textboxCijena.Text = Convert.ToString(izracunCijene) + " Kn";
+            }
         }
     }
 }

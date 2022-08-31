@@ -52,6 +52,9 @@
             this.kupiKartuButton = new System.Windows.Forms.Button();
             this.odustaniButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textboxCijena = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -223,6 +226,7 @@
             this.umirovljenikRdioButton.TabIndex = 2;
             this.umirovljenikRdioButton.Text = "Umirovljenik";
             this.umirovljenikRdioButton.UseVisualStyleBackColor = true;
+            this.umirovljenikRdioButton.CheckedChanged += new System.EventHandler(this.umirovljenikRdioButton_CheckedChanged);
             // 
             // studentskaRadioButton
             // 
@@ -233,6 +237,7 @@
             this.studentskaRadioButton.TabIndex = 1;
             this.studentskaRadioButton.Text = "Studentska";
             this.studentskaRadioButton.UseVisualStyleBackColor = true;
+            this.studentskaRadioButton.CheckedChanged += new System.EventHandler(this.studentskaRadioButton_CheckedChanged);
             // 
             // regularnaRadioButton
             // 
@@ -267,6 +272,7 @@
             this.prtljagaCheckBox.TabIndex = 1;
             this.prtljagaCheckBox.Text = "Prtljaga";
             this.prtljagaCheckBox.UseVisualStyleBackColor = true;
+            this.prtljagaCheckBox.CheckedChanged += new System.EventHandler(this.prtljagaCheckBox_CheckedChanged);
             // 
             // povratnaKartaCheckBox
             // 
@@ -277,6 +283,7 @@
             this.povratnaKartaCheckBox.TabIndex = 0;
             this.povratnaKartaCheckBox.Text = "Povratna karta";
             this.povratnaKartaCheckBox.UseVisualStyleBackColor = true;
+            this.povratnaKartaCheckBox.CheckedChanged += new System.EventHandler(this.povratnaKartaCheckBox_CheckedChanged);
             // 
             // kupiKartuButton
             // 
@@ -284,7 +291,7 @@
             this.kupiKartuButton.FlatAppearance.BorderSize = 0;
             this.kupiKartuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kupiKartuButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.kupiKartuButton.Location = new System.Drawing.Point(156, 549);
+            this.kupiKartuButton.Location = new System.Drawing.Point(156, 661);
             this.kupiKartuButton.Name = "kupiKartuButton";
             this.kupiKartuButton.Size = new System.Drawing.Size(148, 76);
             this.kupiKartuButton.TabIndex = 3;
@@ -298,7 +305,7 @@
             this.odustaniButton.FlatAppearance.BorderSize = 0;
             this.odustaniButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.odustaniButton.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.odustaniButton.Location = new System.Drawing.Point(345, 549);
+            this.odustaniButton.Location = new System.Drawing.Point(345, 661);
             this.odustaniButton.Name = "odustaniButton";
             this.odustaniButton.Size = new System.Drawing.Size(148, 76);
             this.odustaniButton.TabIndex = 4;
@@ -320,12 +327,45 @@
             this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             this.button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button1_MouseUp);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(28, 563);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 30);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Cijena:";
+            // 
+            // textboxCijena
+            // 
+            this.textboxCijena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.textboxCijena.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textboxCijena.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textboxCijena.ForeColor = System.Drawing.Color.White;
+            this.textboxCijena.Location = new System.Drawing.Point(111, 562);
+            this.textboxCijena.Name = "textboxCijena";
+            this.textboxCijena.ReadOnly = true;
+            this.textboxCijena.Size = new System.Drawing.Size(137, 31);
+            this.textboxCijena.TabIndex = 7;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(111, 589);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(137, 1);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
             // KupiKartuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(645, 658);
+            this.ClientSize = new System.Drawing.Size(645, 754);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.textboxCijena);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.odustaniButton);
             this.Controls.Add(this.kupiKartuButton);
@@ -346,6 +386,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -375,5 +416,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textboxCijena;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
