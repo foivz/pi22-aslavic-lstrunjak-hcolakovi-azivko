@@ -142,6 +142,10 @@
             // 
             // dgvPovijestPutovanja
             // 
+            this.dgvPovijestPutovanja.AllowUserToAddRows = false;
+            this.dgvPovijestPutovanja.AllowUserToDeleteRows = false;
+            this.dgvPovijestPutovanja.AllowUserToResizeColumns = false;
+            this.dgvPovijestPutovanja.AllowUserToResizeRows = false;
             this.dgvPovijestPutovanja.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvPovijestPutovanja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
             this.dgvPovijestPutovanja.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -178,6 +182,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPovijestPutovanja.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPovijestPutovanja.RowHeadersVisible = false;
             this.dgvPovijestPutovanja.RowHeadersWidth = 51;
             this.dgvPovijestPutovanja.RowTemplate.Height = 24;
             this.dgvPovijestPutovanja.RowTemplate.ReadOnly = true;

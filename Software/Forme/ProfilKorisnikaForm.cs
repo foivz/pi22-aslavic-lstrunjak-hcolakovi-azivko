@@ -16,7 +16,9 @@ namespace Forme
         private bool mouseDown;
         private Point lastLocation;
         Korisnik korisnik;
-        Karta selektiranaKarta;
+
+        string txtUnchangedIme, txtUnchangedPrezime, txtUnchangedEmail, txtUnchangedBrojMobitela;
+
         public ProfilKorisnikaForm(Korisnik logiraniKorisnik)
         {
             InitializeComponent();
@@ -27,13 +29,15 @@ namespace Forme
         {
             labelEmail.Visible = false;
             labelBrojMobitela.Visible = false;
-            textboxIme.Text = korisnik.ime;
-            textboxPrezime.Text = korisnik.prezime;
-            textboxEmail.Text = korisnik.email;
-            textboxBrojMobitela.Text = korisnik.broj_mobitela;
 
             using (var context = new LinkBusEntities())
             {
+                Korisnik kor = context.Korisnik.Where(k => k.korisnik_id == korisnik.korisnik_id).FirstOrDefault();
+                textboxIme.Text = kor.ime;
+                textboxPrezime.Text = kor.prezime;
+                textboxEmail.Text = kor.email;
+                textboxBrojMobitela.Text = kor.broj_mobitela;
+
                 var query = from k in context.Karta
                             from a in context.Autoprijevoznik
                             from l in context.Linija
@@ -58,6 +62,10 @@ namespace Forme
 
             }
 
+            txtUnchangedIme = textboxIme.Text;
+            txtUnchangedPrezime = textboxPrezime.Text;
+            txtUnchangedEmail = textboxEmail.Text;
+            txtUnchangedBrojMobitela = textboxBrojMobitela.Text;
 
 
         }
@@ -154,12 +162,13 @@ namespace Forme
                 context.SaveChanges();
             }
 
-                buttonPohrani.Visible = false;
-                textboxIme.ReadOnly = true;
-                textboxPrezime.ReadOnly = true;
-                textboxEmail.ReadOnly= true;
-                textboxBrojMobitela.ReadOnly= true;
-                MessageBox.Show("Uspješno ste ažurirali profil!");
+            buttonPohrani.Visible = false;
+            buttonOdustani.Visible = false;
+            textboxIme.ReadOnly = true;
+            textboxPrezime.ReadOnly = true;
+            textboxEmail.ReadOnly= true;
+            textboxBrojMobitela.ReadOnly= true;
+            MessageBox.Show("Uspješno ste ažurirali profil!");
 
         }
 
@@ -171,6 +180,11 @@ namespace Forme
 
         private void buttonOdustani_Click(object sender, EventArgs e)
         {
+            textboxIme.Text = txtUnchangedIme;
+            textboxPrezime.Text = txtUnchangedPrezime;
+            textboxEmail.Text = txtUnchangedEmail;
+            textboxBrojMobitela.Text = txtUnchangedBrojMobitela;
+
             buttonPohrani.Visible = false;
             textboxIme.ReadOnly = true;
             textboxPrezime.ReadOnly = true;
