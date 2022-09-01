@@ -102,6 +102,15 @@ namespace Forme
                 PopunjeneLinije();
                 SkriveneKolone();
             }
+
+            popisLinijaDataGridView.Columns["broj_linije"].HeaderText = "Broj linije";
+            popisLinijaDataGridView.Columns["polaziste"].HeaderText = "Polaziste";
+            popisLinijaDataGridView.Columns["odrediste"].HeaderText = "Odrediste";
+            popisLinijaDataGridView.Columns["datum_i_vrijeme_polaska"].HeaderText = "Datum i vrijeme polaska";
+            popisLinijaDataGridView.Columns["udaljenost"].HeaderText = "Udaljenost";
+            popisLinijaDataGridView.Columns["broj_mjesta"].HeaderText = "Broj mjesta";
+            popisLinijaDataGridView.Columns["broj_slobodnih_mjesta"].HeaderText = "Broj slobodnih mjesta";
+
             popisLinijaDataGridView.BorderStyle = BorderStyle.None;
             popisLinijaDataGridView.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             popisLinijaDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
