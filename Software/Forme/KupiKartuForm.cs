@@ -67,10 +67,38 @@ namespace Forme
                 // Dodavanje karte u tablicu Karta
                 context.Karta.Add(karta);
                 context.SaveChanges();
-
                 // Povratna informacija korisniku
                 MessageBox.Show($"Uspješno ste rezervirali kartu na relaciji {linija.polaziste} - {linija.odrediste}. Ukupna cijena je: {izracunCijene} HRK.");
                 this.Close();
+            }
+
+            string povratnaString;
+            string prtljagaString;
+
+            if (povratnaKartaCheckBox.Checked) 
+            {
+                povratnaString = "Da";
+            }
+            else 
+            {
+                povratnaString = "Ne";
+            }
+
+            if (prtljagaCheckBox.Checked) 
+            {
+                prtljagaString = "Da";
+            }
+            else 
+            {
+                prtljagaString = "Ne";
+            }
+            using (RacunReportForm rrf = new RacunReportForm(Convert.ToString(korisnik.korisnik_id),
+                autoprijevoznikTextBox.Text, polazisteTextBox.Text, 
+                odredisteTextBox.Text, vrstaKarte,
+                textboxCijena.Text, linija.datum_i_vrijeme_polaska,
+                povratnaString, prtljagaString)) 
+            {
+                rrf.ShowDialog();
             }
         }
 
