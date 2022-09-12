@@ -35,6 +35,7 @@
             this.odaberiLinijuButton = new System.Windows.Forms.Button();
             this.nazadButton = new System.Windows.Forms.Button();
             this.buttonNav = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,6 +129,11 @@
             this.buttonNav.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseMove);
             this.buttonNav.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonNav_MouseUp);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // OdaberiLinijuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -144,6 +150,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OdaberiLinijuForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Odabir linije";
             this.Load += new System.EventHandler(this.OdaberiLinijuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
@@ -159,5 +166,6 @@
         private System.Windows.Forms.Button odaberiLinijuButton;
         private System.Windows.Forms.Button nazadButton;
         private System.Windows.Forms.Button buttonNav;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

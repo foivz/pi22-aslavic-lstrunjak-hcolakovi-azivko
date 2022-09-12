@@ -35,6 +35,7 @@ namespace Forme
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +110,11 @@ namespace Forme
             this.flowLayoutPanel1.Size = new System.Drawing.Size(807, 671);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // DetaljiPutovanjaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,6 +126,7 @@ namespace Forme
             this.Controls.Add(this.buttonNav);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetaljiPutovanjaForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "DetaljiPutovanjaForm";
             this.Load += new System.EventHandler(this.DetaljiPutovanjaForm_Load);
             this.panel2.ResumeLayout(false);
@@ -136,5 +143,6 @@ namespace Forme
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

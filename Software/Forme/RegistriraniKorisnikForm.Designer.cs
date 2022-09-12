@@ -54,6 +54,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).BeginInit();
             this.groupBox.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -343,6 +344,11 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // RegistriraniKorisnikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -370,6 +376,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistriraniKorisnikForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "LinkBus";
             this.Load += new System.EventHandler(this.RegistriraniKorisnikForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.popisLinijaDataGridView)).EndInit();
@@ -407,5 +414,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

@@ -30,6 +30,7 @@ namespace Forme
         private void InitializeComponent()
         {
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -41,6 +42,11 @@ namespace Forme
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // RacunReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -49,6 +55,7 @@ namespace Forme
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "RacunReportForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "RacunReportForm";
             this.Load += new System.EventHandler(this.RacunReportForm_Load);
             this.ResumeLayout(false);
@@ -58,5 +65,6 @@ namespace Forme
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

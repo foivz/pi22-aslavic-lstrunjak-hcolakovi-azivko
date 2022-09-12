@@ -58,6 +58,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxPassVisible)).BeginInit();
             this.SuspendLayout();
             // 
@@ -356,6 +357,11 @@
             this.panel6.Size = new System.Drawing.Size(380, 1);
             this.panel6.TabIndex = 34;
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -396,6 +402,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegisterForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Registracija";
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxPassVisible)).EndInit();
             this.ResumeLayout(false);
@@ -434,5 +441,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

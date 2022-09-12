@@ -55,6 +55,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.buttonOdustani = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -369,6 +370,11 @@
             this.buttonOdustani.Visible = false;
             this.buttonOdustani.Click += new System.EventHandler(this.buttonOdustani_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // ProfilKorisnikaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -401,6 +407,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfilKorisnikaForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Profil korisnika";
             this.Load += new System.EventHandler(this.ProfilKorisnikaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPovijestPutovanja)).EndInit();
@@ -437,5 +444,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button buttonOdustani;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

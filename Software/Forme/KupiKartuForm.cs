@@ -44,8 +44,6 @@ namespace Forme
                 vrstaKarte = "Umirovljenička";
             }
 
-            // Moramo dodati tu kartu BAŠ tom korisniku koji je logiran
-            // Moramo smanjiti broj slobodnih mjesta za tu liniju
             using (var context = new LinkBusEntities())
             {
                 Karta karta = new Karta
@@ -59,15 +57,12 @@ namespace Forme
                     datum_i_vrijeme_rezeravcije = DateTime.Now.ToString()
                 };
 
-                // Ažuriranje broja slobodnih mjesta
                 context.Linija.Attach(linija);
                 linija.broj_slobodnih_mjesta -= 1;
                 context.SaveChanges();
 
-                // Dodavanje karte u tablicu Karta
                 context.Karta.Add(karta);
                 context.SaveChanges();
-                // Povratna informacija korisniku
                 MessageBox.Show($"Uspješno ste rezervirali kartu na relaciji {linija.polaziste} - {linija.odrediste}. Ukupna cijena je: {izracunCijene} HRK.");
                 this.Close();
             }

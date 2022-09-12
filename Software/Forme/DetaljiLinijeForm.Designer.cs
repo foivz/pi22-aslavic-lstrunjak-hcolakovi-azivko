@@ -58,6 +58,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // label1
@@ -350,6 +351,11 @@
             this.panel9.Size = new System.Drawing.Size(225, 1);
             this.panel9.TabIndex = 29;
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "C:\\Users\\Z1V3\\Desktop\\PI_Projekt\\pi22-aslavic-lstrunjak-hcolakovi-azivko\\Software" +
+    "\\Forme\\Pomoc\\LinkBus User Manual.chm";
+            // 
             // DetaljiLinijeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -391,6 +397,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetaljiLinijeForm";
+            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Detalji linije";
             this.Load += new System.EventHandler(this.DetaljiLinijeForm_Load);
             this.ResumeLayout(false);
@@ -430,5 +437,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
