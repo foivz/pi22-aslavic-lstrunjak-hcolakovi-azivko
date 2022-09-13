@@ -31,9 +31,9 @@ Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Login | Za pristupanje aplikaciji u svojstvu korisnika/admina | Hasan Čolaković
 F02 | Registracija u sustav | Kako bi korisnik koristio aplikaciju potrebna je registracija. Podaci koje će biti potrebno unijeti su: Ime, Prezime, E-mail, Korisničko ime, Lozinka | Andrija Živko
-F03 | Profil korisnika | Pristupanje/kreiranje profila korisnika ili admina | Andrija Živko
+F03 | Profil korisnika | Pristupanje/kreiranje profila korisnika | Andrija Živko
 F04 | Pregled i filtriranje rasporeda vožnje | Informacije o rasporedu vožnje uz filtriranje po određenim karakteristikama | Hasan Čolaković
-F05 | Rezervacija i kupovina karte | Odabir sjedala, rezervacija te kupovina karte za određenu liniju | Andrija Živko
+F05 | Rezervacija i kupovina karte | Rezervacija te kupovina karte za određenu liniju, ispis računa | Andrija Živko
 F06 | Unos novih linija prijevoza | Unos novih linija koje nisu do sada postojale | Hasan Čolaković
 F07 | Ograničenja | Obavijest korisniku u slučaju popunjenosti autobusa ili nekih drugih izvanrednih situacija | Hasan Čolaković
 F08 | Povijest putovanja | Mogućnost pregleda prošlih putovanja | Andrija Živko
